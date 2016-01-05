@@ -1,0 +1,7 @@
+# dependency
+node_modules/
+components/
+
+# backup
+bk
+README*.md

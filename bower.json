@@ -1,0 +1,30 @@
+{
+  "name": "phaser-examples",
+  "description": "Phaser Examples",
+  "main": "",
+  "authors": [
+    "Nathachai Thongniran"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "phaser",
+    "examples"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lodash": "~3.10.1",
+    "sanitize.css": "~2.0.0",
+    "phaser": "~2.4.4"
+  }
+}
