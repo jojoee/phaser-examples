@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Phaser Examples - project</title>
-<link rel="stylesheet" href="../components/sanitize.css/dist/sanitize.min.css">
-
+<!-- <link rel="stylesheet" href="../components/sanitize.css/dist/sanitize.min.css"> -->
 <style>
 * { margin: 0; padding: 0; }
 body { background: #6b92b9; }
@@ -12,13 +11,11 @@ canvas { display: block; }
 </style>
 </head>
 <body>
-<canvas></canvas>
-<script src="../components/lodashlodash.min.js"></script>
+<canvas id="game-canvas"></canvas>
 <script src="../components/phaser/build/phaser.min.js"></script>
-
-<!--
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.4/phaser.min.js"></script>
--->
+<script type="text/javascript">window.Phaser || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.4/phaser.min.js"><\/script>')</script>
+<script src="../components/lodash/lodash.min.js"></script>
+<script type="text/javascript">window._ || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"><\/script>')</script>
+<script src="js/game.js"></script>
 </body>
 </html>
