@@ -13,23 +13,47 @@ var OPENING = 200;
 var SPAWN_RATE = 1.25;
 var ASSET_PATH = './assets/';
 
-function init() {
-  console.log('init');
+var GAME = null; // game object
 
-  // splash screen
+/*================================================================
+  #LOG
+  ================================================================*/
+
+var LOG = function() {
+  var id = 0;
+}
+
+/*================================================================
+  #INIT
+  ================================================================*/
+
+function init(x) {
+  console.log('init');
+  GAME = this;
+
+  
+}
+
+function setSplashScreen() {
+  // set splash screen
   var text = 'Phaser Version ' + Phaser.VERSION + ' works!';
   var fontStyle = {
     font  : '24px Arial',
     fill  : '#fff',
     align : 'center'
   };
-  var t = game.add.text(this.world.centerX, this.world.centerY, text, fontStyle);
+  var t = game.add.text(GAME.world.centerX, GAME.world.centerY, text, fontStyle);
   t.anchor.setTo(0.5, 0.5);
 }
 
+/*================================================================
+  #LOAD
+  ================================================================*/
+
 function preload() {
   console.log('preload');
-    
+
+  // load all assets
   // check by opening 'Network' tab on browser's console
   this.load.image('wall', ASSET_PATH + 'wall.png');
   this.load.image('background', ASSET_PATH + 'background-texture.png');
@@ -38,6 +62,10 @@ function preload() {
   this.load.audio('jet', ASSET_PATH + 'jet.wav');
   this.load.audio('score', ASSET_PATH + 'score.wav');
   this.load.audio('hurt', ASSET_PATH + 'hurt.wav');
+}
+
+function loadUpdate() {
+  console.log('loadUpdate');
 }
 
 function create() {
@@ -82,6 +110,42 @@ function create() {
   this.reset();
 }
 
+/*================================================================
+  #PAUSE
+  ================================================================*/
+
+function paused() {
+  console.log('paused');
+}
+
+function pauseUpdate() {
+  console.log('pauseUpdate');
+}
+
+function resumed() {
+  console.log('resumed');
+}
+
+/*================================================================
+  #START
+  ================================================================*/
+
+function preRender() {
+  console.log('preRender');
+}
+
+function render() {
+  console.log('render');
+}
+
+function loadRender() {
+  console.log('loadRender');
+}
+
+/*================================================================
+  #UPDATE
+  ================================================================*/
+
 function update() {
   console.log('update');
 
@@ -105,8 +169,8 @@ function update() {
       // player - wall collision
       this.physics.arcade.collide(this.player, this.walls, this.setGameOver, null, this);
 
-      var logMsg = 'walls - alive: ' + this.walls.countLiving() + ', dead: ' + this.walls.countDead();
-      console.log(logMsg);
+      // var logMsg = 'walls - alive: ' + this.walls.countLiving() + ', dead: ' + this.walls.countDead();
+      // console.log(logMsg);
 
       // if wall pass ...
       this.walls.forEachAlive(function(wall) {
@@ -128,8 +192,28 @@ function update() {
   }
 }
 
+/*================================================================
+  #RESIZE
+  ================================================================*/
+
+function resize() {
+  console.log('resize');
+}
+
+/*================================================================
+  #SHUTDOWN
+  ================================================================*/
+
+function shutdown() {
+  console.log('shutdown');
+}
+
+/*================================================================
+  #GAME
+  ================================================================*/
+
 function reset() {
-  console.log('reset');
+  // console.log('reset');
 
   this.background.autoScroll(-SPEED * .80 ,0);
 
@@ -146,7 +230,7 @@ function reset() {
 }
 
 function start() {
-  console.log('start');
+  // console.log('start');
 
   this.player.body.allowGravity = true;
   var screenText = 'SCORE\n' + this.score;
@@ -159,7 +243,7 @@ function start() {
 }
 
 function jet() {
-  console.log('jet');
+  // console.log('jet');
 
   if (! this.gameStarted) { this.start(); }
 
@@ -173,7 +257,7 @@ function jet() {
 }
 
 function setGameOver() {
-  console.log('setGameOver');
+  // console.log('setGameOver');
   this.hurtSnd.play();
 
   this.gameOver = true;
@@ -195,7 +279,7 @@ function setGameOver() {
 }
 
 function spawnWall(y, flipped) {
-  console.log('spawnWall');
+  // console.log('spawnWall');
 
   var wall = this.walls.create(
     game.width,
@@ -216,7 +300,7 @@ function spawnWall(y, flipped) {
 }
 
 function spawnWalls() {
-  console.log('spawnWalls');
+  // console.log('spawnWalls');
 
   var wallY = this.rnd.integerInRange(game.height * .3, game.height * .7);
   var botWall = this.spawnWall(wallY);
@@ -224,6 +308,7 @@ function spawnWalls() {
 }
 
 function addScore(wall) {
+  console.log('addScore')
   this.scoreSnd.play();
 
   wall.scored = true;
@@ -234,9 +319,24 @@ function addScore(wall) {
 
 var state = {
   init: init,
+
   preload: preload,
+  loadUpdate: loadUpdate,
   create: create,
+
+  paused: paused,
+  pauseUpdate: pauseUpdate,
+  resumed: resumed,
+
+  preRender: preRender,
+  render: render,
+  loadRender: loadRender,
+
   update: update,
+
+  resize: resize,
+
+  shutdown: shutdown,
 
   // custom
   reset: reset,
