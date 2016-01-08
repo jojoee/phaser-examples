@@ -1,9 +1,14 @@
 # phaser-examples
+
 Phaser Examples
 
 ## List
 
 - [Flappy bird](), [ref](https://developer.amazon.com/public/community/post/Tx1NQ9QEA4MWGTY/Intro-To-Phaser-Part-1-Setting-Up-Your-Dev-Environment-and-Phaser)
+
+## Note
+
+- [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 
 ## Phaser
 

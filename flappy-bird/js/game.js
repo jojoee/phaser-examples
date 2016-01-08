@@ -1,11 +1,3 @@
-/**
- *
- * This is a simple state template to use for getting a Phaser game up
- * and running quickly. Simply add your own game logic to the default
- * state object or delete it and make your own.
- *
- */
-
 var SPEED = 200; // game speed
 var GRAVITY = 900; // g force
 var JET = 420;
@@ -14,36 +6,33 @@ var SPAWN_RATE = 1.25;
 var ASSET_PATH = './assets/';
 
 var GAME = null; // game object
-
-/*================================================================
-  #LOG
-  ================================================================*/
-
-var LOG = function() {
-  var id = 0;
-}
+var LOG = null;
+var GAME_WIDTH = 320;
+var GAME_HEIGHT = 568;
+var GAME_ID = 'game-canvas';
 
 /*================================================================
   #INIT
   ================================================================*/
 
-function init(x) {
-  console.log('init');
+function init() {
+  LOG = PHLog.getInstance();
+  LOG.info('init');
   GAME = this;
 
-  
+  setSplashScreen();
 }
 
 function setSplashScreen() {
   // set splash screen
   var text = 'Phaser Version ' + Phaser.VERSION + ' works!';
-  var fontStyle = {
+  var textStyle = {
     font  : '24px Arial',
     fill  : '#fff',
     align : 'center'
   };
-  var t = game.add.text(GAME.world.centerX, GAME.world.centerY, text, fontStyle);
-  t.anchor.setTo(0.5, 0.5);
+  GAME.splashScreenText = GAME.add.text(GAME.world.centerX, GAME.world.centerY, text, textStyle);
+  GAME.splashScreenText.anchor.setTo(0.5, 0.5);
 }
 
 /*================================================================
@@ -51,95 +40,82 @@ function setSplashScreen() {
   ================================================================*/
 
 function preload() {
-  console.log('preload');
+  LOG.info('preload');
+  loadAssets();
+}
 
-  // load all assets
+function loadAssets() {
+  GAME.nLoadedAssets = 0;
+
   // check by opening 'Network' tab on browser's console
-  this.load.image('wall', ASSET_PATH + 'wall.png');
-  this.load.image('background', ASSET_PATH + 'background-texture.png');
-  this.load.spritesheet('player', ASSET_PATH + 'player.png', 48, 48);
+  GAME.load.image('wall', ASSET_PATH + 'wall.png');
+  GAME.load.image('background', ASSET_PATH + 'background-texture.png');
+  GAME.load.spritesheet('player', ASSET_PATH + 'player.png', 48, 48);
 
-  this.load.audio('jet', ASSET_PATH + 'jet.wav');
-  this.load.audio('score', ASSET_PATH + 'score.wav');
-  this.load.audio('hurt', ASSET_PATH + 'hurt.wav');
+  GAME.load.audio('jet', ASSET_PATH + 'jet.wav');
+  GAME.load.audio('score', ASSET_PATH + 'score.wav');
+  GAME.load.audio('hurt', ASSET_PATH + 'hurt.wav');
+
+  // game.load.onFileComplete.add(updateProgressBar, this);
 }
 
-function loadUpdate() {
-  console.log('loadUpdate');
+function loadUpdate(file) {
+  LOG.info('loadUpdate');
+  // LOG.debug(file);
+  // updateProgressBar();
 }
+
+// function updateProgressBar() {
+//   var count = ++GAME.nLoadedAssets;
+//   var text = count.toString();
+//   GAME.splashScreenText.setText(text);
+// }
 
 function create() {
-  console.log('create');
+  LOG.info('create');
 
-  this.background = this.add.tileSprite(0,0, this.world.width, this.world.height, 'background');
+  // set bg
+  GAME.background = GAME.add.tileSprite(0, 0, GAME.world.width, GAME.world.height, 'background');
 
-  // group them together into a single manageable game object.
-  this.walls = this.add.group();
-  this.spawnWall(300);
-  this.spawnWall(300, true);
+  // set physics
+  GAME.physics.startSystem(Phaser.Physics.ARCADE);
+  GAME.physics.arcade.gravity.y = GRAVITY;
 
-  this.physics.startSystem(Phaser.Physics.ARCADE);
-  this.physics.arcade.gravity.y = GRAVITY;
-
+  // set player
   // player sprite
-  this.player = this.add.sprite(0,0,'player');
-  // player animation
-  // but not including last frame (last sprite)
-  this.player.animations.add('fly', [0,1,2], 10, true);
+  GAME.player = GAME.add.sprite(0,0,'player');
+  // player animation - but not including last frame (last sprite)
+  GAME.player.animations.add('fly', [0, 1, 2], 10, true);
   // player physic
-  this.physics.arcade.enableBody(this.player);
-  this.player.body.collideWorldBounds = true;
+  GAME.physics.arcade.enableBody(GAME.player);
+  GAME.player.body.collideWorldBounds = true;
 
+  // set wall
+  // group them together into a single manageable game object.
+  GAME.walls = GAME.add.group();
+  GAME.spawnWall(300);
+  GAME.spawnWall(300, true);
+
+  // set welcome text
   var welcomeText = 'TOUCH TO\nSTART GAME';
   var welcomeTextStyle = {
     size  : '32px',
     fill  : '#FFF',
     align : 'center'
   };
-  this.scoreText = this.add.text(this.world.centerX, this.world.height / 5, '', welcomeTextStyle);
-  this.scoreText.setText(welcomeText);
-  this.scoreText.anchor.setTo(0.5, 0.5);
+  GAME.headerText = GAME.add.text(GAME.world.centerX, GAME.world.height / 5, welcomeText, welcomeTextStyle);
+  GAME.headerText.anchor.setTo(0.5, 0.5);
 
   // set sound
-  this.jetSnd = this.add.audio('jet');
-  this.scoreSnd = this.add.audio('score');
-  this.hurtSnd = this.add.audio('hurt');
+  GAME.jetSnd = GAME.add.audio('jet');
+  GAME.scoreSnd = GAME.add.audio('score');
+  GAME.hurtSnd = GAME.add.audio('hurt');
 
+  // set input
   // when user click on the screen
-  this.input.onDown.add(this.jet, this);
-  this.reset();
-}
-
-/*================================================================
-  #PAUSE
-  ================================================================*/
-
-function paused() {
-  console.log('paused');
-}
-
-function pauseUpdate() {
-  console.log('pauseUpdate');
-}
-
-function resumed() {
-  console.log('resumed');
-}
-
-/*================================================================
-  #START
-  ================================================================*/
-
-function preRender() {
-  console.log('preRender');
-}
-
-function render() {
-  console.log('render');
-}
-
-function loadRender() {
-  console.log('loadRender');
+  GAME.input.onDown.add(GAME.jump, GAME);
+  
+  welcomeScreen();
 }
 
 /*================================================================
@@ -147,147 +123,139 @@ function loadRender() {
   ================================================================*/
 
 function update() {
-  console.log('update');
+  // LOG.info('update');
 
-  if (this.gameStarted) {
-    
-    // set player frame when we don't do anything
-    // the player will falling down
-    if (this.player.body.velocity.y > -20) {
-      this.player.frame = 3;
+  if (GAME.isGameStarted) {
 
-    // when user click the screen
-    // then it will increase velocity
+    // check if he falling down then
+    // set player frame
+    if (GAME.player.body.velocity.y > -20) {
+      GAME.player.frame = 3;
+
+    // if he jump then animate
     } else {  
-      this.player.animations.play('fly');
+      GAME.player.animations.play('fly');
     }
 
-    if (! this.gameOver) {
+    if (! GAME.isGameOver) {
+      GAME.checkCollision();
 
-      // player - bottom bound collision
-      if (this.player.body.bottom >= this.world.bounds.bottom) { this.setGameOver(); }
-      // player - wall collision
-      this.physics.arcade.collide(this.player, this.walls, this.setGameOver, null, this);
-
-      // var logMsg = 'walls - alive: ' + this.walls.countLiving() + ', dead: ' + this.walls.countDead();
-      // console.log(logMsg);
+      var logMsg = 'walls - alive: ' + GAME.walls.countLiving() + ', dead: ' + GAME.walls.countDead();
+      LOG.logNoId(logMsg);
 
       // if wall pass ...
-      this.walls.forEachAlive(function(wall) {
+      GAME.walls.forEachAlive(function(wall) {
 
         // if wall pass the screen
         // then kill the wall
-        if (wall.x + wall.width < game.world.bounds.left) {
+        if (wall.x + wall.width < GAME.world.bounds.left) {
           wall.kill();
 
         // if wall passs the player
         // then update the score
-        } else if (! wall.scored && wall.x <= state.player.x) {
-          state.addScore(wall);
+        } else if (! wall.scored && wall.x <= GAME.player.x) {
+          GAME.updateScore(wall);
         }
       });
     }
+
   } else {
-    this.player.y = this.world.centerY + (8 * Math.cos(this.time.now / 200));
+    // player will float on the screen
+    GAME.player.y = GAME.world.centerY + (8 * Math.cos(GAME.time.now / 200));
   }
 }
 
-/*================================================================
-  #RESIZE
-  ================================================================*/
+function checkCollision() {
+  // player - bottom bound collision
+  if (GAME.player.body.bottom >= GAME.world.bounds.bottom) { GAME.gameOverScreen(); }
 
-function resize() {
-  console.log('resize');
-}
-
-/*================================================================
-  #SHUTDOWN
-  ================================================================*/
-
-function shutdown() {
-  console.log('shutdown');
+  // player - wall collision
+  GAME.physics.arcade.collide(GAME.player, GAME.walls, GAME.gameOverScreen, null, GAME);
 }
 
 /*================================================================
   #GAME
   ================================================================*/
 
-function reset() {
-  // console.log('reset');
+function welcomeScreen() {
+  // set bg
+  GAME.background.autoScroll(-SPEED * .80, 0);
 
-  this.background.autoScroll(-SPEED * .80 ,0);
+  // set var
+  GAME.isGameStarted = false; // unused
+  GAME.isGameOver = false; // unused
+  GAME.score = 0; // unused
 
-  this.gameStarted = false; // unused
-  this.gameOver = false; // unused
-  this.score = 0; // unused
-
-  this.player.body.allowGravity = false;
-  this.player.reset(this.world.width / 4, this.world.centerY);
-  this.player.animations.play('fly');
+  // set player
+  GAME.player.body.allowGravity = false;
+  GAME.player.reset(GAME.world.width / 4, GAME.world.centerY);
+  GAME.player.animations.play('fly');
 
   // remove all walls
-  this.walls.removeAll();
+  GAME.walls.removeAll();
 }
 
 function start() {
-  // console.log('start');
+  // set player
+  GAME.player.body.allowGravity = true;
 
-  this.player.body.allowGravity = true;
-  var screenText = 'SCORE\n' + this.score;
-  this.scoreText.setText(screenText);
-  this.gameStarted = true;
+  // set header text
+  var screenText = 'SCORE\n' + GAME.score;
+  GAME.headerText.setText(screenText);
+
+  // set var
+  GAME.isGameStarted = true;
 
   // spawn wall
-  this.wallTimer = this.game.time.events.loop(Phaser.Timer.SECOND * SPAWN_RATE, this.spawnWalls, this);
-  this.wallTimer.timer.start();
+  GAME.wallTimer = GAME.game.time.events.loop(Phaser.Timer.SECOND * SPAWN_RATE, GAME.spawnWalls, GAME);
+  GAME.wallTimer.timer.start();
 }
 
-function jet() {
-  // console.log('jet');
+function jump() {
+  if (! GAME.isGameStarted) {
+    GAME.start();
+  }
 
-  if (! this.gameStarted) { this.start(); }
+  if (! GAME.isGameOver) {
+    GAME.player.body.velocity.y = -JET;
+    GAME.jetSnd.play();
 
-  if (! this.gameOver) {
-    this.player.body.velocity.y = -JET;
-    this.jetSnd.play();
-
-  } else if (this.time.now > this.timeOver + 400) {
-    this.reset();
-  }  
+  // player would accidentally restart the game without seeing their final score
+  } else if (GAME.time.now > GAME.timeOver + 400) {
+    GAME.welcomeScreen();
+  }
 }
 
-function setGameOver() {
-  // console.log('setGameOver');
-  this.hurtSnd.play();
+function gameOverScreen() {
+  // play sound
+  GAME.hurtSnd.play();
 
-  this.gameOver = true;
-  this.timeOver = this.time.now;
-  var screenText = 'FINAL SCORE\n' + this.score + '\n\nTOUCH TO\nTRY AGAIN';
-  this.scoreText.setText(screenText);
-
+  // set var
+  GAME.timeOver = GAME.time.now;
+  GAME.isGameOver = true;
+  GAME.headerText.setText('FINAL SCORE\n' + GAME.score + '\n\nTOUCH TO\nTRY AGAIN');
+  
   // stop bg scroll
-  this.background.autoScroll(0, 0);
+  GAME.background.autoScroll(0, 0);
 
   // stop player velocity
-  this.player.body.velocity.x = 0;
+  GAME.player.body.velocity.x = 0;
 
   // stop all walls
-  this.walls.forEachAlive(function(wall) {
+  GAME.walls.forEachAlive(function(wall) {
     wall.body.velocity.x = wall.body.velocity.y = 0;
   });
-  this.wallTimer.timer.stop();  
+  GAME.wallTimer.timer.stop();
 }
 
 function spawnWall(y, flipped) {
-  // console.log('spawnWall');
-
-  var wall = this.walls.create(
-    game.width,
-    y + (flipped ? - OPENING : OPENING) / 2,
+  var wall = GAME.walls.create(
+    GAME_WIDTH,
+    y + (flipped ? -OPENING : OPENING) / 2,
     'wall'
   )
 
-  this.physics.arcade.enableBody(wall);
+  GAME.physics.arcade.enableBody(wall);
   wall.body.allowGravity = false;
   wall.scored = false;
   wall.body.immovable = true;
@@ -300,58 +268,49 @@ function spawnWall(y, flipped) {
 }
 
 function spawnWalls() {
-  // console.log('spawnWalls');
-
-  var wallY = this.rnd.integerInRange(game.height * .3, game.height * .7);
-  var botWall = this.spawnWall(wallY);
-  var topWall = this.spawnWall(wallY, true);
+  var wallY = GAME.rnd.integerInRange(GAME_HEIGHT * .3, GAME_HEIGHT * .7);
+  var botWall = GAME.spawnWall(wallY);
+  var topWall = GAME.spawnWall(wallY, true);
 }
 
-function addScore(wall) {
-  console.log('addScore')
-  this.scoreSnd.play();
+function updateScore(wall) {
+  GAME.scoreSnd.play();
 
   wall.scored = true;
-  this.score += .5; // cause we have 2 walls (2 instances) in a row (top and bottom)
-  var screenText = 'SCORE\n' + this.score;
-  this.scoreText.setText(screenText);
+  GAME.score += .5; // cause we have 2 walls (2 instances) in a row (top and bottom)
+  GAME.headerText.setText('SCORE\n' + GAME.score);
 }
 
-var state = {
+var STATE = {
   init: init,
-
   preload: preload,
   loadUpdate: loadUpdate,
   create: create,
-
   paused: paused,
   pauseUpdate: pauseUpdate,
   resumed: resumed,
-
   preRender: preRender,
   render: render,
   loadRender: loadRender,
-
   update: update,
-
   resize: resize,
-
   shutdown: shutdown,
 
   // custom
-  reset: reset,
+  welcomeScreen: welcomeScreen,
   start: start,
-  jet: jet,
-  setGameOver: setGameOver,
+  jump: jump,
+  gameOverScreen: gameOverScreen,
+  checkCollision: checkCollision,
   spawnWall: spawnWall,
   spawnWalls: spawnWalls,
-  addScore: addScore
+  updateScore: updateScore
 };
 
 var game = new Phaser.Game(
-  320,
-  568,
+  GAME_WIDTH,
+  GAME_HEIGHT,
   Phaser.AUTO,
-  'game-canvas',
-  state
+  GAME_ID,
+  STATE
 );
