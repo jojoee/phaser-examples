@@ -3,7 +3,8 @@ var notify      = require('gulp-notify'); // unused
 var browserSync = require('browser-sync').create();
 
 var projectName;
-projectName = 'flappy-bird';
+// projectName = 'flappy-bird';
+projectName = 'space-hipster';
 
 /*================================================================
  # HELPER
