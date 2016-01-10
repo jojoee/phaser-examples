@@ -7,9 +7,22 @@ var ASSET_PATH = './assets/';
 
 var GAME = null; // game object
 var LOG = null;
-var GAME_WIDTH = 320;
+var GAME_WIDTH = 640; // 320
 var GAME_HEIGHT = 568;
 var GAME_ID = 'game-canvas';
+var SOUND_VOLUME = 0.1; // 0 - 1
+
+var GAME_FONT_STYLE = {
+  fontSize: '24px',
+  fill: '#fff',
+  align: 'center'
+};
+
+var DEBUG_FONT_STYLE = {
+  fontSize: '16px',
+  fill: '#fff',
+  align: 'left'
+};
 
 /*================================================================
   #INIT
@@ -26,12 +39,7 @@ function init() {
 function setSplashScreen() {
   // set splash screen
   var text = 'Phaser Version ' + Phaser.VERSION + ' works!';
-  var textStyle = {
-    font  : '24px Arial',
-    fill  : '#fff',
-    align : 'center'
-  };
-  GAME.splashScreenText = GAME.add.text(GAME.world.centerX, GAME.world.centerY, text, textStyle);
+  GAME.splashScreenText = GAME.add.text(GAME.world.centerX, GAME.world.centerY, text, GAME_FONT_STYLE);
   GAME.splashScreenText.anchor.setTo(0.5, 0.5);
 }
 
@@ -61,15 +69,18 @@ function loadAssets() {
 
 function loadUpdate(file) {
   LOG.info('loadUpdate');
-  // LOG.debug(file);
   // updateProgressBar();
 }
 
-// function updateProgressBar() {
-//   var count = ++GAME.nLoadedAssets;
-//   var text = count.toString();
-//   GAME.splashScreenText.setText(text);
-// }
+function loadRender() {
+  LOG.info('loadRender');
+}
+
+function updateProgressBar() {
+  // TODO
+  // 
+  // add progress bar
+}
 
 function create() {
   LOG.info('create');
@@ -97,24 +108,19 @@ function create() {
   GAME.spawnWall(300, true);
 
   // set welcome text
-  var welcomeText = 'TOUCH TO\nSTART GAME';
-  var welcomeTextStyle = {
-    size  : '32px',
-    fill  : '#FFF',
-    align : 'center'
-  };
-  GAME.headerText = GAME.add.text(GAME.world.centerX, GAME.world.height / 5, welcomeText, welcomeTextStyle);
+  var headerText = 'TOUCH TO\nSTART GAME';
+  GAME.headerText = GAME.add.text(GAME.world.centerX, GAME.world.height / 5, headerText, GAME_FONT_STYLE);
   GAME.headerText.anchor.setTo(0.5, 0.5);
 
   // set sound
-  GAME.jetSnd = GAME.add.audio('jet');
-  GAME.scoreSnd = GAME.add.audio('score');
-  GAME.hurtSnd = GAME.add.audio('hurt');
+  GAME.jetSnd = GAME.add.audio('jet', SOUND_VOLUME);
+  GAME.scoreSnd = GAME.add.audio('score', SOUND_VOLUME);
+  GAME.hurtSnd = GAME.add.audio('hurt', SOUND_VOLUME);
 
   // set input
   // when user click on the screen
   GAME.input.onDown.add(GAME.jump, GAME);
-  
+
   welcomeScreen();
 }
 
@@ -139,9 +145,6 @@ function update() {
 
     if (! GAME.isGameOver) {
       GAME.checkCollision();
-
-      var logMsg = 'walls - alive: ' + GAME.walls.countLiving() + ', dead: ' + GAME.walls.countDead();
-      LOG.logNoId(logMsg);
 
       // if wall pass ...
       GAME.walls.forEachAlive(function(wall) {
@@ -174,6 +177,51 @@ function checkCollision() {
 }
 
 /*================================================================
+  #PAUSE
+  ================================================================*/
+
+function paused() {
+  LOG.info('paused');
+}
+
+function pauseUpdate() {
+  LOG.infoNoId('pauseUpdate');
+}
+
+function resumed() {
+  LOG.info('resumed');
+}
+
+/*================================================================
+  #OTHERS
+  ================================================================*/
+
+function preRender() {
+  // LOG.infoNoId('preRender');
+}
+
+function render() {
+  // LOG.infoNoId('render');
+  updateDebug();
+}
+
+function resize() {
+  LOG.info('resize');
+}
+
+function shutdown() {
+  LOG.info('shutdown');
+}
+
+function updateDebug() {
+  var xPos = 8;
+  var yPos = 8;
+  game.debug.text('jump ' + GAME.nJumps + ' times', xPos, yPos+=20);
+  game.debug.text('alive walls ' + GAME.walls.countLiving(), xPos, yPos+=20);
+  game.debug.text('dead walls ' + GAME.walls.countDead(), xPos, yPos+=20);
+}
+
+/*================================================================
   #GAME
   ================================================================*/
 
@@ -182,9 +230,14 @@ function welcomeScreen() {
   GAME.background.autoScroll(-SPEED * .80, 0);
 
   // set var
-  GAME.isGameStarted = false; // unused
-  GAME.isGameOver = false; // unused
-  GAME.score = 0; // unused
+  GAME.isGameStarted = false;
+  GAME.isGameOver = false;
+  GAME.score = 0;
+  GAME.nJumps = 0;
+
+  // set header text
+  var headerText = 'TOUCH TO\nSTART GAME';
+  GAME.headerText.setText(headerText);
 
   // set player
   GAME.player.body.allowGravity = false;
@@ -200,8 +253,8 @@ function start() {
   GAME.player.body.allowGravity = true;
 
   // set header text
-  var screenText = 'SCORE\n' + GAME.score;
-  GAME.headerText.setText(screenText);
+  var headerText = 'SCORE\n' + GAME.score;
+  GAME.headerText.setText(headerText);
 
   // set var
   GAME.isGameStarted = true;
@@ -212,6 +265,8 @@ function start() {
 }
 
 function jump() {
+  GAME.nJumps++;
+
   if (! GAME.isGameStarted) {
     GAME.start();
   }
@@ -233,7 +288,10 @@ function gameOverScreen() {
   // set var
   GAME.timeOver = GAME.time.now;
   GAME.isGameOver = true;
-  GAME.headerText.setText('FINAL SCORE\n' + GAME.score + '\n\nTOUCH TO\nTRY AGAIN');
+
+  // set text
+  var headerText = 'SCORE ' + GAME.score + '\nTOUCH TO\nTRY AGAIN';
+  GAME.headerText.setText(headerText);
   
   // stop bg scroll
   GAME.background.autoScroll(0, 0);
@@ -278,7 +336,9 @@ function updateScore(wall) {
 
   wall.scored = true;
   GAME.score += .5; // cause we have 2 walls (2 instances) in a row (top and bottom)
-  GAME.headerText.setText('SCORE\n' + GAME.score);
+  
+  var headerText = 'SCORE\n' + GAME.score;
+  GAME.headerText.setText(headerText);
 }
 
 var STATE = {
@@ -310,7 +370,7 @@ var STATE = {
 var game = new Phaser.Game(
   GAME_WIDTH,
   GAME_HEIGHT,
-  Phaser.AUTO,
+  Phaser.CANVAS, // Phaser.AUTO,
   GAME_ID,
   STATE
 );

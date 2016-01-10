@@ -32,6 +32,9 @@ var PHLog = (function() {
       info: function(a) {
         console.info(id++, a);
       },
+      infoNoId: function(a) {
+        console.info(a);
+      },
       debug: function(a) {
         console.debug(id++, a);
       },
