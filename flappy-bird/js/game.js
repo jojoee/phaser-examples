@@ -7,9 +7,11 @@ var ASSET_PATH = './assets/';
 var SOUND_PATH = ASSET_PATH + 'snds/';
 var IMAGE_PATH = ASSET_PATH + 'imgs/';
 
+var IS_MOBILE = (window.innerWidth < 640) ? true : false;
+
 var GAME = null; // game object
 var LOG = null;
-var GAME_WIDTH = 640; // 320
+var GAME_WIDTH = (IS_MOBILE) ? 320 : 640;
 var GAME_HEIGHT = 568;
 var GAME_ID = 'game-canvas';
 var SOUND_VOLUME = 0.1; // 0 - 1
@@ -41,7 +43,9 @@ LOG = PHLog.getInstance();
 function init() {
   LOG.info('init');
   GAME = this;
-  GAME.add.plugin(Phaser.Plugin.Debug);
+
+  // set debug
+  if (! IS_MOBILE) GAME.add.plugin(Phaser.Plugin.Debug);
 
   setSplashScreen();
 }
