@@ -38,11 +38,20 @@ var PHLog = (function() {
       debug: function(a) {
         console.debug(id++, a);
       },
+      debugNoId: function(a) {
+        console.debug(a);
+      },
       warn: function(a) {
         console.warn(id++, a);
       },
+      warnNoId: function(a) {
+        console.warn(a);
+      },
       err: function(a) {
         console.error(id++, a);
+      },
+      err: function(a) {
+        console.error(a);
       }
     }
   }

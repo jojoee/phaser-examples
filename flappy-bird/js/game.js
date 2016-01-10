@@ -26,12 +26,13 @@ var DEBUG_FONT_STYLE = {
   align: 'left'
 };
 
+LOG = PHLog.getInstance();
+
 /*================================================================
   #INIT
   ================================================================*/
 
 function init() {
-  LOG = PHLog.getInstance();
   LOG.info('init');
   GAME = this;
   GAME.add.plugin(Phaser.Plugin.Debug);
