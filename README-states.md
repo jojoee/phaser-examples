@@ -1,12 +1,10 @@
-# State
-
-## Note
+# Note
 
 - `-` : description
 - `+` : used for
 - `*` : note
 
-## State List
+# State List
 
 - create
 - init
@@ -22,9 +20,7 @@
 - shutdown
 - update
 
-## State
-
-### State - Init
+## State - Init
 
 - init
   - very first (when your `State` starts up)
@@ -32,7 +28,7 @@
   + prepare `var`, `obj`
   + setup (e.g. tracking system, ads)
 
-### State - Pause
+## State - Pause
 
 - paused
   - core game loop is paused
@@ -46,7 +42,7 @@
   - when the core game loop resumes from a paused state.
   + welcome modal
 
-### State - Load
+## State - Load
 
 - preload
   - first
@@ -67,7 +63,7 @@
   create obj that related with assets (create sprites, set sound)
   assign assets to your obj
 
-### State - Render
+## State - Render
 
 - preRender
   - The preRender method is called after all Game Objects have been updated,
@@ -79,7 +75,7 @@
   you don't need to tell them to render.
   However the render method is called AFTER the game renderer and plugins have rendered,
   so you're able to do any final post-processing style effects here. Note that this happens before plugins postRender   takes place.
-  + ????
+  + for `debug`
 
 - loadRender
   - loadRender is called during the Loader process.
@@ -88,7 +84,7 @@
   + ????
   * optional special-case function
 
-### State - Update
+## State - Update
 
 - update
   - called every frame (desktop ~60fps)
@@ -97,7 +93,7 @@
   + game loop
   * heart of your game really
 
-### State - Others
+## State - Others
 
 - resize
   - If your game is set to Scalemode RESIZE
@@ -110,7 +106,7 @@
   - This method will be called when the State is shutdown (i.e. you switch to another state from this one).
   + ????
 
-## Ref
+# Ref
 
 - http://phaser.io/docs/2.4.4/Phaser.State.html
 - http://www.html5gamedevs.com/topic/1372-phaser-function-order-reserved-names-and-special-uses/
