@@ -14,6 +14,12 @@ var GAME_HEIGHT = 568;
 var GAME_ID = 'game-canvas';
 var SOUND_VOLUME = 0.1; // 0 - 1
 
+var DEBUG_XPOS;
+var DEBUG_YPOS;
+
+var STARTED_DEBUG_XPOS = 8;
+var STARTED_DEBUG_YPOS = 8;
+
 var GAME_FONT_STYLE = {
   fontSize: '24px',
   fill: '#fff',
@@ -67,13 +73,10 @@ function loadAssets() {
   GAME.load.audio('jet', SOUND_PATH + 'jet.wav');
   GAME.load.audio('score', SOUND_PATH + 'score.wav');
   GAME.load.audio('hurt', SOUND_PATH + 'hurt.wav');
-
-  // game.load.onFileComplete.add(updateProgressBar, this);
 }
 
-function loadUpdate(file) {
+function loadUpdate() {
   LOG.info('loadUpdate');
-  // updateProgressBar();
 }
 
 function loadRender() {
@@ -189,7 +192,7 @@ function paused() {
 }
 
 function pauseUpdate() {
-  LOG.infoNoId('pauseUpdate');
+  // LOG.infoNoId('pauseUpdate');
 }
 
 function resumed() {
@@ -218,11 +221,18 @@ function shutdown() {
 }
 
 function updateDebug() {
-  var xPos = 8;
-  var yPos = 8;
-  game.debug.text('jump ' + GAME.nJumps + ' times', xPos, yPos+=20);
-  game.debug.text('alive walls ' + GAME.walls.countLiving(), xPos, yPos+=20);
-  game.debug.text('dead walls ' + GAME.walls.countDead(), xPos, yPos+=20);
+  DEBUG_XPOS = STARTED_DEBUG_XPOS;
+  DEBUG_YPOS = STARTED_DEBUG_YPOS;
+
+  echoDebug('jumps', GAME.nJumps);
+  echoDebug('alive walls', GAME.walls.countLiving());
+  echoDebug('dead walls', GAME.walls.countDead());
+  echoDebug('score', GAME.score);
+  echoDebug('highest score', GAME.highestScore);
+}
+
+function echoDebug(txt, val) {
+  this.game.debug.text(txt + ': ' + val, DEBUG_XPOS, DEBUG_YPOS+=20);
 }
 
 /*================================================================
@@ -237,6 +247,7 @@ function welcomeScreen() {
   GAME.isGameStarted = false;
   GAME.isGameOver = false;
   GAME.score = 0;
+  GAME.highestScore = GAME.highestScore || 0;
   GAME.nJumps = 0;
 
   // set header text
@@ -292,6 +303,7 @@ function gameOverScreen() {
   // set var
   GAME.timeOver = GAME.time.now;
   GAME.isGameOver = true;
+  GAME.highestScore = Math.max(GAME.score, GAME.highestScore);
 
   // set text
   var headerText = 'SCORE ' + GAME.score + '\nTOUCH TO\nTRY AGAIN';
