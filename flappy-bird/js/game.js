@@ -34,6 +34,7 @@ function init() {
   LOG = PHLog.getInstance();
   LOG.info('init');
   GAME = this;
+  GAME.add.plugin(Phaser.Plugin.Debug);
 
   setSplashScreen();
 }
