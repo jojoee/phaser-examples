@@ -4,6 +4,8 @@ var JET = 420;
 var OPENING = 200;
 var SPAWN_RATE = 1.25;
 var ASSET_PATH = './assets/';
+var SOUND_PATH = ASSET_PATH + 'snds/';
+var IMAGE_PATH = ASSET_PATH + 'imgs/';
 
 var GAME = null; // game object
 var LOG = null;
@@ -56,13 +58,13 @@ function loadAssets() {
   GAME.nLoadedAssets = 0;
 
   // check by opening 'Network' tab on browser's console
-  GAME.load.image('wall', ASSET_PATH + 'wall.png');
-  GAME.load.image('background', ASSET_PATH + 'background-texture.png');
-  GAME.load.spritesheet('player', ASSET_PATH + 'player.png', 48, 48);
+  GAME.load.image('wall', IMAGE_PATH + 'wall.png');
+  GAME.load.image('background', IMAGE_PATH + 'background-texture.png');
+  GAME.load.spritesheet('player', IMAGE_PATH + 'player.png', 48, 48);
 
-  GAME.load.audio('jet', ASSET_PATH + 'jet.wav');
-  GAME.load.audio('score', ASSET_PATH + 'score.wav');
-  GAME.load.audio('hurt', ASSET_PATH + 'hurt.wav');
+  GAME.load.audio('jet', SOUND_PATH + 'jet.wav');
+  GAME.load.audio('score', SOUND_PATH + 'score.wav');
+  GAME.load.audio('hurt', SOUND_PATH + 'hurt.wav');
 
   // game.load.onFileComplete.add(updateProgressBar, this);
 }
