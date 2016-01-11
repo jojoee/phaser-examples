@@ -4,7 +4,8 @@ var browserSync = require('browser-sync').create();
 
 var projectName;
 // projectName = 'flappy-bird';
-projectName = 'space-hipster';
+projectName = 'space-hipster'; // uncompleted
+projectName = 'tank';
 
 /*================================================================
  # HELPER
