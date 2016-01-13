@@ -5,4 +5,5 @@ components/
 # backup
 bk
 bk*
-README2.md
+README*.md
+!README-*.md
