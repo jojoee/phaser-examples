@@ -1,5 +1,6 @@
 ## Index
 - http://phaser.io/docs/2.4.4/index
+- http://phaser.io/learn/chains
 
 ## World
 - http://phaser.io/docs/2.4.4/Phaser.World.html#setBounds
@@ -47,6 +48,23 @@
 - [Screen Size](http://www.html5gamedevs.com/topic/1638-changing-game-size-to-fit-page/)
 - [TypeScript](http://phaser.io/tutorials/how-to-use-phaser-with-typescript)
 - [Forum](http://www.html5gamedevs.com/forum/14-phaser/)
+- [PhoneGap](http://phonegap.com/)
 
 ## Showcase / Idea
 - [html5gamedevs](http://www.html5gamedevs.com/forum/8-game-showcase/)
+- [itch.io](http://itch.io/)
+- https://github.com/leereilly/games
+- https://github.com/showcases/web-games
+- https://github.com/github/game-off-2012
+- https://github.com/showcases/game-off-winners
++ http://sparklinlabs.itch.io/hunt-the-yeti
++ http://sparklinlabs.itch.io/snow-world
+
+## Superpowers
+- http://superpowers-html5.com/
+- https://github.com/superpowers
+- https://sparklinlabs.itch.io/superpowers
+- https://github.com/superpowers-extra
+
+## Google Font + Webfontloader
+- https://github.com/typekit/webfontloader
