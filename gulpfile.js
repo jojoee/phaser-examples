@@ -5,9 +5,11 @@ var browserSync = require('browser-sync').create();
 var projectName;
 // projectName = 'flappy-bird';
 projectName = 'space-hipster'; // uncompleted
-projectName = 'tank';
+// projectName = 'tank';
 // projectName = 'webfont';
-projectName = 'flappy-bird-2';
+// projectName = 'flappy-bird-2';
+projectName = 'doodle-jump';
+// projectName = 'platformer'; // *
 
 /*================================================================
  # HELPER

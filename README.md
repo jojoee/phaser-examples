@@ -7,6 +7,7 @@
   - Refactor `Game` section
   - Add `debug`
 - [Flappy bird 2](http://jojoee.github.io/phaser-examples/flappy-bird-2/), [Ref](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-2/)
+- [Doodle Jump](http://jojoee.github.io/phaser-examples/doodle-jump/), [Ref](http://phaser.io/tutorials/coding-tips-003/)
 
 ## TODO
 - Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
