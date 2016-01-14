@@ -8,8 +8,9 @@ projectName = 'space-hipster'; // uncompleted
 // projectName = 'tank';
 // projectName = 'webfont';
 // projectName = 'flappy-bird-2';
-projectName = 'doodle-jump';
-// projectName = 'platformer'; // *
+// projectName = 'doodle-jump';
+projectName = 'platformer';
+// projectName = 'platformer-2'; // *
 
 /*================================================================
  # HELPER
