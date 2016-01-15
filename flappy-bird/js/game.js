@@ -45,7 +45,7 @@ function init() {
   GAME = this;
 
   // set debug
-  if (! IS_MOBILE) GAME.add.plugin(Phaser.Plugin.Debug);
+  if (!IS_MOBILE) GAME.add.plugin(Phaser.Plugin.Debug);
 
   setSplashScreen();
 }
@@ -154,7 +154,7 @@ function update() {
       GAME.player.animations.play('fly');
     }
 
-    if (! GAME.isGameOver) {
+    if (!GAME.isGameOver) {
       GAME.checkCollision();
 
       // if wall pass ...
@@ -167,7 +167,7 @@ function update() {
 
         // if wall passs the player
         // then update the score
-        } else if (! wall.scored && wall.x <= GAME.player.x) {
+        } else if (!wall.scored && wall.x <= GAME.player.x) {
           GAME.updateScore(wall);
         }
       });
@@ -286,11 +286,11 @@ function start() {
 function jump() {
   GAME.nJumps++;
 
-  if (! GAME.isGameStarted) {
+  if (!GAME.isGameStarted) {
     GAME.start();
   }
 
-  if (! GAME.isGameOver) {
+  if (!GAME.isGameOver) {
     GAME.player.body.velocity.y = -JET;
     GAME.jetSnd.play();
 

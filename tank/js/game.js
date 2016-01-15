@@ -29,7 +29,7 @@ var PhaserGame = function(game) {
 PhaserGame.prototype = {
   init: function() {
     // add plugin
-    if (! IS_MOBILE) this.add.plugin(Phaser.Plugin.Debug);
+    if (!IS_MOBILE) this.add.plugin(Phaser.Plugin.Debug);
 
     // set roundPixels
     this.game.renderer.renderSession.roundPixels = true;

@@ -24,7 +24,7 @@ SpaceHipster.Boot = function(){};
 SpaceHipster.Boot.prototype = {
   init: function() {
     // add plugin
-    if (! IS_MOBILE) this.add.plugin(Phaser.Plugin.Debug);
+    if (!IS_MOBILE) this.add.plugin(Phaser.Plugin.Debug);
   },
   preload: function() {
     LOG.info('Boot - preload');
