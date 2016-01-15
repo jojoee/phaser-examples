@@ -20,6 +20,8 @@ var nEle = 16;
 // game array, starts with all cells to zero
 var fieldArray;
 
+// http://stackoverflow.com/questions/1295584/most-efficient-way-to-create-a-zero-filled-javascript-array
+// http://stackoverflow.com/questions/20222501/how-to-create-a-zero-filled-javascript-array-of-arbitrary-length
 // fieldArray = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 fieldArray = Array.apply(null, Array(nEle)).map(Number.prototype.valueOf, 0);
 
