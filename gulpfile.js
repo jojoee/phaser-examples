@@ -12,6 +12,7 @@ projectName = 'space-hipster'; // uncompleted
 // projectName = 'platformer';
 projectName = 'platformer-2'; // uncompleted
 projectName = '2048';
+projectName = 'brick';
 
 /*================================================================
  # HELPER
