@@ -3,12 +3,12 @@
 ## List
 - [Flappy bird](http://jojoee.github.io/phaser-examples/flappy-bird/), [Ref](https://developer.amazon.com/public/community/post/Tx1NQ9QEA4MWGTY/Intro-To-Phaser-Part-1-Setting-Up-Your-Dev-Environment-and-Phaser)
 - [Tank](http://jojoee.github.io/phaser-examples/tank/), [Ref](http://phaser.io/tutorials/coding-tips-002/)
-- [Space Hipster](http://jojoee.github.io/phaser-examples/space-hipster/), [Ref](https://gamedevacademy.org/html5-phaser-tutorial-spacehipster-a-space-exploration-game/)
-  - Refactor `Game` section
-  - Add `debug`
 - [Flappy bird 2](http://jojoee.github.io/phaser-examples/flappy-bird-2/), [Ref](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-2/)
 - [Doodle Jump](http://jojoee.github.io/phaser-examples/doodle-jump/), [Ref](http://phaser.io/tutorials/coding-tips-003/)
 - [Platformer](http://jojoee.github.io/phaser-examples/platformer/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game/index)
+
+## List (uncompleted)
+- [Space Hipster](http://jojoee.github.io/phaser-examples/space-hipster/), [Ref](https://gamedevacademy.org/html5-phaser-tutorial-spacehipster-a-space-exploration-game/)
 - [2048](http://jojoee.github.io/phaser-examples/2048/), [Ref](http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser)
 
 ## TODO
