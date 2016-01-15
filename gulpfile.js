@@ -4,15 +4,16 @@ var browserSync = require('browser-sync').create();
 
 var projectName;
 // projectName = 'flappy-bird';
-projectName = 'space-hipster'; // uncompleted
+projectName = 'space-hipster';
 // projectName = 'tank';
 // projectName = 'webfont';
 // projectName = 'flappy-bird-2';
 // projectName = 'doodle-jump';
 // projectName = 'platformer';
-projectName = 'platformer-2'; // uncompleted
+projectName = 'platformer-2';
 projectName = '2048';
 projectName = 'brick';
+projectName = 'move-the-box';
 
 /*================================================================
  # HELPER

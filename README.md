@@ -11,6 +11,7 @@
 - [Space Hipster](http://jojoee.github.io/phaser-examples/space-hipster/), [Ref](https://gamedevacademy.org/html5-phaser-tutorial-spacehipster-a-space-exploration-game/)
 - [2048](http://jojoee.github.io/phaser-examples/2048/), [Ref](http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser)
 - [Brick](http://jojoee.github.io/phaser-examples/brick/), [Ref](http://dailyjs.com/2014/09/16/phaser-tutorial/) (not found assets)
+- [Move The Box](http://jojoee.github.io/phaser-examples/move-the-box/), [Ref](http://www.emanueleferonato.com/2014/11/13/html5-swipe-controlled-sokoban-game-made-with-phaser)
 
 ## TODO
 - Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
