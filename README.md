@@ -9,6 +9,7 @@
 - [Flappy bird 2](http://jojoee.github.io/phaser-examples/flappy-bird-2/), [Ref](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-2/)
 - [Doodle Jump](http://jojoee.github.io/phaser-examples/doodle-jump/), [Ref](http://phaser.io/tutorials/coding-tips-003/)
 - [Platformer](http://jojoee.github.io/phaser-examples/platformer/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game/index)
+- [2048](http://jojoee.github.io/phaser-examples/2048/), [Ref](http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser)
 
 ## TODO
 - Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
