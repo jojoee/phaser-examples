@@ -36,7 +36,6 @@ PhaserGame.prototype = {
 
     // load all assets
     this.load.tilemap('map', 'assets/maze.json', null, Phaser.Tilemap.TILED_JSON);
-    this.load.tilemap('map2', 'assets/maze2.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.image('tiles', 'assets/tiles.png');
     this.load.image('car', 'assets/car.png');
   },
@@ -50,11 +49,10 @@ PhaserGame.prototype = {
   },
   create: function() {
     // set map
-    
-    // this.setMap('map', 'tiles', 'Tile Layer 1', 1, 20);
-    // this.setMap('map', 'tiles', 'Tile Layer 2', 1, 20);
-    this.setMap('map2', 'tiles', 'Tile Layer 1', 29, 20);
-    // this.setMap('map2', 'tiles', 'Tile Layer 2', 43, 41);
+    this.setMap('map', 'tiles', 'Level 1', 29, 20);
+    // this.setMap('map', 'tiles', 'Level 2', 43, 41);
+    // this.setMap('map', 'tiles', 'Level 3', 1, 20);
+    // this.setMap('map', 'tiles', 'Level 4', 1, 20);
 
     // set car
     this.car = this.add.sprite(48, 48, 'car');
