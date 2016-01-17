@@ -19,6 +19,12 @@
 - [Pong](http://jojoee.github.io/phaser-examples/pong/), [Ref](https://github.com/zekechan/phaser-html5-tutorial-pong)
 
 ## TODO
+- [Alto's Adventure](http://altosadventure.com/)
+- [Crossy Road](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad&hl=en)
+  - Shadow play
+  - Online play
+  - Shake
+- Rabbit Collector (like Neko Atsume: Kitty Collector)
 - Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
 - Implement `A* pathfinding` by [easystarjs](https://github.com/prettymuchbryce/easystarjs), [phaser_plugin_pathfinding](https://github.com/appsbu-de/phaser_plugin_pathfinding)
 - Add gulp [JSHint](http://jshint.com/)
@@ -45,27 +51,8 @@
 - [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - Based on [Phaser](http://phaser.io/) created by [Photon Storm](http://www.photonstorm.com/)
 
-## Game Inspiration
-- [Fruit Ninja](https://play.google.com/store/apps/details?id=com.polargames3.br)
-- http://phaser.io/games
-- http://phaser.io/news/category/game
-- http://www.photonstorm.com/games
-- http://www.html5gamedevs.com/
-- [Puzzle RECT](https://play.google.com/store/apps/details?id=com.git.puzzlerect)
-- https://www.latesthackingnews.com/cool-games-you-can-play-from-your-linux-command-line/
-- http://bastation.com/
-- https://www.facebook.com/hashtag/screenshotsaturday
-- [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
-- [QuickDate](https://www.facebook.com/photo.php?fbid=10205293217237887&set=pcb.10153194489856573&type=3&theater)
-- Game that related with github's star
-  - https://help.github.com/articles/searching-users/
-  - https://help.github.com/articles/searching-github/
-  - https://developer.github.com/v3/activity/starring/
-  - https://help.github.com/articles/be-social/
-  - https://help.github.com/articles/searching-repositories/
-  - https://help.github.com/articles/about-stars/
-
-## Tools && Resouces
+## Tools && Resouce
+- [Google Translate](https://translate.google.com/)
 - [Phaser Debug](https://github.com/englercj/phaser-debug) - v1.1.8
 - [UglifyJS Online](https://skalman.github.io/UglifyJS-online/)
 - [Phaser Template Project](https://github.com/gamecook/phaser-project-template)
@@ -89,6 +76,13 @@
 - Font
   - https://developers.google.com/fonts/docs/webfont_loader?hl=en
   - [ONE DAY](https://www.behance.net/gallery/23792563/ONE-DAY-Free-Font)
+- Keyword
+  - Isometric
+  - F2P
+  - Indie
+  - Mobile
+- Color
+  - https://en.wikipedia.org/wiki/List_of_video_game_console_palettes#Game_Boy_Color
 
 ## Where to Release
 - Amazon Web App
