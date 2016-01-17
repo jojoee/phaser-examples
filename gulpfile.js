@@ -9,11 +9,11 @@ projectName = 'space-hipster';
 // projectName = 'webfont';
 // projectName = 'flappy-bird-2';
 // projectName = 'doodle-jump';
-// projectName = 'platformer';
-projectName = 'platformer-2';
 projectName = '2048';
 projectName = 'brick';
 projectName = 'move-the-box';
+projectName = 'platformer';
+projectName = 'platformer-2';
 
 /*================================================================
  # HELPER
