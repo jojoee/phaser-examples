@@ -16,6 +16,7 @@
 - [Pacman 2](http://jojoee.github.io/phaser-examples/pacman/), [Ref](https://github.com/plissken2013es/phaserPacmanClone), [Demo](http://luisquin.com/lq/phaserPacman/index.html), [Theory](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior), [Original Work](http://phaser.io/tutorials/coding-tips-005)
 - [Shootout](http://jojoee.github.io/phaser-examples/shootout/), [Ref](http://phaser.io/tutorials/coding-tips-006)
 - [Bulletpool](http://jojoee.github.io/phaser-examples/bulletpool/), [Ref](http://phaser.io/tutorials/coding-tips-007)
+- [Pong](http://jojoee.github.io/phaser-examples/pong/), [Ref](https://github.com/zekechan/phaser-html5-tutorial-pong)
 
 ## TODO
 - Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
@@ -24,6 +25,8 @@
 - Implement mobile detect by browser header ([mobile-detect.js](https://github.com/hgoebl/mobile-detect.js), [isMobile](https://github.com/kaimallea/isMobile)) or by screen width ([mydevice.io](http://mydevice.io/devices/), [viewportsizes](http://viewportsizes.com/))
 - Implement [phaser-plugin-isometric](http://www.rotates.org/phaser/iso/)
 - Implement [Tiled Map Editor](http://www.mapeditor.org/)
+- Create ONLINE game (web-based)
+- Create Bot for online game ([Tut](http://www.loskutoff.com/blog/writing-a-bot-for-online-browser-game-with-phantomjs))
 - Read all articles on
   - [x] [gamedevacademy.org](https://gamedevacademy.org/category/tutorials/)
   - [x] phaser.io (e.g. [getting-started](http://phaser.io/tutorials/getting-started), [making-your-first-phaser-game](http://phaser.io/tutorials/making-your-first-phaser-game))
@@ -50,6 +53,10 @@
 - http://www.html5gamedevs.com/
 - [Puzzle RECT](https://play.google.com/store/apps/details?id=com.git.puzzlerect)
 - https://www.latesthackingnews.com/cool-games-you-can-play-from-your-linux-command-line/
+- http://bastation.com/
+- https://www.facebook.com/hashtag/screenshotsaturday
+- [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
+- [QuickDate](https://www.facebook.com/photo.php?fbid=10205293217237887&set=pcb.10153194489856573&type=3&theater)
 - Game that related with github's star
   - https://help.github.com/articles/searching-users/
   - https://help.github.com/articles/searching-github/
@@ -58,21 +65,7 @@
   - https://help.github.com/articles/searching-repositories/
   - https://help.github.com/articles/about-stars/
 
-## Resource
-
-###  Graphic
-- [opengameart.org](http://opengameart.org/)
-- [deviantart](http://www.deviantart.com/)
-
-### Tilemap
-- [Tiled Map Editor](http://www.mapeditor.org/)
-- [Creating A Platformer Tilemap (For HTML5 Games)](http://hovercraft.ie/creating-a-platformer-tilemap-for-html5-games/)
-
-### Amazon Web App
-- [Amazon Web App Tester](http://www.amazon.com/gp/product/B00DZ3I1W8)
-- [Implementing the Amazon In-App Purchasing API in your HTML5 Web Apps](https://developer.amazon.com/appsandservices/community/post/Tx3LQBBJRUYE58P/Implementing-the-Amazon-In-App-Purchasing-API-in-your-HTML5-Web-Apps.html)
-
-## Others
+## Tools && Resouces
 - [Phaser Debug](https://github.com/englercj/phaser-debug) - v1.1.8
 - [UglifyJS Online](https://skalman.github.io/UglifyJS-online/)
 - [Phaser Template Project](https://github.com/gamecook/phaser-project-template)
@@ -81,4 +74,29 @@
 - [jsbeautifier](http://jsbeautifier.org/)
   - Indent with 2 spaces
   - Allow 1 newline between tokens
-- [Math for Game Developers](https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My)
+- Tilemap
+  - [Tiled Map Editor](http://www.mapeditor.org/)
+  - [Creating A Platformer Tilemap (For HTML5 Games)](http://hovercraft.ie/creating-a-platformer-tilemap-for-html5-games/)
+- Graphic
+  - [opengameart.org](http://opengameart.org/)
+  - [deviantart](http://www.deviantart.com/)
+- Tut
+  - [Math for Game Developers](https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My)
+- Blog
+  - http://nerd-time.com/
+- Icon
+  - https://medium.com/muzli-design-inspiration/the-best-icons-resources-6430cf5227e8#.5rou8v69c
+- Font
+  - https://developers.google.com/fonts/docs/webfont_loader?hl=en
+  - [ONE DAY](https://www.behance.net/gallery/23792563/ONE-DAY-Free-Font)
+
+## Where to Release
+- Amazon Web App
+- [Amazon Web App Tester](http://www.amazon.com/gp/product/B00DZ3I1W8)
+- [Implementing the Amazon In-App Purchasing API in your HTML5 Web Apps](https://developer.amazon.com/appsandservices/community/post/Tx3LQBBJRUYE58P/Implementing-the-Amazon-In-App-Purchasing-API-in-your-HTML5-Web-Apps.html)
+- http://itch.io/
+
+## Backend
+- http://swagger.io/
+- http://sailsjs.org/
+- https://github.com/feathersjs/feathers/
