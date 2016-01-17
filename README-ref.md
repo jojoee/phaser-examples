@@ -69,6 +69,12 @@
 - http://phaser.io/docs/2.4.4/Phaser.Plugin.html
 - http://phaser.io/docs/2.4.4/Phaser.PluginManager.html#add
 
+## Tween
+- http://phaser.io/docs/2.4.4/Phaser.Tween.html
+
+## Tilemap
+- http://phaser.io/docs/2.4.4/Phaser.Tilemap.html
+
 ## Others
 - [Web Font](http://phaser.io/examples/v2/text/google-webfonts)
 - [Screen Size](http://www.html5gamedevs.com/topic/1638-changing-game-size-to-fit-page/)
