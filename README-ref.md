@@ -9,9 +9,11 @@
 - https://gamedevacademy.org/how-to-debug-phaser-games/
 - http://phaser.io/docs/2.4.4/Phaser.Utils.Debug.html
 - http://phaser.io/examples/v2/debug/debug-sprite
+- http://phaser.io/examples/v2/arcade-physics/body-debug
 - http://phaser.io/examples/v2/debug/debug-draw
 - http://phaser.io/examples/v2/display/viewport
 - http://phaser.io/examples/v2/sprites/anchor
+- http://phaser.io/examples/v2/debug/debug-camera
 
 ## Input
 - http://phaser.io/docs/2.4.4/Phaser.Input.html#activePointer
@@ -21,20 +23,44 @@
 
 ## State
 - http://phaser.io/docs/2.4.4/Phaser.StateManager.html
-- http://phaser.io/docs/2.4.2/Phaser.State.html
+- http://phaser.io/docs/2.4.4/Phaser.State.html
 - http://phaser.io/docs/2.4.4/Phaser.State.html#add
 
 ## Group
-- http://phaser.io/docs/2.4.2/Phaser.Group.html
+- http://phaser.io/docs/2.4.4/Phaser.Group.html
+- http://phaser.io/docs/2.4.4/Phaser.Group.html#callAll
+- http://phaser.io/examples/v2/groups/call-all
+- http://phaser.io/examples/v2/groups/call-all-input
+
+## Anchor
+- http://phaser.io/examples/v2/sprites/anchor
 
 ## Sound
-- http://phaser.io/docs/2.4.2/Phaser.Sound.html
+- http://phaser.io/docs/2.4.4/Phaser.Sound.html
 
 ## Text
 - http://phaser.io/docs/2.4.4/Phaser.Text.html
 
+## Particles
+- http://phaser.io/examples/v2/category/particles
+- http://phaser.io/docs/2.4.4/Phaser.Particles.Arcade.Emitter.html
+- http://phaser.io/docs/2.4.4/Phaser.Particles.Arcade.Emitter.html#makeParticles
+- http://phaser.io/docs/2.4.4/index#particles
+
 ## Game
 - http://phaser.io/docs/2.4.4/Phaser.Game.html
+- http://phaser.io/docs/2.4.4/Phaser.Game.html#renderer
+- http://phaser.io/examples/v2/display/round-pixels
+
+## Physics
+- http://phaser.io/docs/2.4.4/index#physics
+- http://phaser.io/docs/2.4.4/index#arcadephysics
+- http://phaser.io/docs/2.4.4/Phaser.Physics.Arcade.html#overlap
+
+## Loader
+- http://phaser.io/docs/2.4.4/Phaser.Loader.html
+- http://phaser.io/docs/2.4.4/Phaser.Loader.html#baseURL
+- http://phaser.io/docs/2.4.4/Phaser.Loader.html#crossOrigin
 
 ## Scale
 - http://phaser.io/docs/2.4.4/Phaser.ScaleManager.html#scaleMode
