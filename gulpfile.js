@@ -4,18 +4,21 @@ var browserSync = require('browser-sync').create();
 
 var projectName;
 // projectName = 'flappy-bird';
-projectName = 'space-hipster';
+// projectName = 'space-hipster';
 // projectName = 'tank';
 // projectName = 'webfont';
 // projectName = 'flappy-bird-2';
 // projectName = 'doodle-jump';
-projectName = '2048';
-projectName = 'brick';
-projectName = 'move-the-box';
-projectName = 'platformer';
-projectName = 'platformer-2';
-projectName = 'car';
-projectName = 'pacman';
+// projectName = '2048';
+// projectName = 'brick';
+// projectName = 'move-the-box';
+// projectName = 'platformer';
+// projectName = 'platformer-2';
+// projectName = 'car';
+// projectName = 'pacman';
+// projectName = 'pacman-2';
+// projectName = 'shootout';
+projectName = 'bulletpool';
 
 /*================================================================
  # HELPER
