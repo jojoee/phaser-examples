@@ -15,6 +15,7 @@ projectName = 'move-the-box';
 projectName = 'platformer';
 projectName = 'platformer-2';
 projectName = 'car';
+projectName = 'pacman';
 
 /*================================================================
  # HELPER
