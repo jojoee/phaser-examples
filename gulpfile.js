@@ -6,7 +6,7 @@ var projectName;
 // projectName = 'flappy-bird';
 // projectName = 'space-hipster';
 // projectName = 'tank';
-// projectName = 'webfont';
+projectName = 'webfont';
 // projectName = 'flappy-bird-2';
 // projectName = 'doodle-jump';
 // projectName = '2048';
@@ -23,7 +23,7 @@ var projectName;
 // projectName = 'ascii-roguelike';
 // projectName = 'digger';
 // projectName = 'monster-wants-candy';
-projectName = 'orbital-debris';
+// projectName = 'orbital-debris';
 
 /*================================================================
  # HELPER

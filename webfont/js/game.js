@@ -9,9 +9,13 @@ var game = new Phaser.Game(
   }
 );
 
-var ggFontName;
-// ggFontName = 'Revalia';
-ggFontName = 'Open Sans';
+
+var ggWebFontLoaderFontName = 'Fredoka One';
+// ggWebFontLoaderFontName = 'Lobster';
+// ggWebFontLoaderFontName = 'Indie Flower';
+
+var ggLocalFontName = 'Lobster';
+var ggLinkFontName = 'Indie Flower';
 
 // The Google WebFont Loader will look for this object, so create it before loading the script.
 WebFontConfig = {
@@ -25,7 +29,7 @@ WebFontConfig = {
 
   // The Google Fonts we want to load (specify as many as you like in the array)
   google: {
-    families: [ggFontName]
+    families: [ggWebFontLoaderFontName]
   }
 };
 
@@ -39,21 +43,37 @@ var grd;
 
 function create() {
   game.stage.setBackgroundColor(0x2d2d2d);
+  otherFonts();
+}
+
+function otherFonts() {
+  // simple text
+  textLink = game.add.text(game.world.centerX, game.world.centerY, "Link tag");
+  textLink.anchor.setTo(0.5);
+  textLink.font = ggLinkFontName;
+  textLink.fill = '#fff';
+
+
+  textLocal = game.add.text(game.world.centerX, game.world.centerY, "Local Font");
+  textLocal.anchor.setTo(1);
+  textLocal.font = ggLocalFontName;
+  textLocal.fill = '#fff';
 }
 
 function createText() {
   // set phaser text
-  text = game.add.text(game.world.centerX, game.world.centerY, "- phaser -\nrocking with\ngoogle web fonts");
+  text = game.add.text(game.world.centerX, game.world.centerY, "- Font -\nby WebFontLoader");
   text.anchor.setTo(0.5);
-  text.font = ggFontName;
+  text.font = ggWebFontLoaderFontName;
   text.fontSize = 60;
 
   // set gradient
   // x0, y0 - x1, y1
-  grd = text.context.createLinearGradient(0, 0, 0, text.canvas.height);
-  grd.addColorStop(0, '#8ED6FF');   
-  grd.addColorStop(1, '#004CB3');
-  text.fill = grd;
+  // grd = text.context.createLinearGradient(0, 0, 0, text.canvas.height);
+  // grd.addColorStop(0, '#8ED6FF');   
+  // grd.addColorStop(1, '#004CB3');
+  // text.fill = grd;
+  text.fill = '#fff';
 
   // set other props
   text.align = 'center';
@@ -63,14 +83,13 @@ function createText() {
 
   text.inputEnabled = true;
   text.input.enableDrag();
-
   text.events.onInputOver.add(over, this);
   text.events.onInputOut.add(out, this);
 }
 
 function out() {
-  text.fill = grd;
-
+  // text.fill = grd;
+  text.fill = '#ff0';
 }
 
 function over() {
