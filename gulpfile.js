@@ -20,7 +20,8 @@ var projectName;
 // projectName = 'shootout';
 // projectName = 'bulletpool';
 // projectName = 'pong';
-projectName = 'ascii-roguelike';
+// projectName = 'ascii-roguelike';
+projectName = 'digger';
 
 /*================================================================
  # HELPER

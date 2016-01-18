@@ -8,7 +8,7 @@
 - [Platformer](http://jojoee.github.io/phaser-examples/platformer/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game/index)
 - [Space Hipster](http://jojoee.github.io/phaser-examples/space-hipster/), [Ref](https://gamedevacademy.org/html5-phaser-tutorial-spacehipster-a-space-exploration-game/)
 - [2048](http://jojoee.github.io/phaser-examples/2048/), [Ref](http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser)
-- [Brick](http://jojoee.github.io/phaser-examples/brick/), [Ref](http://dailyjs.com/2014/09/16/phaser-tutorial/) (not found assets)
+- [Brick](http://jojoee.github.io/phaser-examples/brick/), [Ref](http://dailyjs.com/2014/09/16/phaser-tutorial/) - No Assets Found
 - [Move The Box](http://jojoee.github.io/phaser-examples/move-the-box/), [Ref](http://www.emanueleferonato.com/2014/11/13/html5-swipe-controlled-sokoban-game-made-with-phaser)
 - [Platformer 2](http://jojoee.github.io/phaser-examples/platformer-2/), [Ref](http://phaser.io/tutorials/coding-tips-004)
 - [Car](http://jojoee.github.io/phaser-examples/car/), [Ref](http://phaser.io/tutorials/coding-tips-005)
@@ -17,7 +17,8 @@
 - [Shootout](http://jojoee.github.io/phaser-examples/shootout/), [Ref](http://phaser.io/tutorials/coding-tips-006)
 - [Bulletpool](http://jojoee.github.io/phaser-examples/bulletpool/), [Ref](http://phaser.io/tutorials/coding-tips-007)
 - [Pong](http://jojoee.github.io/phaser-examples/pong/), [Ref](https://github.com/zekechan/phaser-html5-tutorial-pong)
-- [ASCII Roguelike](http://jojoee.github.io/phaser-examples/ascii-roguelike/), [Ref](http://gamedevelopment.tutsplus.com/tutorials/how-to-make-your-first-roguelike--gamedev-13677)
+- [ASCII Roguelike](http://jojoee.github.io/phaser-examples/ascii-roguelike/), [Ref](http://gamedevelopment.tutsplus.com/tutorials/how-to-make-your-first-roguelike--gamedev-13677), Phaser-1.1.2
+- [Digger](http://jojoee.github.io/phaser-examples/digger/), [Ref](https://gamedevacademy.org/make-a-quick-phaser-compatible-game-using-mightyeditor/), Phaser 2.0.7, [MightyEditor](http://mightyfingers.com/), Difference Structure, No Assets Found
 
 ## TODO
 - [Alto's Adventure](http://altosadventure.com/)
@@ -54,6 +55,7 @@
 
 ## Tools && Resouce
 - [Google Translate](https://translate.google.com/)
+- https://cdnjs.com/libraries/phaser
 - [Phaser Debug](https://github.com/englercj/phaser-debug) - v1.1.8
 - [UglifyJS Online](https://skalman.github.io/UglifyJS-online/)
 - [Phaser Template Project](https://github.com/gamecook/phaser-project-template)
