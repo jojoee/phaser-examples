@@ -17,6 +17,7 @@
 - [Shootout](http://jojoee.github.io/phaser-examples/shootout/), [Ref](http://phaser.io/tutorials/coding-tips-006)
 - [Bulletpool](http://jojoee.github.io/phaser-examples/bulletpool/), [Ref](http://phaser.io/tutorials/coding-tips-007)
 - [Pong](http://jojoee.github.io/phaser-examples/pong/), [Ref](https://github.com/zekechan/phaser-html5-tutorial-pong)
+- [ASCII Roguelike](http://jojoee.github.io/phaser-examples/ascii-roguelike/), [Ref](http://gamedevelopment.tutsplus.com/tutorials/how-to-make-your-first-roguelike--gamedev-13677)
 
 ## TODO
 - [Alto's Adventure](http://altosadventure.com/)

@@ -19,7 +19,8 @@ var projectName;
 // projectName = 'pacman-2';
 // projectName = 'shootout';
 // projectName = 'bulletpool';
-projectName = 'pong';
+// projectName = 'pong';
+projectName = 'ascii-roguelike';
 
 /*================================================================
  # HELPER
