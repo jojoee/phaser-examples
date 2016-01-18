@@ -21,7 +21,8 @@ var projectName;
 // projectName = 'bulletpool';
 // projectName = 'pong';
 // projectName = 'ascii-roguelike';
-projectName = 'digger';
+// projectName = 'digger';
+projectName = 'monster-wants-candy';
 
 /*================================================================
  # HELPER
