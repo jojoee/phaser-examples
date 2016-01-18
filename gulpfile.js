@@ -22,7 +22,8 @@ var projectName;
 // projectName = 'pong';
 // projectName = 'ascii-roguelike';
 // projectName = 'digger';
-projectName = 'monster-wants-candy';
+// projectName = 'monster-wants-candy';
+projectName = 'orbital-debris';
 
 /*================================================================
  # HELPER
