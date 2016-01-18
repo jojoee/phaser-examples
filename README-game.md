@@ -3,7 +3,7 @@
 - http://phaser.io/games
 - http://phaser.io/news/category/game
 - http://www.photonstorm.com/games
-- http://www.html5gamedevs.com/
+- http://www.html5gamedevs.com/forum/8-game-showcase/
 - http://gamejolt.com/
 - http://www.indiedb.com/
 - http://www.indiexpo.net/
