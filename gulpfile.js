@@ -3,10 +3,11 @@ var notify      = require('gulp-notify'); // unused
 var browserSync = require('browser-sync').create();
 
 var projectName;
+projectName = 'test';
 // projectName = 'flappy-bird';
 // projectName = 'space-hipster';
 // projectName = 'tank';
-projectName = 'webfont';
+// projectName = 'webfont';
 // projectName = 'flappy-bird-2';
 // projectName = 'doodle-jump';
 // projectName = '2048';
