@@ -25,6 +25,7 @@
   "devDependencies": {
     "lodash": "~3.10.1",
     "sanitize.css": "~2.0.0",
-    "phaser": "~2.4.4"
+    "phaser": "~2.4.4",
+    "jquery": "~2.2.0"
   }
 }
