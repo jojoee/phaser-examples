@@ -1,19 +1,20 @@
 ## Game Inspiration
-- [Fruit Ninja](https://play.google.com/store/apps/details?id=com.polargames3.br)
 - http://phaser.io/games
 - http://phaser.io/news/category/game
 - http://www.photonstorm.com/games
 - http://www.html5gamedevs.com/forum/8-game-showcase/
 - http://gamejolt.com/
 - http://www.indiedb.com/
+- http://www.dotgears.com/
 - http://www.indiexpo.net/
-- [Puzzle RECT](https://play.google.com/store/apps/details?id=com.git.puzzlerect)
 - https://www.latesthackingnews.com/cool-games-you-can-play-from-your-linux-command-line/
 - http://bastation.com/
 - https://www.facebook.com/hashtag/screenshotsaturday
-- [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
-- [QuickDate](https://www.facebook.com/photo.php?fbid=10205293217237887&set=pcb.10153194489856573&type=3&theater)
 - http://store.steampowered.com/tag/en/Indie#p=0&tab=NewReleases
+- [Fruit Ninja](https://play.google.com/store/apps/details?id=com.polargames3.br)
+- [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
+- [Puzzle RECT](https://play.google.com/store/apps/details?id=com.git.puzzlerect)
+- [QuickDate](https://www.facebook.com/photo.php?fbid=10205293217237887&set=pcb.10153194489856573&type=3&theater)
 - [Jetpack Joyride](https://play.google.com/store/apps/details?id=com.halfbrick.jetpackjoyride&hl=en) - Running
 - [Dead Ahead](https://play.google.com/store/apps/details?id=com.chillingo.deadahead.rowgplay&hl=en) - Running
 - [Punch Quest](https://play.google.com/store/apps/details?id=com.noodlecake.punchquest&hl=en) - Running
