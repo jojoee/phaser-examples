@@ -21,6 +21,7 @@
 - [Digger](http://jojoee.github.io/phaser-examples/digger/), [Ref](https://gamedevacademy.org/make-a-quick-phaser-compatible-game-using-mightyeditor/) - Phaser 2.0.7, [MightyEditor](http://mightyfingers.com/), Difference Structure, No Assets Found
 - [Monster Wants Candy](http://jojoee.github.io/phaser-examples/monster-wants-candy/), [Ref](http://gamedevelopment.tutsplus.com/tutorials/getting-started-with-phaser-building-monster-wants-candy--cms-21723), [Src](https://github.com/tutsplus/Monster-Wants-Candy-demo), [Demo](http://candy.enclavegames.com/) - Phaser 2.0.6
 - [Orbital Debris](http://jojoee.github.io/phaser-examples/orbital-debris/), [Ref](http://www.allworkallplay.org/blog/orbital-debris-making-an-html5-game-with-phaser) - Phaser 1.1.6
+- [Flappy Bird Reborn](http://jojoee.github.io/phaser-examples/flappy-bird-reborn/), [Ref](http://www.codevinsky.com/phaser-2-0-tutorial-flappy-bird-part-1/), [Demo](http://flappy-bird-reborn.herokuapp.com/)
 
 ## TODO
 - [Alto's Adventure](http://altosadventure.com/)
