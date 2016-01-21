@@ -56,13 +56,9 @@
 - Based on [Phaser](http://phaser.io/) created by [Photon Storm](http://www.photonstorm.com/)
 
 ## Tools && Resouce
-- [Google Translate](https://translate.google.com/)
-- https://cdnjs.com/libraries/phaser
-- [Phaser Debug](https://github.com/englercj/phaser-debug) - v1.1.8
 - [UglifyJS Online](https://skalman.github.io/UglifyJS-online/)
 - [Phaser Template Project](https://github.com/gamecook/phaser-project-template)
 - [Browsersync](https://www.browsersync.io/docs/options/)
-- [phaser-coding-tips](https://github.com/photonstorm/phaser-coding-tips)
 - [jsbeautifier](http://jsbeautifier.org/)
   - Indent with 2 spaces
   - Allow 1 newline between tokens
