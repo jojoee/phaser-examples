@@ -5,6 +5,9 @@
 ## World
 - http://phaser.io/docs/2.4.4/Phaser.World.html#setBounds
 
+## Loader
+- http://phaser.io/docs/2.3.0/Phaser.Loader.html
+
 ## Debug
 - https://gamedevacademy.org/how-to-debug-phaser-games/
 - http://phaser.io/docs/2.4.4/Phaser.Utils.Debug.html
@@ -77,6 +80,13 @@
 
 ## Social
 - https://developers.facebook.com/docs/games/services/scores-achievements
+
+## Font
+- default font on mobile (http://jordanm.co.uk/tinytype/)
+
+### Font - Monospace
+- https://www.typewolf.com/top-10-monospaced-fonts
+- http://www.fontsquirrel.com/fonts/list/classification/monospaced
 
 ## Others
 - [Web Font](http://phaser.io/examples/v2/text/google-webfonts)

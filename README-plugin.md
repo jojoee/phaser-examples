@@ -1,6 +1,3 @@
-- http://ezelia.com/phaser-plugins
-- http://www.html5gamedevs.com/topic/6745-using-plugins/
-
 ## Debug
 - [Phaser Debug](https://github.com/englercj/phaser-debug) - v1.1.8
 - [Phaser Inspector](https://github.com/netcell/phaser-inspector) - 77 commits
@@ -17,6 +14,9 @@
 ## Share
 - http://www.addthis.com/
 - http://www.sharethis.com/
+
+## Isometric
+- http://www.rotates.org/phaser/iso/
 
 ## Joystick
 ### JS
