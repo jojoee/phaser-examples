@@ -25,7 +25,8 @@ projectName = 'test';
 // projectName = 'digger';
 // projectName = 'monster-wants-candy';
 // projectName = 'orbital-debris';
-projectName = 'flappy-bird-reborn';
+// projectName = 'flappy-bird-reborn';
+projectName = 'run';
 
 /*================================================================
  # HELPER
