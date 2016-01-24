@@ -58,8 +58,8 @@ gulp.task('serve', function() {
     'open': true
   });
 
-  gulp.watch('./' + projectName + '/**/*.html').on('change', browserSync.reload);
-  gulp.watch('./' + projectName + '/**/*.js').on('change', browserSync.reload);
+  gulp.watch('./' + projectName + '/index.html').on('change', browserSync.reload);
+  gulp.watch('./' + projectName + '/js/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
