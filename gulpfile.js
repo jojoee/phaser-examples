@@ -26,7 +26,15 @@ projectName = 'test';
 // projectName = 'monster-wants-candy';
 // projectName = 'orbital-debris';
 // projectName = 'flappy-bird-reborn';
-projectName = 'run';
+// projectName = 'run';
+// projectName = 'splashscreen';
+// projectName = 'state-transition';
+// projectName = 'hi-low';
+// projectName = 'crazy-snake';
+// projectName = 'pixel-war';
+// projectName = 'box-jump';
+// projectName = 'first-game';
+// projectName = 'man-vs-penguins';
 
 /*================================================================
  # HELPER

@@ -33,7 +33,8 @@
 - http://phaser.io/shop/plugins/virtualjoystick
 
 ## State Transition
-- https://github.com/aaccurso/phaser-state-transition-plugin
+- [phaser-state-transition-plugin](https://github.com/aaccurso/phaser-state-transition-plugin)
+- http://tympanus.net/Development/PageTransitions/
 - https://github.com/cristianbote/phaser-state-transition
 - http://www.html5gamedevs.com/topic/3310-phaserjs-state-transition-plugin/
 

@@ -23,6 +23,14 @@
 - [Orbital Debris](http://jojoee.github.io/phaser-examples/orbital-debris/), [Ref](http://www.allworkallplay.org/blog/orbital-debris-making-an-html5-game-with-phaser) - Phaser 1.1.6
 - [Flappy Bird Reborn](http://jojoee.github.io/phaser-examples/flappy-bird-reborn/), [Ref](https://github.com/codevinsky/flappy-bird-reborn), [Demo](http://flappy-bird-reborn.herokuapp.com/)
 - [Run](http://jojoee.github.io/phaser-examples/run/), [Ref](http://www.lessmilk.com/games/1/)
+- [Splashscreen](http://jojoee.github.io/phaser-examples/splashscreen/)
+- [State Transition](http://jojoee.github.io/phaser-examples/state-transition/), [Ref](https://github.com/aaccurso/phaser-state-transition-plugin)
+- [Hi Low](http://jojoee.github.io/phaser-examples/hi-low/), [Ref](http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-states/)
+- [Crazy Snake](http://jojoee.github.io/phaser-examples/crazy-snake/), [Ref](http://www.lessmilk.com/games/12/)
+- [Pixel War](http://jojoee.github.io/phaser-examples/pixel-war/), [Ref](http://www.lessmilk.com/games/2/), [Bug]
+- [Box Jump](http://jojoee.github.io/phaser-examples/box-jump/), [Ref](http://www.lessmilk.com/games/3/), [Bug]
+- [First Game](http://jojoee.github.io/phaser-examples/first-game/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game)
+- [Man vs Penguins](http://jojoee.github.io/phaser-examples/man-vs-penguins/), [Ref](http://www.lessmilk.com/games/4/), [Bug]
 
 ## TODO
 - [Alto's Adventure](http://altosadventure.com/)
@@ -52,6 +60,10 @@
   - Credit
   - Preloader (Progress bar / Splash screen )
   - Share
+- Add icon font (e.g. [Font Awesome](https://fortawesome.github.io/Font-Awesome/))
+- Add tracking system (e.g. [Google Analytics](http://www.google.com/analytics/))
+- Implement [standardjs.com](https://github.com/feross/standard)
+- Implement [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
 
 ## Note
 - [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)

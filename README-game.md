@@ -10,6 +10,7 @@
 - https://www.latesthackingnews.com/cool-games-you-can-play-from-your-linux-command-line/
 - http://bastation.com/
 - https://www.facebook.com/hashtag/screenshotsaturday
+- http://screenshotdaily.com/
 - http://store.steampowered.com/tag/en/Indie#p=0&tab=NewReleases
 - [Fruit Ninja](https://play.google.com/store/apps/details?id=com.polargames3.br)
 - [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
