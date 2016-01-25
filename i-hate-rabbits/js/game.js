@@ -1,4 +1,4 @@
-var map = [
+var MAP = [
   [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0],
   [0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0],
   [0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0],
@@ -11,44 +11,69 @@ var map = [
   //[x, 0, 0, 0, 0, x, 0, 0, 0, 0, x, 0, 0, 0, 0],
 ];
 Game = {};
-var w = 450;
-var h = 450;
-var level = 0;
-var score = 0;
-var best_score = 0;
+var W = 450;
+var H = 450;
+var LEVEL = 0;
+var SCORE = 0;
+var BEST_SCORE = 0;
+var CURRENT_TIME;
+
+/*================================================================ UTIL
+*/
 
 function rand(num) {
   return Math.floor(Math.random() * num)
 };
+
+/*================================================================ BOOT
+*/
+
 Game.Boot = function(game) {};
 Game.Boot.prototype = {
   preload: function() {
     game.stage.backgroundColor = '#2ecc71';
     game.load.image('loading', 'images/loading.png');
-    game.load.image('loading2', 'images/loading2.png');
+    game.load.image('loading-border', 'images/loading-border.png');
   },
   create: function() {
-    this.game.state.start('Load');
+    game.state.start('Load');
   }
 };
+
+/*================================================================ LOAD
+*/
+
 Game.Load = function(game) {};
 Game.Load.prototype = {
   preload: function() {
-    label2 = game.add.text(Math.floor(w / 2) + 0.5, Math.floor(h / 2) - 15 + 0.5, 'loading...', {
+    // loading label
+    var loadingTextStyle = {
       font: '30px Arial',
       fill: '#fff'
-    });
-    label2.anchor.setTo(0.5, 0.5);
-    preloading2 = game.add.sprite(w / 2, h / 2 + 15, 'loading2');
-    preloading2.x -= preloading2.width / 2;
-    preloading = game.add.sprite(w / 2, h / 2 + 19, 'loading');
-    preloading.x -= preloading.width / 2;
+    };
+    loadingText = game.add.text(
+      Math.floor(W / 2) + 0.5,
+      Math.floor(H / 2) - 15 + 0.5,
+      'loading...',
+      loadingTextStyle
+    );
+    loadingText.anchor.setTo(0.5, 0.5);
+
+    // preloading image
+    preloadingBorder = game.add.sprite(W / 2, H / 2 + 15, 'loading-border');
+    preloadingBorder.x -= preloadingBorder.widtH / 2;
+    preloading = game.add.sprite(W / 2, H / 2 + 19, 'loading');
+    preloading.x -= preloading.widtH / 2;
     game.load.setPreloadSprite(preloading);
+
+    // game images
     game.load.image('rabbit', 'images/rabbit2.png');
     game.load.image('circle', 'images/circle.png');
     game.load.spritesheet('bad', 'images/bad.png', 36, 40);
     game.load.image('tweet', 'images/tweet.png');
     game.load.image('facebook', 'images/facebook.png');
+
+    // game sounds
     game.load.audio('music', 'sounds/music.wav');
     game.load.audio('a', 'sounds/a.mp3');
     game.load.audio('e', 'sounds/e.mp3');
@@ -62,157 +87,204 @@ Game.Load.prototype = {
     game.state.start('Menu');
   }
 };
+
+/*================================================================ MENU
+*/
+
 Game.Menu = function(game) {};
 Game.Menu.prototype = {
   create: function() {
-    var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-    space_key.onDown.add(this.start_game, this);
-    this.bad = this.game.add.sprite(w / 2, h / 2 - 120, 'bad');
+    // input
+    var spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    spaceKey.onDown.add(this.startGame, this);
+
+    // enemy
+    this.bad = game.add.sprite(W / 2, H / 2 - 120, 'bad');
     this.bad.anchor.setTo(0.5, 1);
     this.bad.animations.add('walk', [0, 1], 5, true).play();
-    this.circle = this.game.add.sprite(w / 2, h / 2, 'circle');
+
+    // circle
+    this.circle = game.add.sprite(W / 2, H / 2, 'circle');
     this.circle.anchor.setTo(0.5, 0.5);
-    var s = {
+
+    // top label
+    var topLabelStyle = {
+      font: '30px Arial',
+      fill: '#fff',
+      align: 'center'
+    };
+    topLabel = game.add.text(W / 2 + 0.5, 30, "I Hate Rabbits!", topLabelStyle);
+    topLabel.anchor.setTo(0.5, 0.5);
+
+    // middle label
+    var middleLabelStyle = {
       font: '20px Arial',
       fill: '#fff',
       align: 'center'
     };
-    var start_label = game.add.text(w / 2 + 0.5, h / 2 + 0.5, "press space to\nstart the game", s);
-    start_label.anchor.setTo(0.5, 0.5);
-    game.add.tween(start_label.scale).to({
+    var middleLabel = game.add.text(W / 2 + 0.5, H / 2 + 0.5, "press space to\nstart the game", middleLabelStyle);
+    middleLabel.anchor.setTo(0.5, 0.5);
+    game.add.tween(middleLabel.scale).to({
       x: 1.1,
       y: 1.1
     }, 300).to({
       x: 1,
       y: 1
     }, 300).loop().start();
-    var start_label = game.add.text(w / 2 + 0.5, h - 30, "try to save the rabbits by pressing space", s);
-    start_label.anchor.setTo(0.5, 0.5);
-    var s = {
-      font: '30px Arial',
-      fill: '#fff',
-      align: 'center'
-    };
-    title_label = game.add.text(w / 2 + 0.5, 30, "I Hate Rabbits!", s);
-    title_label.anchor.setTo(0.5, 0.5);
-  },
-  start_game: function() {
-    this.game.state.start('Play');
-  }
-};
-Game.Play = function(game) {};
-Game.Play.prototype = {
-  create: function() {
-    this.space_key = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-    this.space_key.onDown.add(this.jump, this);
-    this.rabbits = game.add.group();
-    this.rabbits.createMultiple(30, 'rabbit');
-    this.bad = this.game.add.sprite(w / 2, h / 2, 'bad');
-    this.bad.anchor.setTo(0.5, 1);
-    this.bad.animations.add('walk', [0, 1], 5, true).play();
-    this.circle = this.game.add.sprite(w / 2, h / 2, 'circle');
-    this.circle.anchor.setTo(0.5, 0.5);
-    var s = {
+
+    // bottom label
+    var bottomLabelStyle = {
       font: '20px Arial',
       fill: '#fff',
       align: 'center'
     };
-    this.start_label = game.add.text(w / 2 + 0.5, 30, "try to save the rabbits by pressing space", s);
-    this.start_label.anchor.setTo(0.5, 0.5);
-    var s2 = {
+    var bottomLabel = game.add.text(W / 2 + 0.5, H - 30, "try to save the rabbits by pressing space", bottomLabelStyle);
+    bottomLabel.anchor.setTo(0.5, 0.5);
+  },
+  startGame: function() {
+    game.state.start('Play');
+  }
+};
+
+/*================================================================ PLAY
+*/
+
+Game.Play = function(game) {};
+Game.Play.prototype = {
+  create: function() {
+    // var
+    SCORE = 65;
+    LEVEL = 0;
+    this.changeLevel = true;
+
+    // input
+    this.spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    this.spaceKey.onDown.add(this.jump, this);
+
+    // player
+    this.rabbits = game.add.group();
+    this.rabbits.createMultiple(30, 'rabbit');
+
+    // enemy
+    this.bad = game.add.sprite(W / 2, H / 2, 'bad');
+    this.bad.anchor.setTo(0.5, 1);
+    this.bad.animations.add('walk', [0, 1], 5, true).play();
+    game.physics.arcade.enable(this.bad);
+
+    // circle
+    this.circle = game.add.sprite(W / 2, H / 2, 'circle');
+    this.circle.anchor.setTo(0.5, 0.5);
+
+    // top label
+    var topLabelStyle = {
+      font: '20px Arial',
+      fill: '#fff',
+      align: 'center'
+    };
+    this.topLabel = game.add.text(W / 2 + 0.5, 30, "try to save the rabbits by pressing space", topLabelStyle);
+    this.topLabel.anchor.setTo(0.5, 0.5);
+
+    // middle label (LEVEL)
+    var middleLabelStyle = {
       font: '80px Arial',
       fill: '#fff',
       align: 'center'
     };
-    this.world_label = game.add.text(w / 2, h / 2, "10", s2);
-    this.world_label.anchor.setTo(0.5, 0.5);
-    score = 65;
-    level = 0;
-    this.change_level = true;
-    this.end = 0;
-    this.a_s = this.game.add.audio("a");
-    this.a_s.volume = 0.3;
-    this.e_s = this.game.add.audio("e");
-    this.e_s.volume = 0.3;
-    this.i_s = this.game.add.audio("i");
-    this.i_s.volume = 0.3;
-    this.o_s = this.game.add.audio("o");
-    this.o_s.volume = 0.3;
-    this.u_s = this.game.add.audio("u");
-    this.u_s.volume = 0.3;
-    this.music_s = game.add.audio('music');
-    this.music_s.play('', 0, 0.4, false);
+    this.middleLabel = game.add.text(W / 2, H / 2, "10", middleLabelStyle);
+    this.middleLabel.anchor.setTo(0.5, 0.5);
+
+    // sound
+    this.aSound = game.add.audio("a");
+    this.aSound.volume = 0.3;
+    this.eSound = game.add.audio("e");
+    this.eSound.volume = 0.3;
+    this.iSound = game.add.audio("i");
+    this.iSound.volume = 0.3;
+    this.oSound = game.add.audio("o");
+    this.oSound.volume = 0.3;
+    this.uSound = game.add.audio("u");
+    this.uSound.volume = 0.3;
+    this.gameMusic = game.add.audio('music');
+    this.gameMusic.play('', 0, 0.4, false);
   },
   update: function() {
-    if (this.end != 0 && this.end < game.time.now) {
-      this.music_s.stop();
-      this.game.state.start('End');
+    game.physics.arcade.overlap(this.bad, this.rabbits, this.hit, null, this);
+
+    // angle
+    // 0 -> 180
+    // -180 -> 0
+    
+    // prevent js lagging
+    if (this.bad.angle >= -2 && this.bad.angle <= 2 && this.changeLevel) {
+      this.changeLevel = false;
+      this.drawLevel();
+
+    } else if (this.bad.angle > 2) {
+      this.changeLevel = true;
     }
-    game.physics.overlap(this.bad, this.rabbits, this.hit, null, this);
-    if (this.bad.angle >= -2 && this.bad.angle <= 2 && this.change_level) {
-      this.change_level = false;
-      this.draw_level();
-    } else if (this.bad.angle > 2)
-      this.change_level = true;
+
     this.bad.angle += 1.2;
-    var x = w / 2 + (this.circle.width / 2 - 4) * Math.cos(this.bad.rotation - Math.PI / 2);
-    var y = h / 2 + (this.circle.width / 2 - 4) * Math.sin(this.bad.rotation - Math.PI / 2);
+
+    var x = W / 2 + (this.circle.width / 2 - 4) * Math.cos(this.bad.rotation - Math.PI / 2);
+    var y = H / 2 + (this.circle.width / 2 - 4) * Math.sin(this.bad.rotation - Math.PI / 2);
     this.bad.reset(x, y);
   },
-  add_rabbit: function(angle, i) {
+  addRabbit: function(angle, i) {
     var rabbit = this.rabbits.getFirstDead();
+    game.physics.arcade.enable(rabbit);
     rabbit.rotation = 0;
     rabbit.rotation = angle + Math.PI / 2;
-    var x_out = w / 2 + (this.circle.width + 100) * Math.cos(angle);
-    var y_out = h / 2 + (this.circle.width + 100) * Math.sin(angle);
-    var x_in = w / 2 + (this.circle.width / 2 - 2) * Math.cos(angle);
-    var y_in = h / 2 + (this.circle.width / 2 - 2) * Math.sin(angle);
+
+    var xOut = W / 2 + (this.circle.width + 100) * Math.cos(angle);
+    var yOut = H / 2 + (this.circle.width + 100) * Math.sin(angle);
+    var xIn = W / 2 + (this.circle.width / 2 - 2) * Math.cos(angle);
+    var yIn = H / 2 + (this.circle.width / 2 - 2) * Math.sin(angle);
+
     rabbit.jump = false;
     rabbit.alpha = 1;
     rabbit.pos = i;
-    rabbit.reset(x_out, y_out);
+    rabbit.reset(xOut, yOut);
+
     rabbit.anchor.setTo(0.5, 1);
-    rabbit.t = this.game.add.tween(rabbit);
+    rabbit.t = game.add.tween(rabbit);
     rabbit.t.to({
-      x: x_in,
-      y: y_in
+      x: xIn,
+      y: yIn
     }, 300).start();
   },
   hit: function(bad, rabbit) {
     rabbit.kill();
-    /*game.add.tween(this.circle.scale).to({x:3, y:3}, 500).start();
-    game.add.tween(this.world_label).to({alpha: 0}, 100).start();
-    this.start_label.alpha = 0;
-    this.rabbits.forEachAlive(function(r){r.kill();}, this);
-    this.end = game.time.now + 500;*/
-    score -= 1;
-    var sound = this.game.add.audio("haho");
+    SCORE--;
+
+    var sound = game.add.audio("haho");
     sound.volume = 0.5;
     sound.play();
   },
-  jump_sound: function() {
+  jumpSound: function() {
     var r = rand(5);
-    if (r == 0) this.a_s.play();
-    else if (r == 1) this.e_s.play();
-    else if (r == 2) this.i_s.play();
-    else if (r == 3) this.o_s.play();
-    else if (r == 4) this.u_s.play();
+    if (r == 0) this.aSound.play();
+    else if (r == 1) this.eSound.play();
+    else if (r == 2) this.iSound.play();
+    else if (r == 3) this.oSound.play();
+    else if (r == 4) this.uSound.play();
   },
   jump: function() {
-    var min = 20,
-      min_r;
+    var min = 20;
+    var minR;
+
     this.rabbits.forEachAlive(function(r) {
       if (r.jump == false && r.pos < min) {
         min = r.pos;
-        min_r = r;
+        minR = r;
       }
     }, this);
-    var rabbit = min_r;
+
+    var rabbit = minR;
     if (min != 20 && !rabbit.t.isRunning) {
-      this.jump_sound();
-      var x = w / 2 + (this.circle.width / 2 + 90) * Math.cos(rabbit.rotation - Math.PI / 2);
-      var y = h / 2 + (this.circle.width / 2 + 90) * Math.sin(rabbit.rotation - Math.PI / 2);
-      rabbit.t2 = this.game.add.tween(rabbit)
+      this.jumpSound();
+      var x = W / 2 + (this.circle.width / 2 + 90) * Math.cos(rabbit.rotation - Math.PI / 2);
+      var y = H / 2 + (this.circle.width / 2 + 90) * Math.sin(rabbit.rotation - Math.PI / 2);
+      rabbit.t2 = game.add.tween(rabbit)
         .to({
           x: x,
           y: y
@@ -225,59 +297,97 @@ Game.Play.prototype = {
       rabbit.jump = true;
     }
   },
-  draw_level: function() {
+  drawLevel: function() {
+    console.log('LEVEL', LEVEL);
+    if (LEVEL == 9) {
+      game.state.start('End');
+      return;
+    }
+
+    // fade and kill alive rabbit
     this.rabbits.forEachAlive(function(r) {
-      var t = this.game.add.tween(r).to({
+      var t = game.add.tween(r).to({
         alpha: 0
       }, 300).start();
+
       t.onComplete.add(function() {
         this.kill()
       }, r);
     }, this);
-    this.world_label.content = 9 - level;
-    if (level == 9) {
-      this.game.state.start('End');
-      return;
-    }
-    if (level == 1)
-      this.game.add.tween(this.start_label).to({
+
+    // update middle label
+    this.middleLabel.setText(9 - LEVEL);
+
+    // fade top label
+    if (LEVEL == 1) {
+      game.add.tween(this.topLabel).to({
         alpha: 0
       }, 500).start();
-    var l = map[level];
-    for (var i = 0; i < l.length; i++)
-      if (l[i] != 0)
-        this.add_rabbit(i * (Math.PI / 10), i);
-    level += 1;
+    }
+
+    // show rabbit
+    var l = MAP[LEVEL];
+    for (var i = 0; i < l.length; i++) {
+      if (l[i] != 0) {
+        this.addRabbit(i * (Math.PI / 10), i);
+      }
+    }
+
+    LEVEL += 1;
   }
 };
+
+/*================================================================ END
+*/
+
 Game.End = function(game) {};
 Game.End.prototype = {
   create: function() {
-    if (score > best_score)
-      best_score = score;
-    var space_key = this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-    space_key.onDown.add(this.start_game, this);
-    this.circle = this.game.add.sprite(w / 2, h / 2, 'circle');
+    if (SCORE > BEST_SCORE) {
+      BEST_SCORE = SCORE;
+    }
+
+    var spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+    spaceKey.onDown.add(this.startGame, this);
+
+    // circle
+    this.circle = game.add.sprite(W / 2, H / 2, 'circle');
     this.circle.anchor.setTo(0.5, 0.5);
-    var s = {
+
+    // top
+    var topLabelStyle = {
       font: '30px Arial',
       fill: '#fff',
       align: 'center'
     };
-    var score_label = game.add.text(w / 2 + 0.5, 40, "you saved " + score + " rabbits", s);
-    score_label.anchor.setTo(0.5, 0.5);
-    var s = {
+    var topLabel = game.add.text(W / 2 + 0.5, 40, "you saved " + SCORE + " rabbits", topLabelStyle);
+    topLabel.anchor.setTo(0.5, 0.5);
+
+    var top2LabelStyle = {
       font: '20px Arial',
       fill: '#fff',
       align: 'center'
     };
-    var best_score_label = game.add.text(w / 2 + 0.5, 70, "best score: " + best_score, s);
-    best_score_label.anchor.setTo(0.5, 0.5);
-    var start_label = game.add.text(w / 2 + 0.5, h / 2 + 0.5, "press space to\nrestart the game", s);
-    start_label.anchor.setTo(0.5, 0.5);
-    share_label = game.add.text(w / 2 - 70 + 0.5, h - 50, "share your score on Twitter:", s);
-    share_label.anchor.setTo(0.5, 0.5);
-    var t = this.game.add.button(w / 2 + 135, h - 50, 'tweet', this.tweet, this);
+    var top2Label = game.add.text(W / 2 + 0.5, 70, "best SCORE: " + BEST_SCORE, top2LabelStyle);
+    top2Label.anchor.setTo(0.5, 0.5);
+
+    var middleLabelStyle = {
+      font: '20px Arial',
+      fill: '#fff',
+      align: 'center'
+    };
+    var middleLabel = game.add.text(W / 2 + 0.5, H / 2 + 0.5, "press space to\nrestart the game", middleLabelStyle);
+    middleLabel.anchor.setTo(0.5, 0.5);
+
+    var bottomLabelStyle = {
+      font: '20px Arial',
+      fill: '#fff',
+      align: 'center'
+    };
+    bottomLabel = game.add.text(W / 2 - 70 + 0.5, H - 50, "share your SCORE on Twitter:", bottomLabelStyle);
+    bottomLabel.anchor.setTo(0.5, 0.5);
+
+    var t = game.add.button(W / 2 + 135, H - 50, 'tweet', this.tweet, this);
     t.scale.setTo(0.8, 0.8);
     t.anchor.setTo(0.5, 0.5);
     game.add.tween(t.scale).to({
@@ -287,28 +397,33 @@ Game.End.prototype = {
       x: 0.8,
       y: 0.8
     }, 300).loop().start();
-    this.time = this.game.time.now + 500;
-    if (level == 9) {
-      var sound = this.game.add.audio("yeah");
+
+    this.currentTime = game.time.now + 500;
+
+    if (LEVEL == 9) {
+      var sound = game.add.audio("yeah");
       sound.volume = 0.5;
       sound.play();
     }
-    this.game.world.alpha = 0;
-    this.game.add.tween(this.game.world).to({
+
+    game.world.alpha = 0;
+    game.add.tween(game.world).to({
       alpha: 1
     }, 1000).start();
   },
-  start_game: function() {
-    if (this.time < this.game.time.now) {
-      this.game.world.alpha = 1;
-      this.game.state.start('Play');
+  startGame: function() {
+    if (this.currentTime < game.time.now) {
+      game.world.alpha = 1;
+      game.state.start('Play');
     }
   },
   tweet: function() {
-    window.open('http://twitter.com/share?text=I+just+saved+' + score + '+rabbits+at+"I+Hate+Rabbits"+game!+Try+to+beat+me+here&via=lessmilk_&url=http://www.lessmilk.com/9/', '_blank');
+    window.open('http://twitter.com/share?text=I+just+saved+' + SCORE + '+rabbits+at+"I+Hate+Rabbits"+game!+Try+to+beat+me+here&via=lessmilk_&url=http://www.lessmilk.com/9/', '_blank');
   }
 };
-var game = new Phaser.Game(w, h, Phaser.AUTO, 'gameContainer');
+
+var game = new Phaser.Game(W, H, Phaser.CANVS, 'game-container');
+
 game.state.add('Boot', Game.Boot);
 game.state.add('Load', Game.Load);
 game.state.add('Menu', Game.Menu);
