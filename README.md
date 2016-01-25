@@ -31,6 +31,13 @@
 - [Box Jump](http://jojoee.github.io/phaser-examples/box-jump/), [Ref](http://www.lessmilk.com/games/3/), [Bug]
 - [First Game](http://jojoee.github.io/phaser-examples/first-game/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game)
 - [Man vs Penguins](http://jojoee.github.io/phaser-examples/man-vs-penguins/), [Ref](http://www.lessmilk.com/games/4/), [Bug]
+- [Fill the Holes](http://jojoee.github.io/phaser-examples/fill-the-holes/), [Ref](http://www.lessmilk.com/games/5/), [Bug]
+- [Princess Quest](http://jojoee.github.io/phaser-examples/princess-quest/), [Ref](http://www.lessmilk.com/games/6/), [Bug]
+- [Connected](http://jojoee.github.io/phaser-examples/connected/), [Ref](http://www.lessmilk.com/games/7/), [Bug]
+- [Save the City](http://jojoee.github.io/phaser-examples/save-the-city/), [Ref](http://www.lessmilk.com/games/8/), [Bug]
+- [I Hate Rabbits](http://jojoee.github.io/phaser-examples/i-hate-rabbits/), [Ref](http://www.lessmilk.com/games/9/), [Bug]
+- [Dark Blue](http://jojoee.github.io/phaser-examples/dark-blue/), [Ref](http://www.lessmilk.com/games/10/), [Bug]
+- [The Three Hearths](http://jojoee.github.io/phaser-examples/the-three-hearths/), [Ref](http://www.lessmilk.com/games/11/), [Bug]
 
 ## TODO
 - [Alto's Adventure](http://altosadventure.com/)

@@ -35,6 +35,14 @@ projectName = 'test';
 // projectName = 'box-jump';
 // projectName = 'first-game';
 // projectName = 'man-vs-penguins';
+// projectName = 'fill-the-holes';
+// projectName = 'princess-quest';
+// projectName = 'connected';
+// projectName = 'save-the-city';
+// projectName = 'i-hate-rabbits';
+// projectName = 'i-hate-rabbits';
+// projectName = 'dark-blue';
+// projectName = 'the-three-hearths';
 
 /*================================================================
  # HELPER
