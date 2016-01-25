@@ -418,7 +418,7 @@ Game.End.prototype = {
     }
   },
   tweet: function() {
-    window.open('http://twitter.com/share?text=I+just+saved+' + SCORE + '+rabbits+at+"I+Hate+Rabbits"+game!+Try+to+beat+me+here&via=lessmilk_&url=http://www.lessmilk.com/9/', '_blank');
+    window.open('http://twitter.com/share?text=I+just+saved+' + SCORE + '+rabbits+at+"I+Hate+Rabbits"+game!+Try+to+beat+me+here&via=joejojoee&url=http://jojoee.github.io/phaser-examples/i-hate-rabbits/', '_blank');
   }
 };
 

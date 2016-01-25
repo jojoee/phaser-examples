@@ -35,7 +35,7 @@
 - [Princess Quest](http://jojoee.github.io/phaser-examples/princess-quest/), [Ref](http://www.lessmilk.com/games/6/), [Bug]
 - [Connected](http://jojoee.github.io/phaser-examples/connected/), [Ref](http://www.lessmilk.com/games/7/), [Bug]
 - [Save the City](http://jojoee.github.io/phaser-examples/save-the-city/), [Ref](http://www.lessmilk.com/games/8/), [Bug]
-- [I Hate Rabbits](http://jojoee.github.io/phaser-examples/i-hate-rabbits/), [Ref](http://www.lessmilk.com/games/9/), [Bug]
+- [I Hate Rabbits](http://jojoee.github.io/phaser-examples/i-hate-rabbits/), [Ref](http://www.lessmilk.com/games/9/)
 - [Dark Blue](http://jojoee.github.io/phaser-examples/dark-blue/), [Ref](http://www.lessmilk.com/games/10/), [Bug]
 - [The Three Hearths](http://jojoee.github.io/phaser-examples/the-three-hearths/), [Ref](http://www.lessmilk.com/games/11/), [Bug]
 
