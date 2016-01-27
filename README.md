@@ -30,7 +30,7 @@ A collection of games made by phaser
 - [State Transition](http://jojoee.github.io/phaser-examples/state-transition/), [Ref](https://github.com/aaccurso/phaser-state-transition-plugin)
 - [Hi Low](http://jojoee.github.io/phaser-examples/hi-low/), [Ref](http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-states/) - `2.0.7`
 - [Crazy Snake](http://jojoee.github.io/phaser-examples/crazy-snake/), [Ref](http://www.lessmilk.com/games/12/)
-- [Pixel War](http://jojoee.github.io/phaser-examples/pixel-war/), [Ref](http://www.lessmilk.com/games/2/) - `bug`
+- [Pixel War](http://jojoee.github.io/phaser-examples/pixel-war/), [Ref](http://www.lessmilk.com/games/2/)
 - [Box Jump](http://jojoee.github.io/phaser-examples/box-jump/), [Ref](http://www.lessmilk.com/games/3/) - `bug`
 - [First Game](http://jojoee.github.io/phaser-examples/first-game/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game)
 - [Man vs Penguins](http://jojoee.github.io/phaser-examples/man-vs-penguins/), [Ref](http://www.lessmilk.com/games/4/) - `bug`
