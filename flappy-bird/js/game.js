@@ -97,7 +97,7 @@ function create() {
   LOG.info('create');
 
   // enable plugin
-  game.plugins.add(Phaser.Plugin.Inspector);
+  // game.plugins.add(Phaser.Plugin.Inspector);
 
   // set bg
   GAME.background = GAME.add.tileSprite(0, 0, GAME.world.width, GAME.world.height, 'background');
