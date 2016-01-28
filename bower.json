@@ -21,10 +21,10 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "lodash": "~3.10.1",
-    "sanitize.css": "~2.0.0",
+  "dependencies": {
+    "moment": "~2.11.1",
     "phaser": "~2.4.4",
-    "jquery": "~2.2.0"
+    "lodash": "~3.10.1",
+    "faker": "~0.0.2"
   }
 }
