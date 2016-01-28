@@ -97,6 +97,11 @@ A collection of games made by phaser
 - Implement [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
 - update `index.html`
 
+## Getting Started
+1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
+2. Install global - `npm install -g bower gulp browser-sync`
+3. Install dependencies - `bower install && npm install`
+
 ## Note && Tools && Resouce
 - [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - Based on [Phaser](http://phaser.io/) created by [Photon Storm](http://www.photonstorm.com/)
