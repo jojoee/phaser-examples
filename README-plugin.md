@@ -15,22 +15,24 @@
 - http://www.addthis.com/
 - http://www.sharethis.com/
 
+## Time && Sun && Moon
+- http://momentjs.com/
+- https://github.com/mourner/suncalc
+
+## Spine animation
+- https://github.com/StudioKrok/PhaserSpine
+
 ## Isometric
 - http://www.rotates.org/phaser/iso/
 
 ## Joystick
-### JS
-- https://github.com/yoannmoinet/nipplejs
-- https://github.com/jeromeetienne/virtualjoystick.js
-
-### Phaser
-- https://github.com/Gamegur-us/phaser-touch-control-plugin
-- https://github.com/InformalPenguins/phaser-vjoy-plugin
-- http://anhnt.ninja/2015/08/19/make-some-joy-on-phaser-stick/
-- https://gist.github.com/netcell/9083b5cef97125128420
-
-### Phaser official
-- http://phaser.io/shop/plugins/virtualjoystick
+- https://github.com/yoannmoinet/nipplejs - `js`
+- https://github.com/jeromeetienne/virtualjoystick.js - `js`
+- https://github.com/Gamegur-us/phaser-touch-control-plugin - `phaser`
+- https://github.com/InformalPenguins/phaser-vjoy-plugin - `phaser`
+- http://anhnt.ninja/2015/08/19/make-some-joy-on-phaser-stick/ - `phaser`
+- https://gist.github.com/netcell/9083b5cef97125128420 - `phaser`
+- http://phaser.io/shop/plugins/virtualjoystick - `phaser official`
 
 ## State Transition
 - [phaser-state-transition-plugin](https://github.com/aaccurso/phaser-state-transition-plugin)

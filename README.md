@@ -1,9 +1,7 @@
 # Phaser Examples
-
 A collection of games made by phaser
 
 ## List
-
 - [Flappy bird](http://jojoee.github.io/phaser-examples/flappy-bird/), [Ref](https://developer.amazon.com/public/community/post/Tx1NQ9QEA4MWGTY/Intro-To-Phaser-Part-1-Setting-Up-Your-Dev-Environment-and-Phaser)
 - [Tank](http://jojoee.github.io/phaser-examples/tank/), [Ref](http://phaser.io/tutorials/coding-tips-002/)
 - [Flappy bird 2](http://jojoee.github.io/phaser-examples/flappy-bird-2/), [Ref](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-2/)
@@ -16,7 +14,7 @@ A collection of games made by phaser
 - [Platformer 2](http://jojoee.github.io/phaser-examples/platformer-2/), [Ref](http://phaser.io/tutorials/coding-tips-004)
 - [Car](http://jojoee.github.io/phaser-examples/car/), [Ref](http://phaser.io/tutorials/coding-tips-005)
 - [Pacman](http://jojoee.github.io/phaser-examples/pacman/), [Ref](http://phaser.io/tutorials/coding-tips-005)
-- [Pacman 2](http://jojoee.github.io/phaser-examples/pacman/), [Ref](https://github.com/plissken2013es/phaserPacmanClone), [Demo](http://luisquin.com/lq/phaserPacman/index.html), [Theory](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior), [Original Work](http://phaser.io/tutorials/coding-tips-005)
+- [Pacman 2](http://jojoee.github.io/phaser-examples/pacman-2/), [Ref](https://github.com/plissken2013es/phaserPacmanClone), [Demo](http://luisquin.com/lq/phaserPacman/index.html), [Theory](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior), [Original Work](http://phaser.io/tutorials/coding-tips-005)
 - [Shootout](http://jojoee.github.io/phaser-examples/shootout/), [Ref](http://phaser.io/tutorials/coding-tips-006)
 - [Bulletpool](http://jojoee.github.io/phaser-examples/bulletpool/), [Ref](http://phaser.io/tutorials/coding-tips-007)
 - [Pong](http://jojoee.github.io/phaser-examples/pong/), [Ref](https://github.com/zekechan/phaser-html5-tutorial-pong)
@@ -52,10 +50,17 @@ A collection of games made by phaser
 - [Spellfall](http://jojoee.github.io/phaser-examples/spellfall/), [Ref](http://www.emanueleferonato.com/2014/08/19/how-to-create-an-html5-swap-and-match-3-game-engine-like-the-one-used-in-spellfall-ios-game-using-phaser/), [Inspi](https://itunes.apple.com/gb/app/spellfall-puzzle-rpg/id809027853?mt=8) - `2.0.7`
 - [Spring Ninja](http://jojoee.github.io/phaser-examples/spring-ninja/), [Ref](http://www.emanueleferonato.com/2015/03/16/html5-prototype-of-an-endless-runner-game-like-spring-ninja/), [Inspi](https://itunes.apple.com/us/app/spring-ninja/id963980545?mt=8)
 - [Christmas Quest](http://jojoee.github.io/phaser-examples/christmas-quest/), [Ref](http://www.emanueleferonato.com/2014/11/18/upcoming-html5-christmas-game-christmas-quest/) - `game title`, `2.1.1`
+- [Bresenham Light](http://jojoee.github.io/phaser-examples/bresenham-light/), [Ref](http://www.emanueleferonato.com/2015/12/15/calculating-dynamic-light-and-shadows-in-tile-based-roguelike-games-part-3-let-there-be-bresenham-light/), [Ref](http://deepnight.net/bresenham-magic-raycasting-line-of-sight-pathfinding/)
+- [Horror](http://jojoee.github.io/phaser-examples/horror/), [Ref](http://www.emanueleferonato.com/2014/10/21/phaser-tutorial-how-to-create-an-html5-survival-horror-game-in-6-easy-steps/), [Ref](http://www.emanueleferonato.com/2014/10/10/a-quick-html5-survival-horror-prototype-made-with-phaser/), [Demo](http://www.emanueleferonato.com/wp-content/uploads/2014/10/survival/) - `2.1.2`
+- [Rise Above](http://jojoee.github.io/phaser-examples/rise-above/), [Ref](http://www.emanueleferonato.com/2015/12/24/new-minibook-released-create-html5-vertical-endless-runner-cross-platform-games/), [Demo](http://www.emanueleferonato.com/wp-content/uploads/2015/12/riseabove/), [Inspi](https://itunes.apple.com/nz/app/rise-above/id1039989390?mt=8) - `bug`, `obfuscate`
+- [Diamond Dash](http://jojoee.github.io/phaser-examples/diamond-dash/), [Ref](http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/)
+- [Flood Fill](http://jojoee.github.io/phaser-examples/flood-fill/), [Ref](http://www.emanueleferonato.com/2014/09/10/the-basics-behind-diamond-digger-saga-flood-fill-algorithm/), [Ref](http://www.emanueleferonato.com/2008/06/06/flash-flood-fill-implementation/)
+- [Diamond Digger](http://jojoee.github.io/phaser-examples/diamond-digger/), [Ref](http://www.emanueleferonato.com/2014/09/23/html5-diamond-digger-saga-prototype-made-with-phaser-adding-dirt-and-water/), [Ref](http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/), [Demo](https://king.com/#!/play/diamonddigger)
+- [Sea Life Vs Mines](http://jojoee.github.io/phaser-examples/sea-life-vs-mines/), [Ref](http://www.emanueleferonato.com/2014/10/07/how-to-bring-your-html5-games-title-screen-to-life-in-a-minute-with-phaser/) - `game title`
 
 ## TODO
-
 - [Alto's Adventure](http://altosadventure.com/)
+- [PirateKing](https://www.facebook.com/CashKingPirates/)
 - [Crossy Road](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad&hl=en)
   - Shadow play
   - Online play
@@ -78,7 +83,10 @@ A collection of games made by phaser
   - [ ] Community Tutorials (e.g. http://phaser.io/learn, http://phaser.io/learn?page=2, http://phaser.io/learn/community-tutorials, http://phaser.io/news/category/tutorial)
   - [ ] [Labs](http://phaser.io/labs)
   - [ ] [Examples](http://phaser.io/examples)
-- Creating plugins
+- Creating plugin / boilerplate
+  - Game title
+  - Menu
+  - Scoreboard
   - Log
   - Credit
   - Preloader (Progress bar / Splash screen )
@@ -90,7 +98,6 @@ A collection of games made by phaser
 - update `index.html`
 
 ## Note && Tools && Resouce
-
 - [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - Based on [Phaser](http://phaser.io/) created by [Photon Storm](http://www.photonstorm.com/)
 - [UglifyJS Online](https://skalman.github.io/UglifyJS-online/)
@@ -100,20 +107,19 @@ A collection of games made by phaser
 - [Tiled Map Editor](http://www.mapeditor.org/)
 - [Math for Game Developers](https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My)
 - [MightyEditor](http://mightyfingers.com/)
+- [JScrambler](https://jscrambler.com/en/), [Tut](http://www.emanueleferonato.com/2014/10/01/phaser-jscrambler-awesome-games-with-awesome-protection/)
+- http://pyxeledit.com
 
 ## Graphic
-
 - [opengameart.org](http://opengameart.org/)
 - [deviantart](http://www.deviantart.com/)
 
 ## Icon && Font
-
 - https://medium.com/muzli-design-inspiration/the-best-icons-resources-6430cf5227e8#.5rou8v69c
 - [Webfont Loader](https://developers.google.com/fonts/docs/webfont_loader?hl=en)
 - [ONE DAY](https://www.behance.net/gallery/23792563/ONE-DAY-Free-Font)
 
 ## Keyword
-
 - Isometric
 - F2P
 - Indie
@@ -121,7 +127,6 @@ A collection of games made by phaser
 - Color
 
 ## Distribution Channel
-
 - Amazon Web App
 - [Amazon Web App Tester](http://www.amazon.com/gp/product/B00DZ3I1W8)
 - [Implementing the Amazon In-App Purchasing API in your HTML5 Web Apps](https://developer.amazon.com/appsandservices/community/post/Tx3LQBBJRUYE58P/Implementing-the-Amazon-In-App-Purchasing-API-in-your-HTML5-Web-Apps.html)
@@ -134,11 +139,10 @@ A collection of games made by phaser
 - http://www.gamepix.com/
 
 ## Backend
-
 - http://swagger.io/
 - http://sailsjs.org/
 - https://github.com/feathersjs/feathers/
+- https://strongloop.com/strongblog/comparison-tools-to-automate-restarting-node-js-server-after-code-changes-forever-nodemon-nodesupervisor-nodedev/
 
 ## Tracking
-
 - http://blog.soom.la/2016/01/2016-guide-mobile-analytic-platforms.htm

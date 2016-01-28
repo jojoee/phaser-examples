@@ -12,6 +12,8 @@
 - https://www.facebook.com/hashtag/screenshotsaturday
 - http://screenshotdaily.com/
 - http://store.steampowered.com/tag/en/Indie#p=0&tab=NewReleases
+- [10 Minute Barbarian](http://studiopuffer.appspot.com/)
+- [RETRO WINGS](https://play.google.com/store/apps/details?id=com.arkavis.retrowingsgame&hl=en)
 - [Fruit Ninja](https://play.google.com/store/apps/details?id=com.polargames3.br)
 - [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
 - [Puzzle RECT](https://play.google.com/store/apps/details?id=com.git.puzzlerect)
