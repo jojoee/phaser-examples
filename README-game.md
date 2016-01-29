@@ -9,6 +9,8 @@
 - http://www.indiexpo.net/
 - https://www.latesthackingnews.com/cool-games-you-can-play-from-your-linux-command-line/
 - http://bastation.com/
+- http://jams.gamejolt.io/gjfest
+- http://www.newgrounds.com/
 - https://www.facebook.com/hashtag/screenshotsaturday
 - http://screenshotdaily.com/
 - http://store.steampowered.com/tag/en/Indie#p=0&tab=NewReleases
@@ -16,12 +18,18 @@
 - [RETRO WINGS](https://play.google.com/store/apps/details?id=com.arkavis.retrowingsgame&hl=en)
 - [Fruit Ninja](https://play.google.com/store/apps/details?id=com.polargames3.br)
 - [Puzzle Alarm Clock](http://ysetter.com/post/puzzle-alarm-clock)
+- [TILEBALL](http://www.emanueleferonato.com/stuff/tileball/)
+- [Down The Mountain](https://play.google.com/store/apps/details?id=com.umbrella.downthemountain)
+- [Flinker](https://play.google.com/store/apps/details?id=com.remotepineapple.flinker)
+- [Titans Tower](https://play.google.com/store/apps/details?id=com.remotepineapple.titanstower)
+- [Zombie Stick Hero](https://play.google.com/store/apps/details?id=com.sgs.ZombieStickHero)
 - [Puzzle RECT](https://play.google.com/store/apps/details?id=com.git.puzzlerect)
 - [QuickDate](https://www.facebook.com/photo.php?fbid=10205293217237887&set=pcb.10153194489856573&type=3&theater)
 - [Jetpack Joyride](https://play.google.com/store/apps/details?id=com.halfbrick.jetpackjoyride&hl=en) - Running
 - [Dead Ahead](https://play.google.com/store/apps/details?id=com.chillingo.deadahead.rowgplay&hl=en) - Running
 - [Punch Quest](https://play.google.com/store/apps/details?id=com.noodlecake.punchquest&hl=en) - Running
 - [Tiny Wings](https://itunes.apple.com/en/app/tiny-wings/id417817520?mt=8) - Running
+- [Circle Chain](https://itunes.apple.com/us/app/circle-chain/id512177754?mt=8)
 - [Rayman Jungle Run](https://itunes.apple.com/en/app/rayman-jungle-run/id537931449?mt=8) - Running
 - [Super Stickman Golf 2](https://play.google.com/store/apps/details?id=com.noodlecake.ssg2)
 - [CastleStorm - Free to Siege](https://play.google.com/store/apps/details?id=com.zenstudios.castlestorm&hl=en)
@@ -38,6 +46,8 @@
 - [Downwell](http://downwellgame.com/)
 - [Alto's Adventure](http://altosadventure.com/)
 - [Niche](http://niche-game.com/wordpress/)
+- [Capitals - Free Word Battle](https://itunes.apple.com/us/app/capitals-free-word-battle/id968456900?mt=8) - Word Puzzle
+- [Letterpad - Free Word Puzzles](https://itunes.apple.com/in/app/letterpad-free-word-puzzles/id943235780?mt=8) - Word Puzzle
 - [Tiny Guardians](https://play.google.com/store/apps/details?id=com.kurechii.tinyguardians&hl=en)
 - [Hero of Many](https://play.google.com/store/apps/details?id=com.tricksterarts.heroofmany&hl=en)
 - [King's League: Odyssey](https://play.google.com/store/apps/details?id=com.gamenauts.klo&hl=en)

@@ -31,7 +31,7 @@ projectName = 'test';
 // projectName = 'state-transition';
 // projectName = 'hi-low';
 // projectName = 'crazy-snake';
-// projectName = 'pixel-war';
+projectName = 'pixel-war';
 // projectName = 'box-jump';
 // projectName = 'first-game';
 // projectName = 'man-vs-penguins';
@@ -39,7 +39,7 @@ projectName = 'test';
 // projectName = 'princess-quest';
 // projectName = 'connected';
 // projectName = 'save-the-city';
-projectName = 'i-hate-rabbits';
+// projectName = 'i-hate-rabbits';
 // projectName = 'dark-blue';
 // projectName = 'the-three-hearths';
 

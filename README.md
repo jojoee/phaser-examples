@@ -57,10 +57,39 @@ A collection of games made by phaser
 - [Flood Fill](http://jojoee.github.io/phaser-examples/flood-fill/), [Ref](http://www.emanueleferonato.com/2014/09/10/the-basics-behind-diamond-digger-saga-flood-fill-algorithm/), [Ref](http://www.emanueleferonato.com/2008/06/06/flash-flood-fill-implementation/)
 - [Diamond Digger](http://jojoee.github.io/phaser-examples/diamond-digger/), [Ref](http://www.emanueleferonato.com/2014/09/23/html5-diamond-digger-saga-prototype-made-with-phaser-adding-dirt-and-water/), [Ref](http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/), [Demo](https://king.com/#!/play/diamonddigger)
 - [Sea Life Vs Mines](http://jojoee.github.io/phaser-examples/sea-life-vs-mines/), [Ref](http://www.emanueleferonato.com/2014/10/07/how-to-bring-your-html5-games-title-screen-to-life-in-a-minute-with-phaser/) - `game title`
+- [State Transition Plugin](http://jojoee.github.io/phaser-examples/state-transition-plugin/), [Ref](https://github.com/aaccurso/phaser-state-transition-plugin), [Demo](http://aaccurso.github.io/phaser-state-transition-plugin/demo/)
+- [Fruit Ninja](http://jojoee.github.io/phaser-examples/fruit-ninja/), [Ref](http://codepen.io/labdev/pen/sCAKe)
+- [Santa On The Run](http://jojoee.github.io/phaser-examples/santa-on-the-run/), [Ref](http://codepen.io/natewiley/pen/gbwWMX)
+- [Particle To Sprite](http://jojoee.github.io/phaser-examples/particle-to-sprite/), [Ref](http://codepen.io/codevinsky/pen/aocsr)
+- [Space is Key](http://jojoee.github.io/phaser-examples/space-is-key/), [Ref](http://www.emanueleferonato.com/2014/02/01/create-an-html5-game-like-space-is-key-with-a-lot-of-room-for-customization-step-2-adding-obstacles/), [Inspi](http://www.kongregate.com/games/chrisjeff/space-is-key?ref=triqui)
+- [Drop Wizard](http://jojoee.github.io/phaser-examples/drop-wizard/), [Ref](http://www.emanueleferonato.com/2015/03/05/create-an-html5-game-like-drop-wizard-with-phaser-patrolling-enemies/), [Inspi](https://itunes.apple.com/us/app/drop-wizard/id834955398?mt=8)
+- [Boom Dots](http://jojoee.github.io/phaser-examples/boom-dots/), [Ref](http://www.emanueleferonato.com/2015/04/16/create-an-html5-game-like-boom-dots-in-less-than-100-lines-of-code-with-phaser/), [Inspi](https://itunes.apple.com/us/app/boom-dots/id975047985?mt=8)
+- [The Next Arrow](http://jojoee.github.io/phaser-examples/the-next-arrow/), [Ref](http://www.emanueleferonato.com/2015/05/18/create-an-html5-game-like-the-next-arrow-using-phaser/), [Inspi](https://itunes.apple.com/us/app/the-next-arrow/id951476189?mt=8), [Demo](https://www.youtube.com/watch?v=NhvY3LOUZ3E)
+- [Spin Wheel](http://jojoee.github.io/phaser-examples/spin-wheel/), [Ref](http://www.emanueleferonato.com/2015/07/31/create-a-wheel-of-fortune-for-your-html5-games-with-phaser-in-only-a-few-lines/)
+- [Down The Mountain](http://jojoee.github.io/phaser-examples/down-the-mountain/), [Ref](http://www.emanueleferonato.com/2015/08/11/html5-down-the-mountain-game-prototype-made-with-phaser-actually-going-down-the-mountain/), [Ref](http://www.emanueleferonato.com/tag/down-the-mountain/), [Inspi](https://itunes.apple.com/us/app/down-the-mountain/id992730639?mt=8)
+- [Hexagonal Tiles](http://jojoee.github.io/phaser-examples/hexagonal-tiles/), [Ref](http://www.emanueleferonato.com/2015/02/12/how-to-find-adjacent-tiles-in-hexagonal-maps-all-and-every-case-explained/), [Ref](http://www.emanueleferonato.com/tag/hexagonal-tiles/) - `bug`
+- [Fruit Ninja 2](http://jojoee.github.io/phaser-examples/fruit-ninja-2/), [Ref](http://codepen.io/codevinsky/pen/mgwdv) - `2.0.3`
+- [Breakout](http://jojoee.github.io/phaser-examples/breakout/), [Ref](http://codepen.io/K_Cuma/pen/emaJBd) - `no assets found`
+- [Lighting](http://jojoee.github.io/phaser-examples/lighting/), [Ref](http://codepen.io/jdnic)
+- [Infinite Runner](http://jojoee.github.io/phaser-examples/infinite-runner/), [Ref](http://codepen.io/ebrewe/pen/MamqXM)
+- [Screenshake](http://jojoee.github.io/phaser-examples/screenshake/), [Ref 1](http://codepen.io/Problematic/pen/dPvBZN), [Ref 2](https://github.com/dmaslov/phaser-screen-shake), [Demo 2](https://github.com/dmaslov/super-coin-box)
+- [Super Coin Box](http://jojoee.github.io/phaser-examples/super-coin-box/), [Ref](https://github.com/dmaslov/super-coin-box), [Demo](http://dmaslov.github.io/super-coin-box/)
+
+## List - Others
+- [Phaser Jump Game](http://codepen.io/jackrugile/pen/fqHtn)
+- [Phaser & P2 Physics: Working with Polygon Colliders](http://codepen.io/codevinsky/pen/JAoHa)
+- [Drag and Drop in Phaser](http://codepen.io/jdnichollsc/pen/WbZgwM)
+- [Lives like Zelda in Phaser](http://codepen.io/jdnichollsc/pen/NPJmRq)
+- [Phaser y TimelineLite](http://codepen.io/jdnichollsc/pen/ZYeWEr)
+- [Menu](http://codepen.io/john-cheesman/pen/Gpzzbr) - `babel`
+- [Jetpack Joyride](http://zenva-runner.herokuapp.com/)
+- [Health Bar of Life with crop](http://codepen.io/jdnichollsc/pen/oXXRMz)
+- [Lives like Zelda in Phaser](http://codepen.io/jdnichollsc/pen/NPJmRq)
 
 ## TODO
 - [Alto's Adventure](http://altosadventure.com/)
 - [PirateKing](https://www.facebook.com/CashKingPirates/)
+- [True Color](https://play.google.com/store/apps/details?id=com.Tenminutes.TrueColor)
 - [Crossy Road](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad&hl=en)
   - Shadow play
   - Online play
@@ -74,7 +103,7 @@ A collection of games made by phaser
 - Implement [Tiled Map Editor](http://www.mapeditor.org/)
 - Create ONLINE game (web-based)
 - Create Bot for online game ([Tut](http://www.loskutoff.com/blog/writing-a-bot-for-online-browser-game-with-phantomjs))
-- Read all articles on
+- Study and Try
   - [x] [gamedevacademy.org](https://gamedevacademy.org/category/tutorials/)
   - [x] phaser.io (e.g. [getting-started](http://phaser.io/tutorials/getting-started), [making-your-first-phaser-game](http://phaser.io/tutorials/making-your-first-phaser-game))
   - [x] [Official Phaser Tutorials](http://phaser.io/learn/official-tutorials)
@@ -83,12 +112,17 @@ A collection of games made by phaser
   - [ ] Community Tutorials (e.g. http://phaser.io/learn, http://phaser.io/learn?page=2, http://phaser.io/learn/community-tutorials, http://phaser.io/news/category/tutorial)
   - [ ] [Labs](http://phaser.io/labs)
   - [ ] [Examples](http://phaser.io/examples)
+  - [ ] http://ezelia.com/phaser-plugins
+  - [ ] https://github.com/photonstorm/phaser-plugins
 - Creating plugin / boilerplate
   - Game title
   - Menu
   - Scoreboard
+  - Modal
   - Log
+  - Ads
   - Credit
+  - Option panel
   - Preloader (Progress bar / Splash screen )
   - Share
 - Add icon font (e.g. [Font Awesome](https://fortawesome.github.io/Font-Awesome/))
@@ -114,15 +148,24 @@ A collection of games made by phaser
 - [MightyEditor](http://mightyfingers.com/)
 - [JScrambler](https://jscrambler.com/en/), [Tut](http://www.emanueleferonato.com/2014/10/01/phaser-jscrambler-awesome-games-with-awesome-protection/)
 - http://pyxeledit.com
+- http://sourceforge.net/projects/audacity/
+- [pixel-sprite-generator](https://github.com/zfedoran/pixel-sprite-generator)
+- [UglifyJS](http://marijnhaverbeke.nl//uglifyjs), [UglifyJS2](http://lisperator.net/uglifyjs/), [JSCompression](http://jscompress.com/), https://skalman.github.io/UglifyJS-online/
 
 ## Graphic
 - [opengameart.org](http://opengameart.org/)
 - [deviantart](http://www.deviantart.com/)
+- http://itch.io/game-assets/free/tag-pixel-art
+
+## Sound
+- http://www.pdsounds.org/
+- http://www.soundsnap.com/faq
 
 ## Icon && Font
 - https://medium.com/muzli-design-inspiration/the-best-icons-resources-6430cf5227e8#.5rou8v69c
 - [Webfont Loader](https://developers.google.com/fonts/docs/webfont_loader?hl=en)
 - [ONE DAY](https://www.behance.net/gallery/23792563/ONE-DAY-Free-Font)
+- `google font monospace` (e.g. [Inconsolata](https://www.google.com/fonts/specimen/Inconsolata))
 
 ## Keyword
 - Isometric
@@ -130,6 +173,10 @@ A collection of games made by phaser
 - Indie
 - Mobile
 - Color
+
+## Image To Data URI
+- http://www.abeautifulsite.net/convert-an-image-to-a-data-uri-with-your-browser/
+- https://www.base64-image.de/
 
 ## Distribution Channel
 - Amazon Web App
@@ -148,6 +195,12 @@ A collection of games made by phaser
 - http://sailsjs.org/
 - https://github.com/feathersjs/feathers/
 - https://strongloop.com/strongblog/comparison-tools-to-automate-restarting-node-js-server-after-code-changes-forever-nodemon-nodesupervisor-nodedev/
+
+## BAAS
+- https://parse.com/
+- https://www.firebase.com/
+- https://mongolab.com/
+- https://www.pubnub.com/
 
 ## Tracking
 - http://blog.soom.la/2016/01/2016-guide-mobile-analytic-platforms.htm

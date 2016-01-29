@@ -11,6 +11,9 @@
 ## Animte
 - [Fade](https://github.com/satanas/phaser-fade-plugin)
 
+## Dialog
+- https://github.com/xaviserrag/phaserjs-dialogs-plugin
+
 ## Share
 - http://www.addthis.com/
 - http://www.sharethis.com/
@@ -19,11 +22,14 @@
 - http://momentjs.com/
 - https://github.com/mourner/suncalc
 
-## Spine animation
+## Spine Animation
 - https://github.com/StudioKrok/PhaserSpine
 
 ## Isometric
 - http://www.rotates.org/phaser/iso/
+
+## Shake
+- [phaser-screen-shake](https://github.com/dmaslov/phaser-screen-shake)
 
 ## Joystick
 - https://github.com/yoannmoinet/nipplejs - `js`
@@ -43,12 +49,10 @@
 ## Scroll
 - http://jdnichollsc.github.io/Phaser-Kinetic-Scrolling-Plugin/
 
-## Phonegap Plugin
-- http://www.joshmorony.com/the-15-most-popular-phonegap-build-plugins/
-
 ## Camera
 - http://anhnt.ninja/2015/08/19/a-stalker-on-phaser/
 - https://gist.github.com/netcell/60097d0661ad2f74a258
 
 ## ??
 - https://github.com/netcell/nine-patch-phaser-plugin
+- https://github.com/codevinsky/phaser-HudManager
