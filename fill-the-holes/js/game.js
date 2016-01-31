@@ -31,17 +31,22 @@ Game.Boot.prototype = {
 Game.Load = function(game) {};
 Game.Load.prototype = {
   preload: function() {
+    // set label
     label2 = game.add.text(Math.floor(w / 2) + 0.5, Math.floor(h / 2) - 15 + 0.5, 'loading...', {
       font: '30px Arial',
       fill: '#fff'
     });
     label2.anchor.setTo(0.5, 0.5);
+
+    // set preloading images
     preloading2 = game.add.sprite(w / 2, h / 2 + 15, 'loading2');
     preloading2.x -= preloading2.width / 2;
     preloading2.alpha = 0.5;
     preloading = game.add.sprite(w / 2, h / 2 + 15, 'loading');
     preloading.x -= preloading.width / 2;
     game.load.setPreloadSprite(preloading);
+
+    // load all assets
     game.load.image('wall', 'images/wall.png');
     game.load.image('box', 'images/box.png');
     game.load.image('hole', 'images/hole.png');
