@@ -121,23 +121,23 @@ A collection of games made by phaser
 - [Lives like Zelda in Phaser](http://codepen.io/jdnichollsc/pen/NPJmRq)
 
 ## TODO
-- [Alto's Adventure](http://altosadventure.com/)
-- [PirateKing](https://www.facebook.com/CashKingPirates/)
-- [True Color](https://play.google.com/store/apps/details?id=com.Tenminutes.TrueColor)
-- [Crossy Road](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)
-  - Shadow play
-  - Online play
-  - Shake
-- Rabbit Collector (like Neko Atsume: Kitty Collector)
-- Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
-- Implement `A* pathfinding` by [easystarjs](https://github.com/prettymuchbryce/easystarjs), [phaser_plugin_pathfinding](https://github.com/appsbu-de/phaser_plugin_pathfinding)
-- Add gulp [JSHint](http://jshint.com/)
-- Implement mobile detect by browser header ([mobile-detect.js](https://github.com/hgoebl/mobile-detect.js), [isMobile](https://github.com/kaimallea/isMobile)) or by screen width ([mydevice.io](http://mydevice.io/devices/), [viewportsizes](http://viewportsizes.com/))
-- Implement [phaser-plugin-isometric](http://www.rotates.org/phaser/iso/)
-- Implement [Tiled Map Editor](http://www.mapeditor.org/)
-- Create ONLINE game (web-based)
-- Create Bot for online game ([Tut](http://www.loskutoff.com/blog/writing-a-bot-for-online-browser-game-with-phantomjs))
-- Study and Try
+- [ ] [Alto's Adventure](http://altosadventure.com/)
+- [ ] [PirateKing](https://www.facebook.com/CashKingPirates/)
+- [ ] [True Color](https://play.google.com/store/apps/details?id=com.Tenminutes.TrueColor)
+- [ ] [Crossy Road](https://play.google.com/store/apps/details?id=com.yodo1.crossyroad)
+  - [ ] Shadow play
+  - [ ] Online play
+  - [ ] Shake
+- [ ] Rabbit Collector (like Neko Atsume: Kitty Collector)
+- [ ] Implement [phaser-plugins](https://github.com/photonstorm/phaser-plugins)
+- [ ] Implement `A* pathfinding` by [easystarjs](https://github.com/prettymuchbryce/easystarjs), [phaser_plugin_pathfinding](https://github.com/appsbu-de/phaser_plugin_pathfinding)
+- [ ] Add gulp [JSHint](http://jshint.com/)
+- [ ] Implement mobile detect by browser header ([mobile-detect.js](https://github.com/hgoebl/mobile-detect.js), [isMobile](https://github.com/kaimallea/isMobile)) or by screen width ([mydevice.io](http://mydevice.io/devices/), [viewportsizes](http://viewportsizes.com/))
+- [ ] Implement [phaser-plugin-isometric](http://www.rotates.org/phaser/iso/)
+- [ ] Implement [Tiled Map Editor](http://www.mapeditor.org/)
+- [ ] Create ONLINE game (web-based)
+- [ ] Create Bot for online game ([Tut](http://www.loskutoff.com/blog/writing-a-bot-for-online-browser-game-with-phantomjs))
+- [ ] Study and Try
   - [x] [gamedevacademy.org](https://gamedevacademy.org/category/tutorials/)
   - [x] phaser.io (e.g. [getting-started](http://phaser.io/tutorials/getting-started), [making-your-first-phaser-game](http://phaser.io/tutorials/making-your-first-phaser-game))
   - [x] [Official Phaser Tutorials](http://phaser.io/learn/official-tutorials)
@@ -148,22 +148,22 @@ A collection of games made by phaser
   - [ ] [Examples](http://phaser.io/examples)
   - [ ] http://ezelia.com/phaser-plugins
   - [ ] https://github.com/photonstorm/phaser-plugins
-- Creating plugin / boilerplate
-  - Game title
-  - Menu
-  - Scoreboard
-  - Modal
-  - Log
-  - Ads
-  - Credit
-  - Option panel
-  - Preloader (Progress bar / Splash screen )
-  - Share
-- Add icon font (e.g. [Font Awesome](https://fortawesome.github.io/Font-Awesome/))
-- Add tracking system (e.g. [Google Analytics](http://www.google.com/analytics/))
-- Implement [standardjs.com](https://github.com/feross/standard)
-- Implement [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
-- update `index.html`
+- [ ] Creating plugin / boilerplate
+  - [ ] Game title
+  - [ ] Menu
+  - [ ] Scoreboard
+  - [ ] Modal
+  - [ ] Log
+  - [ ] Advertising
+  - [ ] Credit
+  - [ ] Option panel
+  - [ ] Preloader (Progress bar / Splash screen )
+  - [ ] Share
+- [ ] Add icon font (e.g. [Font Awesome](https://fortawesome.github.io/Font-Awesome/))
+- [ ] Add tracking system (e.g. [Google Analytics](http://www.google.com/analytics/))
+- [ ] Implement [standardjs.com](https://github.com/feross/standard)
+- [ ] Implement [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
+- [ ] update `index.html`
 
 ## Getting Started
 1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
