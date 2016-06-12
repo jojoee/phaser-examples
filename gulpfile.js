@@ -2,47 +2,6 @@ var gulp        = require('gulp');
 var notify      = require('gulp-notify'); // unused
 var browserSync = require('browser-sync').create();
 
-var projectName;
-projectName = 'test';
-// projectName = 'flappy-bird';
-// projectName = 'space-hipster';
-// projectName = 'tank';
-// projectName = 'webfont';
-// projectName = 'flappy-bird-2';
-// projectName = 'doodle-jump';
-// projectName = '2048';
-// projectName = 'brick';
-// projectName = 'move-the-box';
-// projectName = 'platformer';
-// projectName = 'platformer-2';
-// projectName = 'car';
-// projectName = 'pacman';
-// projectName = 'pacman-2';
-// projectName = 'shootout';
-// projectName = 'bulletpool';
-// projectName = 'pong';
-// projectName = 'ascii-roguelike';
-// projectName = 'digger';
-// projectName = 'monster-wants-candy';
-// projectName = 'orbital-debris';
-// projectName = 'flappy-bird-reborn';
-// projectName = 'run';
-// projectName = 'splashscreen';
-// projectName = 'state-transition';
-// projectName = 'hi-low';
-// projectName = 'crazy-snake';
-projectName = 'pixel-war';
-// projectName = 'box-jump';
-// projectName = 'first-game';
-// projectName = 'man-vs-penguins';
-// projectName = 'fill-the-holes';
-// projectName = 'princess-quest';
-// projectName = 'connected';
-// projectName = 'save-the-city';
-// projectName = 'i-hate-rabbits';
-// projectName = 'dark-blue';
-// projectName = 'the-three-hearths';
-
 /*================================================================
  # HELPER
  ================================================================*/
@@ -70,12 +29,11 @@ function handleError(err) {
 gulp.task('serve', function() {
   browserSync.init({
     'server': './',
-    'startPath': '/' + projectName,
     'open': true
   });
 
-  gulp.watch('./' + projectName + '/index.html').on('change', browserSync.reload);
-  gulp.watch('./' + projectName + '/js/*.js').on('change', browserSync.reload);
+  gulp.watch('./**/*.js', { interval: 500 }).on('change', browserSync.reload);
+  gulp.watch('./**/index.html', { interval: 500 }).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
