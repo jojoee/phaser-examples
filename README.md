@@ -21,6 +21,7 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 ## TODO
 - [ ] Create landing page (`games/index.html`) and add screenshot
 - [ ] Fix `games/index.php`
+- [ ] Move `screenshots` out of repository
 - [ ] Refactor all games (make it same structure)
 - [ ] Fix and update `/games/games.js`
 - [ ] [Alto's Adventure](http://altosadventure.com/)
@@ -68,7 +69,6 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 - [ ] update `index.html`
 
 ## Note & Tool & Resource
-- What the difference between `master` and `gh-pages` branch is `screenshots` folder
 - Using `capture.js` for capture game screenshot (using [node-webshot](https://github.com/brenden/node-webshot))
 - JavaScript Style Guide: [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - Based on [Phaser](http://phaser.io/) created by [Photon Storm](http://www.photonstorm.com/)
