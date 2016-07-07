@@ -5,6 +5,6 @@ bower_components/
 # Others
 bk
 bk*
-screenshots/
+# screenshots/
 README*.md
 !README-*.md
