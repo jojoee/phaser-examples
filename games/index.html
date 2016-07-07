@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phaser Examples</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: #ffffff;
+  font-size: 100%;
+}
+
+.wrapper {
+  margin: 24px;
+}
+
+#game-list {
+
+}
+
+#game-list > ul {
+
+}
+
+#game-list > ul > li {
+  display: block;
+  padding: 24px;
+}
+
+#game-list > ul > li:nth-child(even) {
+  background-color: #f9f4f4;
+  border: 1px solid #cecece;
+  border-radius: 2px;
+}
+
+#game-list .game {
+  
+}
+
+#game-list .img {
+  height: 256px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <h2 class="logo">Phaser Examples</h2>
+  <div id="game-list"></div>
+</div>
+<script id="game-template" type="text/x-handlebars-template">
+  {{#list games}}
+    <div
+      id="game-{{id}}"
+      class="game {{#unless isPlayable}}notplayable{{/unless}}">
+      <div class="name">{{name}}</div>
+      <div class="desc">{{description}}</div>
+      <div class="version">Phaser version: {{phaserVersion}}</div>
+      <div class="screenshots">
+        <ul>
+          {{#each screenshots}}
+            <li>
+              <div class="img" style="background-image: url(../screenshots/{{this}});"></div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="references">
+        <ul>
+          {{#each references}}
+            <li>
+              <a href="{{this}}" target="_blank">{{this}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="tags">
+        <ul>
+          {{#each tags}}
+            <li>
+              <a href="{{this}}" target="_blank">{{this}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="inspirations">
+        <ul>
+          {{#each inspirations}}
+            <li>
+              <a href="{{this}}" target="_blank">{{this}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="demos">
+        <ul>
+          {{#each demos}}
+            <li>
+              <a href="{{this}}" target="_blank">{{this}}</a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  {{/list}}
+  </div>
+</script>
+<script src="games.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script>
+Handlebars.registerHelper('list', function(items, options) {
+  var out = '<ul>';
+  for (var i = 0, l = items.length; i < l; i++) {
+    out = out + '<li>' + options.fn(items[i]) + '</li>';
+  }
+
+  return out + '</ul>';
+});
+
+var source = document.getElementById('game-template').innerHTML,
+  template = Handlebars.compile(source),
+  context = {games: games},
+  html = template(context),
+  gameListEle = document.getElementById('game-list');
+
+gameListEle.innerHTML = html;
+</script>
+</body>
+</html>

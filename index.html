@@ -1,35 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
 <title>Phaser Examples</title>
-<style>
-* { margin: 0; padding: 0; }
-body { font-family: 'Open Sans', monospace; background-color: #ffffff; font-size: 100%; }
-.wel { margin-bottom: 24px; color: #7EA2B8; }
-.wel a:hover {color: #03b48d !important; }
-.wrapper { text-align: center; margin-top: 24px; }
-.logo { color: #03b48d; font-weight: bold; font-size: 60px; margin-bottom: 12px; }
-.project { font-size: 16px; }
-a { text-decoration: none; }
-a:hover { color: #fff !important; }
-ul.list { list-style: none; }
-ul.list li { margin-bottom: 12px; }
-ul.list li a { color: #03b48d; }
-ul.list li a:hover { background-color: #03b48d; }
-ul.list ul li a { color: #F37B7B; }
-ul.list ul li a:before { content: '-'; margin-right: 6px; }
-ul.list ul li a:hover { background-color: #F37B7B; }
-</style>
 </head>
 <body>
-<div class="wrapper">
-<div class="wel">
-  <h2 class="logo">Phaser Examples</h2>
-  <p>
-    Please see <a href="https://github.com/jojoee/phaser-examples/" title="README.md"><code>README.md</code></a>
-  </p>
-</div>
-</div>
+<script>
+/**
+ * [removeTrailingSlash description]
+ *
+ * @see http://stackoverflow.com/questions/6680825/return-string-without-trailing-slash
+ *  
+ * @param  {[type]} str [description]
+ * @return {[type]}     [description]
+ */
+function removeTrailingSlash(str) {
+  return str.replace(/\/$/, '');
+}
+
+/**
+ * [getRedirectUrl description]
+ * HACK
+ * 
+ * test list
+ * - file:///C:/xampp/htdocs/jojoee.com/phaser-examples/index.html
+ * - http://jojoee.dev/phaser-examples/
+ * - http://jojoee.dev/phaser-examples/index.html
+ * 
+ * @return {[type]} [description]
+ */
+function getRedirectUrl() {
+  var url = window.location.href;
+  var indexFileName = 'index.html';
+  if (url.indexOf(indexFileName) >= 0) {
+    url = url.replace(indexFileName, '');
+  }
+
+  url = removeTrailingSlash(url);
+
+  return url + '/games/index.html';
+}
+
+// redirect
+var redirectUrl = getRedirectUrl();
+window.location.href = redirectUrl;
+</script>  
 </body>
 </html>

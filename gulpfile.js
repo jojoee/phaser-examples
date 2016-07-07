@@ -29,11 +29,12 @@ function handleError(err) {
 gulp.task('serve', function() {
   browserSync.init({
     'server': './',
+    'startPath': '/games/',
     'open': true
   });
 
-  gulp.watch('./**/*.js', { interval: 500 }).on('change', browserSync.reload);
-  gulp.watch('./**/index.html', { interval: 500 }).on('change', browserSync.reload);
+  gulp.watch('./games/**/index.html').on('change', browserSync.reload);
+  gulp.watch('./games/**/js/*.js').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);

@@ -1,9 +1,10 @@
-# dependency
+# Dependency
 node_modules/
-components/
+bower_components/
 
-# backup
+# Others
 bk
 bk*
+screenshots/
 README*.md
 !README-*.md

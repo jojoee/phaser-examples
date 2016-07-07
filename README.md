@@ -1,115 +1,13 @@
 # Phaser Examples
-A collection of games made by phaser
+A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-examples/games/)
 
-## List
-- [Flappy bird](http://jojoee.github.io/phaser-examples/flappy-bird/), [Ref](https://developer.amazon.com/public/community/post/Tx1NQ9QEA4MWGTY/Intro-To-Phaser-Part-1-Setting-Up-Your-Dev-Environment-and-Phaser)
-- [Tank](http://jojoee.github.io/phaser-examples/tank/), [Ref](http://phaser.io/tutorials/coding-tips-002/)
-- [Flappy bird 2](http://jojoee.github.io/phaser-examples/flappy-bird-2/), [Ref](http://blog.lessmilk.com/how-to-make-flappy-bird-in-html5-2/)
-- [Doodle Jump](http://jojoee.github.io/phaser-examples/doodle-jump/), [Ref](http://phaser.io/tutorials/coding-tips-003/)
-- [Platformer](http://jojoee.github.io/phaser-examples/platformer/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game/index)
-- [Space Hipster](http://jojoee.github.io/phaser-examples/space-hipster/), [Ref](https://gamedevacademy.org/html5-phaser-tutorial-spacehipster-a-space-exploration-game/)
-- [2048](http://jojoee.github.io/phaser-examples/2048/), [Ref](http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser)
-- [Brick](http://jojoee.github.io/phaser-examples/brick/), [Ref](http://dailyjs.com/2014/09/16/phaser-tutorial/) - No Assets Found
-- [Sokoban Swipe](http://jojoee.github.io/phaser-examples/sokoban-swipe/), [Ref](http://www.emanueleferonato.com/2014/11/13/html5-swipe-controlled-sokoban-game-made-with-phaser)
-- [Platformer 2](http://jojoee.github.io/phaser-examples/platformer-2/), [Ref](http://phaser.io/tutorials/coding-tips-004)
-- [Car](http://jojoee.github.io/phaser-examples/car/), [Ref](http://phaser.io/tutorials/coding-tips-005)
-- [Pacman](http://jojoee.github.io/phaser-examples/pacman/), [Ref](http://phaser.io/tutorials/coding-tips-005)
-- [Pacman 2](http://jojoee.github.io/phaser-examples/pacman-2/), [Ref](https://github.com/plissken2013es/phaserPacmanClone), [Demo](http://luisquin.com/lq/phaserPacman/index.html), [Theory](http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior), [Original Work](http://phaser.io/tutorials/coding-tips-005)
-- [Shootout](http://jojoee.github.io/phaser-examples/shootout/), [Ref](http://phaser.io/tutorials/coding-tips-006)
-- [Bulletpool](http://jojoee.github.io/phaser-examples/bulletpool/), [Ref](http://phaser.io/tutorials/coding-tips-007)
-- Paths
-  - [Aliens](http://jojoee.github.io/phaser-examples/paths/aliens.html)
-  - [Face](http://jojoee.github.io/phaser-examples/paths/face.html)
-  - [Paths](http://jojoee.github.io/phaser-examples/paths/paths.html)
-- [Pong](http://jojoee.github.io/phaser-examples/pong/), [Ref](https://github.com/zekechan/phaser-html5-tutorial-pong)
-- [ASCII Roguelike](http://jojoee.github.io/phaser-examples/ascii-roguelike/), [Ref](http://gamedevelopment.tutsplus.com/tutorials/how-to-make-your-first-roguelike--gamedev-13677) - `1.1.2`
-- [Digger](http://jojoee.github.io/phaser-examples/digger/), [Ref](https://gamedevacademy.org/make-a-quick-phaser-compatible-game-using-mightyeditor/) - `2.0.7`, `MightyEditor`, `difference structure`, `no assets found`
-- [Monster Wants Candy](http://jojoee.github.io/phaser-examples/monster-wants-candy/), [Ref](http://gamedevelopment.tutsplus.com/tutorials/getting-started-with-phaser-building-monster-wants-candy--cms-21723), [Src](https://github.com/tutsplus/Monster-Wants-Candy-demo), [Demo](http://candy.enclavegames.com/) - `2.0.6`
-- [Orbital Debris](http://jojoee.github.io/phaser-examples/orbital-debris/), [Ref](http://www.allworkallplay.org/blog/orbital-debris-making-an-html5-game-with-phaser) - `1.1.6`
-- [Flappy Bird Reborn](http://jojoee.github.io/phaser-examples/flappy-bird-reborn/), [Ref](https://github.com/codevinsky/flappy-bird-reborn), [Demo](http://flappy-bird-reborn.herokuapp.com/)
-- [Run](http://jojoee.github.io/phaser-examples/run/), [Ref](http://www.lessmilk.com/games/1/)
-- [Splashscreen](http://jojoee.github.io/phaser-examples/splashscreen/)
-- [State Transition](http://jojoee.github.io/phaser-examples/state-transition/), [Ref](https://github.com/aaccurso/phaser-state-transition-plugin)
-- [Hi Low](http://jojoee.github.io/phaser-examples/hi-low/), [Ref](http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-states/) - `2.0.7`
-- [Crazy Snake](http://jojoee.github.io/phaser-examples/crazy-snake/), [Ref](http://www.lessmilk.com/games/12/)
-- [Pixel War](http://jojoee.github.io/phaser-examples/pixel-war/), [Ref](http://www.lessmilk.com/games/2/)
-- [Box Jump](http://jojoee.github.io/phaser-examples/box-jump/), [Ref](http://www.lessmilk.com/games/3/) - `bug`
-- [First Game](http://jojoee.github.io/phaser-examples/first-game/), [Ref](http://phaser.io/tutorials/making-your-first-phaser-game)
-- [Man vs Penguins](http://jojoee.github.io/phaser-examples/man-vs-penguins/), [Ref](http://www.lessmilk.com/games/4/) - `bug`
-- [Fill the Holes](http://jojoee.github.io/phaser-examples/fill-the-holes/), [Ref](http://www.lessmilk.com/games/5/) - `bug`
-- [Princess Quest](http://jojoee.github.io/phaser-examples/princess-quest/), [Ref](http://www.lessmilk.com/games/6/) - `bug`
-- [Connected](http://jojoee.github.io/phaser-examples/connected/), [Ref](http://www.lessmilk.com/games/7/) - `bug`
-- [Save the City](http://jojoee.github.io/phaser-examples/save-the-city/), [Ref](http://www.lessmilk.com/games/8/) - `bug`
-- [I Hate Rabbits](http://jojoee.github.io/phaser-examples/i-hate-rabbits/), [Ref](http://www.lessmilk.com/games/9/)
-- [Dark Blue](http://jojoee.github.io/phaser-examples/dark-blue/), [Ref](http://www.lessmilk.com/games/10/) - `bug`
-- [The Three Hearths](http://jojoee.github.io/phaser-examples/the-three-hearths/), [Ref](http://www.lessmilk.com/games/11/) - `bug`
-- [1 + 2 = 3](http://jojoee.github.io/phaser-examples/one-plus-two-equal-three/), [Ref](http://www.emanueleferonato.com/2015/02/23/123-html5-game-made-in-100-lines-of-code-brackets-included-using-phaser/), [Inspi](https://itunes.apple.com/us/app/1+2-3/id953831664)
-- [Clocks](http://jojoee.github.io/phaser-examples/clocks/), [Ref](http://www.emanueleferonato.com/2016/01/07/clocks-the-game-html5-prototype-step-3-actually-playing-the-game/)
-- [Two Cars](http://jojoee.github.io/phaser-examples/two-cars/), [Ref](http://www.emanueleferonato.com/2015/11/03/2-cars-html5-prototype-part-ii-adding-targets-and-steering/), [Ref 2](http://www.emanueleferonato.com/2015/10/26/creation-of-a-2-cars-html-prototype-using-phaser-and-arcade-physics/)
-- [String Avoider](http://jojoee.github.io/phaser-examples/string-avoider/), [Ref](http://www.emanueleferonato.com/2014/06/10/html5-string-avoider-game-made-with-phaser/), [Demo](http://www.kongregate.com/games/triqui/stringy)
-- [Straight Rush](http://jojoee.github.io/phaser-examples/straight-rush/), [Ref](http://www.emanueleferonato.com/2014/07/30/html5-one-button-minigame-prototype-made-with-phaser/) - `2.0.7`
-- [Mass Attack](http://jojoee.github.io/phaser-examples/mass-attack/), [Ref](http://www.emanueleferonato.com/2014/08/05/create-an-html5-game-like-mass-attack-with-phaser-just-using-tweens-well-almost/) - `2.0.7`
-- [One Tap RPG](http://jojoee.github.io/phaser-examples/one-tap-rpg/), [Ref](http://www.emanueleferonato.com/2014/08/13/how-to-create-an-html5-rpg-physics-driven-game-with-phaser/), [Inspi](https://itunes.apple.com/it/app/id891234532) - `2.0.7`
-- [10000000](http://jojoee.github.io/phaser-examples/10000000/), [Ref](http://www.emanueleferonato.com/2014/07/24/html5-drag-and-match-engine-made-with-phaser/), [Inspi](https://itunes.apple.com/en/app/10000000/id544385071) - `2.0.7`
-- [Spellfall](http://jojoee.github.io/phaser-examples/spellfall/), [Ref](http://www.emanueleferonato.com/2014/08/19/how-to-create-an-html5-swap-and-match-3-game-engine-like-the-one-used-in-spellfall-ios-game-using-phaser/), [Inspi](https://itunes.apple.com/gb/app/spellfall-puzzle-rpg/id809027853) - `2.0.7`
-- [Spring Ninja](http://jojoee.github.io/phaser-examples/spring-ninja/), [Ref](http://www.emanueleferonato.com/2015/03/16/html5-prototype-of-an-endless-runner-game-like-spring-ninja/), [Inspi](https://itunes.apple.com/us/app/spring-ninja/id963980545)
-- [Christmas Quest](http://jojoee.github.io/phaser-examples/christmas-quest/), [Ref](http://www.emanueleferonato.com/2014/11/18/upcoming-html5-christmas-game-christmas-quest/) - `game title`, `2.1.1`
-- [Bresenham Light](http://jojoee.github.io/phaser-examples/bresenham-light/), [Ref](http://www.emanueleferonato.com/2015/12/15/calculating-dynamic-light-and-shadows-in-tile-based-roguelike-games-part-3-let-there-be-bresenham-light/), [Ref](http://deepnight.net/bresenham-magic-raycasting-line-of-sight-pathfinding/)
-- [Horror](http://jojoee.github.io/phaser-examples/horror/), [Ref](http://www.emanueleferonato.com/2014/10/21/phaser-tutorial-how-to-create-an-html5-survival-horror-game-in-6-easy-steps/), [Ref](http://www.emanueleferonato.com/2014/10/10/a-quick-html5-survival-horror-prototype-made-with-phaser/), [Demo](http://www.emanueleferonato.com/wp-content/uploads/2014/10/survival/) - `2.1.2`
-- [Rise Above](http://jojoee.github.io/phaser-examples/rise-above/), [Ref](http://www.emanueleferonato.com/2015/12/24/new-minibook-released-create-html5-vertical-endless-runner-cross-platform-games/), [Ref 2](http://www.emanueleferonato.com/2015/11/11/creation-of-an-html5-game-like-rise-above-using-phaser-and-arcade-physics-step-2/), [Ref 3](http://www.emanueleferonato.com/2015/10/23/creation-of-an-html5-game-like-rise-above-using-phaser-and-arcade-physics-step-1/), [Demo](http://www.emanueleferonato.com/wp-content/uploads/2015/12/riseabove/), [Inspi](https://itunes.apple.com/nz/app/rise-above/id1039989390) - `bug`, `obfuscate`
-- [Diamond Dash](http://jojoee.github.io/phaser-examples/diamond-dash/), [Ref](http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/)
-- [Flood Fill](http://jojoee.github.io/phaser-examples/flood-fill/), [Ref](http://www.emanueleferonato.com/2014/09/10/the-basics-behind-diamond-digger-saga-flood-fill-algorithm/), [Ref](http://www.emanueleferonato.com/2008/06/06/flash-flood-fill-implementation/)
-- [Diamond Digger](http://jojoee.github.io/phaser-examples/diamond-digger/), [Ref](http://www.emanueleferonato.com/2014/09/23/html5-diamond-digger-saga-prototype-made-with-phaser-adding-dirt-and-water/), [Ref](http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/), [Demo](https://king.com/#!/play/diamonddigger)
-- [Sea Life Vs Mines](http://jojoee.github.io/phaser-examples/sea-life-vs-mines/), [Ref](http://www.emanueleferonato.com/2014/10/07/how-to-bring-your-html5-games-title-screen-to-life-in-a-minute-with-phaser/) - `game title`
-- [State Transition Plugin](http://jojoee.github.io/phaser-examples/state-transition-plugin/), [Ref](https://github.com/aaccurso/phaser-state-transition-plugin), [Demo](http://aaccurso.github.io/phaser-state-transition-plugin/demo/)
-- [Fruit Ninja](http://jojoee.github.io/phaser-examples/fruit-ninja/), [Ref](http://codepen.io/labdev/pen/sCAKe)
-- [Santa On The Run](http://jojoee.github.io/phaser-examples/santa-on-the-run/), [Ref](http://codepen.io/natewiley/pen/gbwWMX)
-- [Particle To Sprite](http://jojoee.github.io/phaser-examples/particle-to-sprite/), [Ref](http://codepen.io/codevinsky/pen/aocsr)
-- [Space is Key](http://jojoee.github.io/phaser-examples/space-is-key/), [Ref](http://www.emanueleferonato.com/2014/02/01/create-an-html5-game-like-space-is-key-with-a-lot-of-room-for-customization-step-2-adding-obstacles/), [Ref 2](http://www.emanueleferonato.com/2014/01/15/create-an-html5-game-like-space-is-key-with-a-lot-of-room-for-customization/), [Inspi](http://www.kongregate.com/games/chrisjeff/space-is-key?ref=triqui)
-- [Drop Wizard](http://jojoee.github.io/phaser-examples/drop-wizard/), [Ref](http://www.emanueleferonato.com/2015/03/05/create-an-html5-game-like-drop-wizard-with-phaser-patrolling-enemies/), [Ref 2](http://www.emanueleferonato.com/2015/03/03/create-an-html5-game-like-drop-wizard-with-phaser-player-fire-by-extending-sprite-class/), [Ref 3](http://www.emanueleferonato.com/2015/01/15/create-an-html5-game-like-drop-wizard-with-phaser-player-movement/), [Inspi](https://itunes.apple.com/us/app/drop-wizard/id834955398)
-- [Boom Dots](http://jojoee.github.io/phaser-examples/boom-dots/), [Ref](http://www.emanueleferonato.com/2015/04/16/create-an-html5-game-like-boom-dots-in-less-than-100-lines-of-code-with-phaser/), [Inspi](https://itunes.apple.com/us/app/boom-dots/id975047985)
-- [The Next Arrow](http://jojoee.github.io/phaser-examples/the-next-arrow/), [Ref](http://www.emanueleferonato.com/2015/05/18/create-an-html5-game-like-the-next-arrow-using-phaser/), [Inspi](https://itunes.apple.com/us/app/the-next-arrow/id951476189), [Demo](https://www.youtube.com/watch?v=NhvY3LOUZ3E)
-- [Spin Wheel](http://jojoee.github.io/phaser-examples/spin-wheel/), [Ref](http://www.emanueleferonato.com/2015/07/31/create-a-wheel-of-fortune-for-your-html5-games-with-phaser-in-only-a-few-lines/)
-- [Down The Mountain](http://jojoee.github.io/phaser-examples/down-the-mountain/), [Ref](http://www.emanueleferonato.com/2015/08/11/html5-down-the-mountain-game-prototype-made-with-phaser-actually-going-down-the-mountain/), [Ref](http://www.emanueleferonato.com/tag/down-the-mountain/), [Inspi](https://itunes.apple.com/us/app/down-the-mountain/id992730639)
-- [Hexagonal Tiles](http://jojoee.github.io/phaser-examples/hexagonal-tiles/), [Ref](http://www.emanueleferonato.com/2015/02/12/how-to-find-adjacent-tiles-in-hexagonal-maps-all-and-every-case-explained/), [Ref](http://www.emanueleferonato.com/tag/hexagonal-tiles/) - `bug`
-- [Fruit Ninja 2](http://jojoee.github.io/phaser-examples/fruit-ninja-2/), [Ref](http://codepen.io/codevinsky/pen/mgwdv) - `2.0.3`
-- [Breakout](http://jojoee.github.io/phaser-examples/breakout/), [Ref](http://codepen.io/K_Cuma/pen/emaJBd) - `no assets found`
-- [Lighting](http://jojoee.github.io/phaser-examples/lighting/), [Ref](http://codepen.io/jdnic)
-- [Infinite Runner](http://jojoee.github.io/phaser-examples/infinite-runner/), [Ref](http://codepen.io/ebrewe/pen/MamqXM)
-- [Screenshake](http://jojoee.github.io/phaser-examples/screenshake/), [Ref 1](http://codepen.io/Problematic/pen/dPvBZN), [Ref 2](https://github.com/dmaslov/phaser-screen-shake), [Demo 2](https://github.com/dmaslov/super-coin-box)
-- [Super Coin Box](http://jojoee.github.io/phaser-examples/super-coin-box/), [Ref](https://github.com/dmaslov/super-coin-box), [Demo](http://dmaslov.github.io/super-coin-box/)
-- [Crack Alien Code](http://jojoee.github.io/phaser-examples/crack-alien-code/), [Ref](http://www.emanueleferonato.com/2015/05/28/play-crack-alien-code-an-html5-speed-memory-game-you-are-about-to-learn-how-to-code/), [Demo](http://www.emanueleferonato.com/wp-content/uploads/2015/05/cac/) - `sound control`, `sound`, `obfuscate`, `bug`
-- [Horror Ray Casting](http://jojoee.github.io/phaser-examples/horror-ray-casting/), [Ref 1](https://github.com/byronknoll/visibility-polygon-js), [Ref 2](http://www.byronknoll.com/visibility.html), [Ref 3](http://www.emanueleferonato.com/2015/02/03/play-with-light-and-dark-using-ray-casting-and-visibility-polygons/)
-- [gyro.js](http://jojoee.github.io/phaser-examples/gyro.js/), [Ref](http://www.emanueleferonato.com/2015/01/10/playing-with-phaser-and-accelerometer-with-gyro-js/), [Ref 2](https://github.com/tomgco/gyro.js)
-- [Easystarjs](http://jojoee.github.io/phaser-examples/easystarjs/), [Ref](http://www.emanueleferonato.com/2015/07/03/pure-javascript-a-maze-solving-with-a-bit-of-magic-thanks-to-phaser/), [Ref 2](https://github.com/appsbu-de/phaser_plugin_pathfinding), [Ref 3](http://www.easystarjs.com/)
-- [Maze](http://jojoee.github.io/phaser-examples/maze/), [Ref](http://www.emanueleferonato.com/2015/06/30/pure-javascript-perfect-tile-maze-generation-with-a-bit-of-magic-thanks-to-phaser/)
-- [Endless Scale](http://jojoee.github.io/phaser-examples/endless-scale/), [Ref](http://www.emanueleferonato.com/2015/03/25/quick-tip-how-to-scale-your-html5-endless-runner-game-to-play-it-on-mobile-devices/) - `scale`
-- [Angry Birds Space](http://jojoee.github.io/phaser-examples/angry-birds-space/), [Ref](http://www.emanueleferonato.com/2015/06/19/simulate-planet-gravity-with-phaser-box2d-as-seen-on-angry-birds-space/), [Inspi](http://space.angrybirds.com/launch/)
-- [Spring Ninja Double Jump](http://jojoee.github.io/phaser-examples/spring-ninja-double-jump/), [Ref 1](http://www.emanueleferonato.com/2015/06/12/the-basics-of-double-jump-concept-in-an-endless-runner-game-like-spring-ninja/), [Ref 2](http://www.emanueleferonato.com/2015/03/20/html5-spring-ninja-game-update-bug-fix/), [Ref 3](http://www.emanueleferonato.com/2015/03/16/html5-prototype-of-an-endless-runner-game-like-spring-ninja/)
-- [Particle Storm](http://jojoee.github.io/phaser-examples/particle-storm/), [Ref 1](http://www.emanueleferonato.com/2015/10/08/create-stunning-html5-particle-effects-with-phaser-particle-storm/), [Ref 2](http://www.emanueleferonato.com/wp-content/uploads/2015/10/particle01/), [Ref 3](http://phaser.io/shop/plugins/particlestorm)
-- [Radical](http://jojoee.github.io/phaser-examples/radical/), [Ref 1](http://www.emanueleferonato.com/2015/11/13/creation-of-an-html5-game-like-radical-using-phaser-and-arcade-physics-step-1/), [Ref 2](http://www.emanueleferonato.com/2015/11/25/creation-of-an-html5-game-like-radical-using-phaser-and-arcade-physics-step-2/), [Ref 3](http://www.emanueleferonato.com/tag/radical/), [Inspi](https://itunes.apple.com/us/app/radical/id919034275)
-- [Bouncing Menu](http://jojoee.github.io/phaser-examples/bouncing-menu/), [Ref](http://www.emanueleferonato.com/2015/10/06/give-your-html5-game-menu-a-nice-bounce-effect-with-phaser/)
-- [Level Selection](http://jojoee.github.io/phaser-examples/level-selection/), [Ref](http://www.emanueleferonato.com/2016/01/25/create-a-html5-level-select-screen-controlled-by-swipe-without-actually-checking-for-swipes/)
-- [Cube Jump](http://jojoee.github.io/phaser-examples/cube-jump/), [Ref](http://www.emanueleferonato.com/2015/08/18/creation-of-the-engine-behind-cube-jump-ios-game-with-phaser/), [Ref 2](http://www.emanueleferonato.com/wp-content/uploads/2015/08/cubejump/), [Inspi](https://itunes.apple.com/us/app/cube-jump/id1015137537)
-- Boids, [Ref](http://www.red3d.com/cwr/boids/), [Ref 2](http://www.kfish.org/boids/pseudocode.html) - boids algorithm
-  - [Flocking](http://jojoee.dev/phaser-examples/boids/flocking.html), [Ref](http://www.emanueleferonato.com/2016/01/12/how-to-simulate-flocking-behavior-with-boids-using-html5-and-phaser/)
-  - [Steering](http://jojoee.dev/phaser-examples/boids/steering.html), [Ref](http://www.emanueleferonato.com/2016/02/01/understanding-steering-behavior-html5-example-using-phaser/)
-- [Draggable and Scrollable with Inertia](http://jojoee.github.io/phaser-examples/draggable-and-scrollable-with-inertia/), [Ref](http://www.emanueleferonato.com/2016/01/18/how-to-create-a-html-draggable-and-scrollable-map-with-inertia-using-phaser-framework/), [Ref 2](http://www.emanueleferonato.com/2015/01/21/create-an-html5-level-selection-screen-using-a-scrollable-map-like-in-hero-emblems-game-using-phaser/), [Inspi](https://itunes.apple.com/vn/app/id645797558)
-- [Level Selection With Locked and Stars](http://jojoee.github.io/phaser-examples/level-selection-with-locked-and-stars/), [Ref](http://www.emanueleferonato.com/2014/12/05/html5-phaser-tutorial-how-to-create-a-level-selection-screen-with-locked-levels-and-stars-finished-prototype/), [Ref 2](http://www.emanueleferonato.com/2014/11/21/html5-phaser-tutorial-how-to-create-a-level-selection-screen-with-locked-levels-and-stars/)
-- [Magick](http://jojoee.github.io/phaser-examples/magick/), [Ref](http://www.emanueleferonato.com/2015/05/12/phaser-tutorial-html5-player-movement-as-seen-in-ipad-magick-game-using-mostly-tile-maps/), [Inspi](https://itunes.apple.com/us/app/magick/id657336338), [Magick - Launch Trailer (iPad)](https://www.youtube.com/watch?v=WGeKW8gA3WM), [Magick - iPad/iPad 2/New iPad/iPad Mini/iPad Air - HD Gameplay Trailer](https://www.youtube.com/watch?v=gGRohOMgvDY) - `player movement`
-- [String Avoider 2](http://jojoee.github.io/phaser-examples/string-avoider-2/), [Ref](http://www.emanueleferonato.com/2014/12/15/phaser-tutorial-creation-of-an-html5-string-avoider-prototype-working-on-mobile-devices-too/), [Demo](http://www.emanueleferonato.com/wp-content/uploads/2014/12/avoider/)
-- [Character Selection](http://jojoee.github.io/phaser-examples/character-selection/), [Ref](http://www.emanueleferonato.com/2016/01/20/phaser-tutorial-creation-of-a-html5-character-selection-screen-like-the-one-in-crossy-road-ios-smash-hit/) - Character selection like Crossy Road
-- [Dashy Panda](http://jojoee.github.io/phaser-examples/dashy-panda/), [Ref](http://www.emanueleferonato.com/2016/01/15/phaser-tutorial-create-a-html5-prototype-of-the-ios-game-dashy-panda/), [Inspi](https://itunes.apple.com/us/app/dashy-panda-and-friends/id989937013)
-- [Rush Hour](http://jojoee.github.io/phaser-examples/rush-hour/), [Ref](http://www.emanueleferonato.com/2015/08/27/learn-how-phaser-manages-draggable-objects-by-making-the-html5-engine-behind-rush-hour-game/), [Demo](http://www.thinkfun.com/play-online/rush-hour/)
-- [Box2D](http://jojoee.github.io/phaser-examples/box2d/), [Ref](http://www.emanueleferonato.com/2015/06/16/introducing-phaser-box2d/), [Ref 2](http://phaser.io/shop/plugins/box2d)
-- [Totem Destroyer](http://jojoee.github.io/phaser-examples/totem-destroyer/), [Ref](http://www.emanueleferonato.com/wp-content/uploads/2014/04/totem/), [Ref 2](http://www.emanueleferonato.com/2014/04/21/html5-totem-destroyer-fully-working-prototype-using-phaser/), [Ref 3](http://www.emanueleferonato.com/2014/02/13/complete-html5-totem-destroyer-engine-using-physicsjs/)
-- [Iromeku](http://jojoee.github.io/phaser-examples/iromeku/), [Ref](http://www.emanueleferonato.com/2015/06/10/html5-prototype-of-the-iromeku-game-engine-made-with-phaser/), [Ref 2](http://www.emanueleferonato.com/2013/03/20/prototype-of-the-iromeku-game-engine/)
-- [Mikey Hooks](http://jojoee.github.io/phaser-examples/mikey-hooks/), [Ref](http://www.emanueleferonato.com/2015/09/29/html5-box2d-hook-like-the-one-seen-on-ios-mikey-hooks-game/), [Ref 2](http://www.emanueleferonato.com/2015/10/13/play-and-get-the-source-code-of-hookpod-a-flash-game-i-never-released/), [Ref 3](http://www.emanueleferonato.com/tag/mikey-hooks/), [Inspi](https://play.google.com/store/apps/details?id=com.noodlecake.mikeyhooks), [Mikey Hooks - Official Game Trailer](https://www.youtube.com/watch?v=aBsOanrh3Jk), [MIKEY HOOKS (iPhone Gameplay Video)](https://www.youtube.com/watch?v=yqdPRkMsroA)
-- [Trick Shot](http://jojoee.github.io/phaser-examples/trick-shot/), [Inspi](https://itunes.apple.com/us/app/trick-shot/id1016915419), [Ref](http://www.emanueleferonato.com/wp-content/uploads/2015/09/trickshot3/), [Ref 2](http://www.emanueleferonato.com/2015/09/16/trick-shot-html5-game-prototype-part-3-handling-collisions/), [Ref 3](http://www.emanueleferonato.com/tag/trick-shot/)
-- [Sokoban Responsive](http://jojoee.github.io/phaser-examples/sokoban-responsive/), [Ref](http://www.emanueleferonato.com/2015/02/26/the-basics-of-responsive-html5-games/), [Ref 2](http://www.emanueleferonato.com/tag/sokoban/) - `responsive`
-- [Goat Rider](http://jojoee.github.io/phaser-examples/goat-rider/), [Ref](http://www.emanueleferonato.com/2015/12/02/html5-game-prototype-like-goat-rider-powered-by-phaser-and-arcade-physics/), [Ref 2](http://www.emanueleferonato.com/tag/goat-rider/), [Inspi](https://itunes.apple.com/us/app/goat-rider/id1045358578), [Goat Rider - Official Game Trailer](https://www.youtube.com/watch?v=Mc2rtBDgzkw)
+## Getting Started
+1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
+2. Install global: `npm install -g bower`
+3. Install dependencies: `bower install && npm install`
+4. Start: `gulp`
 
-## List - Others
+## Other Games
 - [Phaser Jump Game](http://codepen.io/jackrugile/pen/fqHtn)
 - [Phaser & P2 Physics: Working with Polygon Colliders](http://codepen.io/codevinsky/pen/JAoHa)
 - [Drag and Drop in Phaser](http://codepen.io/jdnichollsc/pen/WbZgwM)
@@ -121,6 +19,10 @@ A collection of games made by phaser
 - [Lives like Zelda in Phaser](http://codepen.io/jdnichollsc/pen/NPJmRq)
 
 ## TODO
+- [ ] Create landing page (`games/index.html`) and add screenshot
+- [ ] Fix `games/index.php`
+- [ ] Refactor all games (make it same structure)
+- [ ] Fix and update `/games/games.js`
 - [ ] [Alto's Adventure](http://altosadventure.com/)
 - [ ] [PirateKing](https://www.facebook.com/CashKingPirates/)
 - [ ] [True Color](https://play.google.com/store/apps/details?id=com.Tenminutes.TrueColor)
@@ -165,12 +67,8 @@ A collection of games made by phaser
 - [ ] Implement [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
 - [ ] update `index.html`
 
-## Getting Started
-1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
-2. Install global - `npm install -g bower gulp browser-sync`
-3. Install dependencies - `bower install && npm install`
-
 ## Note & Tool & Resource
+- Using `capture.js` for capture game screenshot (using [node-webshot](https://github.com/brenden/node-webshot))
 - JavaScript Style Guide: [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - Based on [Phaser](http://phaser.io/) created by [Photon Storm](http://www.photonstorm.com/)
 - [UglifyJS Online](https://skalman.github.io/UglifyJS-online/)

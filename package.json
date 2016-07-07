@@ -18,15 +18,10 @@
   "devDependencies": {
     "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
-    "gulp-notify": "^2.2.0"
+    "gulp-notify": "^2.2.0",
+    "webshot": "^0.18.0"
   },
   "scripts": {
-    "postinstall": "bower install",
-
-    "pretest": "bower install && npm install",
-    "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js  --single-run",
-
     "prestart": "bower install && npm install",
     "start": "gulp default"
   }
