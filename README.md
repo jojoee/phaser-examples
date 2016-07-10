@@ -3,7 +3,7 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 
 ## Getting Started
 1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
-2. Install global: `npm install -g bower`
+2. Install global: `npm install -g bower gulp`
 3. Install dependencies: `bower install && npm install`
 4. Start: `gulp`
 

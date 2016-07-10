@@ -53,6 +53,9 @@
 - http://anhnt.ninja/2015/08/19/a-stalker-on-phaser/
 - https://gist.github.com/netcell/60097d0661ad2f74a258
 
+## HudManager
+- https://github.com/codevinsky/phaser-HudManager
+- http://www.html5gamedevs.com/topic/5542-hudmanager-bringing-angularjs-style-data-binding-to-your-games-hud-demo-and-source/
+
 ## ??
 - https://github.com/netcell/nine-patch-phaser-plugin
-- https://github.com/codevinsky/phaser-HudManager
