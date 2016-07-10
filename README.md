@@ -19,6 +19,7 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 - [Lives like Zelda in Phaser](http://codepen.io/jdnichollsc/pen/NPJmRq)
 
 ## TODO
+- [ ] Creating `.gif` instead of screenshot
 - [ ] Create landing page (`games/index.html`) and add screenshot
 - [ ] Fix `games/index.php`
 - [ ] Move `screenshots` out of repository
