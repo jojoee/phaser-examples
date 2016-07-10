@@ -39,7 +39,7 @@ body {
 }
 
 #game-list .game {
-  
+  word-wrap: break-word;
 }
 
 #game-list .img {
@@ -67,41 +67,13 @@ body {
         <ul>
           {{#each screenshots}}
             <li>
-              <div class="img" style="background-image: url('https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages/screenshots/{{this}}');"></div>
+              <div class="img"
+                style="background-image: url('{{this}}');">
+              </div>
             </li>
           {{/each}}
         </ul>
-      </div>
-
-      <div class="references">
-        <ul>
-          {{#each references}}
-            <li>
-              <a href="{{this}}" target="_blank">{{this}}</a>
-            </li>
-          {{/each}}
-        </ul>
-      </div>
-
-      <div class="tags">
-        <ul>
-          {{#each tags}}
-            <li>
-              <a href="{{this}}" target="_blank">{{this}}</a>
-            </li>
-          {{/each}}
-        </ul>
-      </div>
-
-      <div class="inspirations">
-        <ul>
-          {{#each inspirations}}
-            <li>
-              <a href="{{this}}" target="_blank">{{this}}</a>
-            </li>
-          {{/each}}
-        </ul>
-      </div>
+      </div><!-- .screenshots -->
 
       <div class="demos">
         <ul>
@@ -111,7 +83,31 @@ body {
             </li>
           {{/each}}
         </ul>
+      </div><!-- .demos -->
+
+      <div class="inspirations">
+        <ul>
+          {{#each inspirations}}
+            <li><a href="{{this}}" target="_blank">{{this}}</a></li>
+          {{/each}}
+        </ul>
+      </div><!-- .inspirations -->
+
+      <div class="references">
+        <ul>
+          {{#each references}}
+            <li><a href="{{this}}" target="_blank">{{this}}</a></li>
+          {{/each}}
+        </ul>
       </div>
+
+      <div class="tags">
+        <ul>
+          {{#each tags}}
+            <li><a href="{{this}}" target="_blank">{{this}}</a></li>
+          {{/each}}
+        </ul>
+      </div><!-- .tags -->
     </div>
   {{/list}}
   </div>
@@ -127,6 +123,29 @@ Handlebars.registerHelper('list', function(items, options) {
 
   return out + '</ul>';
 });
+
+// Setup `games` variable for demo purpose
+var nGames = games.length,
+  i = 0,
+  j = 0;
+
+var hostName = (window.location.host === 'localhost:3000') ?
+  'http://localhost:3000' :
+  'https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages';
+var screenshotsHostName = hostName + '/screenshots/';
+var gameHostname = hostName + '/games/';
+
+for (i = 0; i < nGames; i++) {
+  // Screenshots
+  var nScreenshots = games[i].screenshots.length;
+  for (j = 0; j < nScreenshots; j++) {
+    games[i].screenshots[j] = screenshotsHostName + games[i].screenshots[j];
+  }
+
+  // Demos
+  var selfHostDemo = gameHostname + games[i].id;
+  games[i].demos.push(selfHostDemo);
+}
 
 var source = document.getElementById('game-template').innerHTML,
   template = Handlebars.compile(source),
