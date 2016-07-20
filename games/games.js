@@ -1554,9 +1554,7 @@ var games = [
     'screenshots': [
       'splashscreen.jpg'
     ],
-    'references': [
-      'xxxxxxxxxxxxxxxx'
-    ],
+    'references': [],
     'tags': [],
     'inspirations': [],
     'demos': []
