@@ -1,6 +1,8 @@
 # Phaser Examples
 A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-examples/games/)
 
+[![Phaser Examples - Screenshot](https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages/games/demo.jpg "Phaser Examples - Screenshot")](http://jojoee.github.io/phaser-examples/games/)
+
 ## Getting Started
 1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
 2. Install global: `npm install -g bower gulp`
