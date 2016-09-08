@@ -155,6 +155,10 @@ body {
 <script src="games.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script>
+function isLocal() {
+  return (window.location.host === 'localhost:3000');
+}
+
 Handlebars.registerHelper('list', function(items, options) {
   var out = '<ul>';
   for (var i = 0, l = items.length; i < l; i++) {
@@ -169,11 +173,15 @@ var nGames = games.length,
   i = 0,
   j = 0;
 
-var hostName = (window.location.host === 'localhost:3000') ?
-  'http://localhost:3000' :
-  'https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages';
-var screenshotsHostName = hostName + '/screenshots/';
-var gameHostname = hostName + '/games/';
+var screenshotsHostName = isLocal()
+  ? 'http://localhost:3000'
+  : 'https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages';
+screenshotsHostName += '/screenshots/';
+
+var gameHostname = isLocal()
+  ? 'http://localhost:3000'
+  : 'http://jojoee.github.io/phaser-examples';
+gameHostname += '/games/';
 
 for (i = 0; i < nGames; i++) {
   // Screenshots
