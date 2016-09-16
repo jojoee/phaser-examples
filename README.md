@@ -22,11 +22,12 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 
 ## TODO
 - [ ] Creating `.gif` instead of screenshot
-- [ ] Create landing page (`games/index.html`) and add screenshot
-- [ ] Fix `games/index.php`
-- [ ] Move `screenshots` out of repository
+- [x] Create landing page (`games/index.html`) and add screenshot
+- [x] Fix `games/index.php`
 - [ ] Refactor all games (make it same structure)
-- [ ] Fix and update `/games/games.js`
+- [x] Fix and update `/games/games.js`
+- [ ] Update screenshot
+- [ ] Update README.md
 - [ ] [Alto's Adventure](http://altosadventure.com/)
 - [ ] [PirateKing](https://www.facebook.com/CashKingPirates/)
 - [ ] [True Color](https://play.google.com/store/apps/details?id=com.Tenminutes.TrueColor)
@@ -69,7 +70,7 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 - [ ] Add tracking system (e.g. [Google Analytics](http://www.google.com/analytics/))
 - [ ] Implement [standardjs.com](https://github.com/feross/standard)
 - [ ] Implement [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
-- [ ] update `index.html`
+- [x] update `index.html`
 
 ## Note & Tool & Resource
 - Using `capture.js` for capture game screenshot (using [node-webshot](https://github.com/brenden/node-webshot))
