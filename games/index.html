@@ -39,7 +39,7 @@ body {
 }
 
 .game {
-  height: 438px;
+  min-height: 638px;
   display: block;
   position: relative;
   width: 100%;
@@ -48,10 +48,11 @@ body {
 
 .link-wrap {
   width: 100%;
-  height: 100%;
+  height: 438px;
   display: block;
-  z-index: 1;
   position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 .screenshot {
@@ -59,40 +60,16 @@ body {
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-}
-
-.screenshot:before {
-  background-color: rgba(0, 0, 0, .2);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: ' ';
   width: 100%;
 }
 
 .meta {
   width: 100%;
-  height: 160px;
-  position: absolute;
+  height: 200px;
+  overflow: hidden;
   background: rgba(0, 0, 0, .8);
   color: #fff;
-  z-index: 2;
-  bottom: 0;
   padding: 12px;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.meta:hover {
-  height: 100%;
 }
 
 .links {
@@ -136,6 +113,7 @@ body {
 
         {{#if demos.[0]}}
           <a class="link-wrap"
+            target="_blank"
             href="{{demos.[0]}}">
             &nbsp;
           </a>
