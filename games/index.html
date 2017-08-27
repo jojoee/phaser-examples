@@ -39,16 +39,17 @@ body {
 }
 
 .game {
-  min-height: 638px;
   display: block;
   position: relative;
   width: 100%;
+  height: 438px;
   overflow: hidden;
+  background: rgba(0, 0, 0, .8);
 }
 
 .link-wrap {
   width: 100%;
-  height: 438px;
+  height: 100%;
   display: block;
   position: absolute;
   top: 0;
@@ -56,24 +57,30 @@ body {
 }
 
 .screenshot {
+  padding: 0;
   height: 438px;
   display: block;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
 }
 
 .meta {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, .8);
   color: #fff;
-  padding: 12px;
+  padding-top: 12px;
+}
+
+.no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px;
+  background-color: black;
+  color: #fff;
 }
 
 .links {
   display: table;
+  word-break: break-all;
 }
 
 .links li {
@@ -101,25 +108,25 @@ body {
 </div>
 <script id="game-template" type="text/x-handlebars-template">
   {{#each games}}
-    <div id="game-{{id}}" class="col-md-6 game-wrap {{#unless isPlayable}}notplayable{{/unless}}">
+    <div id="game-{{id}}" class="col-md-12 game-wrap {{#unless isPlayable}}notplayable{{/unless}}">
       <div class="game">
-        <div class="screenshot"
+        <div class="screenshot col-md-6"
           {{#if screenshots.[0]}}
             style="background-image: url('{{screenshots.[0]}}');"
           {{/if}}
         >
           &nbsp;
+          <span class="no">{{no}}</span>
+          {{#if demos.[0]}}
+            <a class="link-wrap"
+              target="_blank"
+              href="{{demos.[0]}}">
+              &nbsp;
+            </a>
+          {{/if}}
         </div><!-- .screenshot -->
 
-        {{#if demos.[0]}}
-          <a class="link-wrap"
-            target="_blank"
-            href="{{demos.[0]}}">
-            &nbsp;
-          </a>
-        {{/if}}
-
-        <div class="meta">
+        <div class="meta col-md-6">
           <div class="name">{{name}}</div>
           <div class="desc">{{description}}</div>
           <div class="version">Phaser version: {{phaserVersion}}</div>
@@ -183,6 +190,9 @@ for (i = 0; i < nGames; i++) {
   for (j = 0; j < nScreenshots; j++) {
     games[i].screenshots[j] = screenshotsHostName + games[i].screenshots[j];
   }
+
+  // No
+  games[i].no = i + 1
 
   // Demos
   var selfHostDemo = gameHostname + games[i].id;
