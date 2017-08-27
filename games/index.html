@@ -186,7 +186,7 @@ for (i = 0; i < nGames; i++) {
 
   // Demos
   var selfHostDemo = gameHostname + games[i].id;
-  games[i].demos.push(selfHostDemo);
+  games[i].demos.unshift(selfHostDemo);
 }
 
 var source = document.getElementById('game-template').innerHTML,

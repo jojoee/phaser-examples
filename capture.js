@@ -9,9 +9,9 @@ eval(require('fs').readFileSync(gameFilePath, 'utf8'));
 var screenshotFolderPath = './screenshots',
   devPath = 'http://localhost:3000/games',
   nGames = games.length;
-  
-/*================================================================ Screenshot
-*/
+
+/* ================================================================ Screenshot
+ */
 
 var webshotOption = {
   renderDelay: 1000
@@ -23,7 +23,7 @@ var webshotOption = {
  * @example fireWebshotByIndex(0);
  * @example fireWebshotByIndex(3);
  * @example fireWebshotByIndex(nGames - 1);
- * 
+ *
  * @param {number} idx
  */
 function fireWebshotByIndex(idx) {
@@ -33,7 +33,7 @@ function fireWebshotByIndex(idx) {
     var gameUrl = devPath + '/' + gameId,
       screenshotFilePath = screenshotFolderPath + '/' + gameId + '.jpg';
 
-    webshot(gameUrl, screenshotFilePath, webshotOption, function(err) {  
+    webshot(gameUrl, screenshotFilePath, webshotOption, function(err) {
       console.log('i: ' + i + ', ' + gameId + '\'s screenshot has been saved to ' + screenshotFilePath);
 
       if (err) {
@@ -41,7 +41,6 @@ function fireWebshotByIndex(idx) {
         console.log(err);
       }
     });
-
   } else {
     console.log('================ ERROR: gameId is undefined (i: ' + i + ')');
   }
@@ -52,7 +51,7 @@ function fireWebshotByIndex(idx) {
  * quite duplicate with `fireWebshotByIndex`
  *
  * @example fireWebshot(0);
- * 
+ *
  * @param {number} i
  */
 function fireWebshot(i) {
@@ -63,7 +62,7 @@ function fireWebshot(i) {
       var gameUrl = devPath + '/' + gameId,
         screenshotFilePath = screenshotFolderPath + '/' + gameId + '.jpg';
 
-      webshot(gameUrl, screenshotFilePath, webshotOption, function(err) {  
+      webshot(gameUrl, screenshotFilePath, webshotOption, function(err) {
         console.log('i: ' + i + ', ' + gameId + '\'s screenshot has been saved to ' + screenshotFilePath);
 
         if (err) {
@@ -73,11 +72,9 @@ function fireWebshot(i) {
 
         fireWebshot(++i);
       });
-
     } else {
       console.log('================ ERROR: gameId is undefined (i: ' + i + ')');
     }
-
   } else {
     console.log('================ DONE');
   }
