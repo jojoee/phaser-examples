@@ -5,6 +5,5 @@ bower_components/
 # Others
 bk
 bk*
-# screenshots/
 README*.md
-!README-*.md
+yarn.lock
