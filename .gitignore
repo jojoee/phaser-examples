@@ -1,9 +1,14 @@
-# Dependency
+# dependency
 node_modules/
 bower_components/
 
-# Others
+# backup
 bk
 bk*
+
+# readme
 README*.md
+
+# lock
 yarn.lock
+package-lock.json
