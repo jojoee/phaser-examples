@@ -22,10 +22,10 @@
     "tests"
   ],
   "dependencies": {
-    "moment": "~2.11.1",
-    "phaser": "~2.4.4",
-    "lodash": "~3.10.1",
-    "faker": "~0.0.2",
-    "jquery": "~2.2.0"
+    "moment": "^2.18.1",
+    "phaser": "^2.6.2",
+    "lodash": "^4.17.4",
+    "faker": "^0.0.2",
+    "jquery": "^3.2.1"
   }
 }
