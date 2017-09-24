@@ -101,7 +101,7 @@ body {
 <body>
 <div class="container wrapper">
   <div class="row">
-    <h2 class="logo">Phaser Examples</h2>
+    <h2 class="logo">Phaser Examples, <span id="ngames">0</span> games</h2>
     <hr>
     <div id="game-list"></div>
   </div>
@@ -156,9 +156,14 @@ body {
 <script src="games.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script>
+
+// ================================================================ Function
+
 function isLocal() {
   return (window.location.host === 'localhost:3000');
 }
+
+// ================================================================ Handlebars
 
 Handlebars.registerHelper('list', function(items, options) {
   var out = '<ul>';
@@ -169,40 +174,46 @@ Handlebars.registerHelper('list', function(items, options) {
   return out + '</ul>';
 });
 
+// ================================================================ App
+
 // Setup `games` variable for demo purpose
-var nGames = games.length,
-  i = 0,
-  j = 0;
+var gameTemplateEle = document.getElementById('game-template');
+var gameListEle = document.getElementById('game-list');
+var ngamesEle = document.getElementById('ngames');
 
 var screenshotsHostName = isLocal()
   ? 'http://localhost:3000'
   : 'https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages';
 screenshotsHostName += '/screenshots/';
-
 var gameHostname = isLocal()
   ? 'http://localhost:3000'
   : 'http://jojoee.github.io/phaser-examples';
 gameHostname += '/games/';
 
-for (i = 0; i < nGames; i++) {
-  // Screenshots
-  var nScreenshots = games[i].screenshots.length;
-  for (j = 0; j < nScreenshots; j++) {
-    games[i].screenshots[j] = screenshotsHostName + games[i].screenshots[j];
+function init() {
+  for (var i = 0; i < games.length; i++) {
+    // Screenshots
+    var nScreenshots = games[i].screenshots.length;
+    for (var j = 0; j < nScreenshots; j++) {
+      games[i].screenshots[j] = screenshotsHostName + games[i].screenshots[j];
+    }
+
+    // Demos
+    var selfHostDemo = gameHostname + games[i].name;
+    games[i].demos.unshift(selfHostDemo);
   }
 
-  // Demos
-  var selfHostDemo = gameHostname + games[i].name;
-  games[i].demos.unshift(selfHostDemo);
+  // start
+  var source = gameTemplateEle.innerHTML;
+  var template = Handlebars.compile(source);
+  var context = {games: games};
+  var html = template(context);
+
+  ngamesEle.innerHTML = games.length
+  gameListEle.innerHTML = html;
 }
 
-var source = document.getElementById('game-template').innerHTML,
-  template = Handlebars.compile(source),
-  context = {games: games},
-  html = template(context),
-  gameListEle = document.getElementById('game-list');
-
-gameListEle.innerHTML = html;
+init()
 </script>
 </body>
 </html>
