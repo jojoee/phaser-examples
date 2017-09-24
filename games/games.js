@@ -1,6 +1,7 @@
 /*
-id: string (folder name (lower case only))
-name: string
+id: game no.
+name: string (folder name (lower case only))
+title: string
 description: string
 phaserVersion: string
 isPlayable: boolean
@@ -13,8 +14,9 @@ demos: array (game play and video)
 
 var games = [
   {
-    id: '2048',
+    id: 1,
     name: '2048',
+    title: '2048',
     description: '2048 Game',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -29,8 +31,9 @@ var games = [
     demos: []
   },
   {
-    id: '10000000',
+    id: 2,
     name: '10000000',
+    title: '10000000',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -47,8 +50,9 @@ var games = [
     demos: []
   },
   {
-    id: 'angry-birds-space',
-    name: 'Angry Birds Space',
+    id: 3,
+    name: 'angry-birds-space',
+    title: 'Angry Birds Space',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -65,8 +69,9 @@ var games = [
     demos: []
   },
   {
-    id: 'ascii-roguelike',
-    name: 'ASCII Roguelike',
+    id: 4,
+    name: 'ascii-roguelike',
+    title: 'ASCII Roguelike',
     description: '',
     phaserVersion: '1.1.2',
     isPlayable: true,
@@ -81,8 +86,9 @@ var games = [
     demos: []
   },
   {
-    id: 'boids-flocking',
-    name: 'Boids Flocking',
+    id: 5,
+    name: 'boids-flocking',
+    title: 'Boids Flocking',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -101,8 +107,9 @@ var games = [
     demos: []
   },
   {
-    id: 'boids-steering',
-    name: 'Boids Steering',
+    id: 6,
+    name: 'boids-steering',
+    title: 'Boids Steering',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -121,8 +128,9 @@ var games = [
     demos: []
   },
   {
-    id: 'boom-dots',
-    name: 'Boom Dots',
+    id: 7,
+    name: 'boom-dots',
+    title: 'Boom Dots',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -139,8 +147,9 @@ var games = [
     demos: []
   },
   {
-    id: 'bouncing-menu',
-    name: 'Bouncing Menu',
+    id: 8,
+    name: 'bouncing-menu',
+    title: 'Bouncing Menu',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -155,8 +164,9 @@ var games = [
     demos: []
   },
   {
-    id: 'box-jump',
-    name: 'Box Jump',
+    id: 9,
+    name: 'box-jump',
+    title: 'Box Jump',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -171,8 +181,9 @@ var games = [
     demos: []
   },
   {
-    id: 'box2d',
-    name: 'Box2D',
+    id: 10,
+    name: 'box2d',
+    title: 'Box2D',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -188,8 +199,9 @@ var games = [
     demos: []
   },
   {
-    id: 'breakout',
-    name: 'Breakout',
+    id: 11,
+    name: 'breakout',
+    title: 'Breakout',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -204,8 +216,9 @@ var games = [
     demos: []
   },
   {
-    id: 'bresenham-light',
-    name: 'Bresenham Light',
+    id: 12,
+    name: 'bresenham-light',
+    title: 'Bresenham Light',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -221,8 +234,9 @@ var games = [
     demos: []
   },
   {
-    id: 'brick',
-    name: 'Brick',
+    id: 13,
+    name: 'brick',
+    title: 'Brick',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -237,8 +251,9 @@ var games = [
     demos: []
   },
   {
-    id: 'bulletpool',
-    name: 'Bulletpool',
+    id: 14,
+    name: 'bulletpool',
+    title: 'Bulletpool',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -253,8 +268,9 @@ var games = [
     demos: []
   },
   {
-    id: 'car',
-    name: 'Car',
+    id: 15,
+    name: 'car',
+    title: 'Car',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -269,8 +285,9 @@ var games = [
     demos: []
   },
   {
-    id: 'character-selection',
-    name: 'Character Selection',
+    id: 16,
+    name: 'character-selection',
+    title: 'Character Selection',
     description: 'Character selection like Crossy Road',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -288,8 +305,9 @@ var games = [
     demos: []
   },
   {
-    id: 'christmas-quest',
-    name: 'Christmas Quest',
+    id: 17,
+    name: 'christmas-quest',
+    title: 'Christmas Quest',
     description: '',
     phaserVersion: '2.1.1',
     isPlayable: true,
@@ -306,8 +324,9 @@ var games = [
     demos: []
   },
   {
-    id: 'clocks',
-    name: 'Clocks',
+    id: 18,
+    name: 'clocks',
+    title: 'Clocks',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -322,8 +341,9 @@ var games = [
     demos: []
   },
   {
-    id: 'connected',
-    name: 'Connected',
+    id: 19,
+    name: 'connected',
+    title: 'Connected',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -338,8 +358,9 @@ var games = [
     demos: []
   },
   {
-    id: 'crack-alien-code',
-    name: 'Crack Alien Code',
+    id: 20,
+    name: 'crack-alien-code',
+    title: 'Crack Alien Code',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -358,8 +379,9 @@ var games = [
     ]
   },
   {
-    id: 'crazy-snake',
-    name: 'Crazy Snake',
+    id: 21,
+    name: 'crazy-snake',
+    title: 'Crazy Snake',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -374,8 +396,9 @@ var games = [
     demos: []
   },
   {
-    id: 'cube-jump',
-    name: 'Cube Jump',
+    id: 22,
+    name: 'cube-jump',
+    title: 'Cube Jump',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -393,8 +416,9 @@ var games = [
     demos: []
   },
   {
-    id: 'dark-blue',
-    name: 'Dark Blue',
+    id: 23,
+    name: 'dark-blue',
+    title: 'Dark Blue',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -409,8 +433,9 @@ var games = [
     demos: []
   },
   {
-    id: 'dashy-panda',
-    name: 'Dashy Panda',
+    id: 24,
+    name: 'dashy-panda',
+    title: 'Dashy Panda',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -427,8 +452,9 @@ var games = [
     demos: []
   },
   {
-    id: 'diamond-digger',
-    name: 'Diamond Digger',
+    id: 25,
+    name: 'diamond-digger',
+    title: 'Diamond Digger',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -446,8 +472,9 @@ var games = [
     ]
   },
   {
-    id: 'digger',
-    name: 'Digger',
+    id: 26,
+    name: 'digger',
+    title: 'Digger',
     description: '',
     phaserVersion: '2.0.7',
     isPlayable: false,
@@ -464,8 +491,9 @@ var games = [
     demos: []
   },
   {
-    id: 'doodle-jump',
-    name: 'Doodle Jump',
+    id: 27,
+    name: 'doodle-jump',
+    title: 'Doodle Jump',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -480,8 +508,9 @@ var games = [
     demos: []
   },
   {
-    id: 'down-the-mountain',
-    name: 'Down The Mountain',
+    id: 28,
+    name: 'down-the-mountain',
+    title: 'Down The Mountain',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -499,8 +528,9 @@ var games = [
     demos: []
   },
   {
-    id: 'draggable-and-scrollable-with-inertia',
-    name: 'Draggable and Scrollable with Inertia',
+    id: 29,
+    name: 'draggable-and-scrollable-with-inertia',
+    title: 'Draggable and Scrollable with Inertia',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -518,8 +548,9 @@ var games = [
     demos: []
   },
   {
-    id: 'drop-wizard',
-    name: 'Drop Wizard',
+    id: 30,
+    name: 'drop-wizard',
+    title: 'Drop Wizard',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -538,8 +569,9 @@ var games = [
     demos: []
   },
   {
-    id: 'easystarjs',
-    name: 'Easystarjs',
+    id: 31,
+    name: 'easystarjs',
+    title: 'Easystarjs',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -556,8 +588,9 @@ var games = [
     demos: []
   },
   {
-    id: 'endless-scale',
-    name: 'Endless Scale',
+    id: 32,
+    name: 'endless-scale',
+    title: 'Endless Scale',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -574,8 +607,9 @@ var games = [
     demos: []
   },
   {
-    id: 'fill-the-holes',
-    name: 'Fill the Holes',
+    id: 33,
+    name: 'fill-the-holes',
+    title: 'Fill the Holes',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -590,8 +624,9 @@ var games = [
     demos: []
   },
   {
-    id: 'first-game',
-    name: 'First Game',
+    id: 34,
+    name: 'first-game',
+    title: 'First Game',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -606,8 +641,9 @@ var games = [
     demos: []
   },
   {
-    id: 'flappy-bird',
-    name: 'Flappy bird',
+    id: 35,
+    name: 'flappy-bird',
+    title: 'Flappy bird',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -622,8 +658,9 @@ var games = [
     demos: []
   },
   {
-    id: 'flappy-bird-2',
-    name: 'Flappy bird 2',
+    id: 36,
+    name: 'flappy-bird-2',
+    title: 'Flappy bird 2',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -638,8 +675,9 @@ var games = [
     demos: []
   },
   {
-    id: 'flappy-bird-reborn',
-    name: 'Flappy Bird Reborn',
+    id: 37,
+    name: 'flappy-bird-reborn',
+    title: 'Flappy Bird Reborn',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -656,8 +694,9 @@ var games = [
     ]
   },
   {
-    id: 'flood-fill',
-    name: 'Flood Fill',
+    id: 38,
+    name: 'flood-fill',
+    title: 'Flood Fill',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -673,8 +712,9 @@ var games = [
     demos: []
   },
   {
-    id: 'fruit-ninja',
-    name: 'Fruit Ninja',
+    id: 39,
+    name: 'fruit-ninja',
+    title: 'Fruit Ninja',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -689,8 +729,9 @@ var games = [
     demos: []
   },
   {
-    id: 'fruit-ninja-2',
-    name: 'Fruit Ninja 2',
+    id: 40,
+    name: 'fruit-ninja-2',
+    title: 'Fruit Ninja 2',
     description: '',
     phaserVersion: '2.0.3',
     isPlayable: true,
@@ -705,8 +746,9 @@ var games = [
     demos: []
   },
   {
-    id: 'goat-rider',
-    name: 'Goat Rider',
+    id: 41,
+    name: 'goat-rider',
+    title: 'Goat Rider',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -726,8 +768,9 @@ var games = [
     ]
   },
   {
-    id: 'gyro.js',
+    id: 42,
     name: 'gyro.js',
+    title: 'gyro.js',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -743,8 +786,9 @@ var games = [
     demos: []
   },
   {
-    id: 'hexagonal-tiles',
-    name: 'Hexagonal Tiles',
+    id: 43,
+    name: 'hexagonal-tiles',
+    title: 'Hexagonal Tiles',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -760,8 +804,9 @@ var games = [
     demos: []
   },
   {
-    id: 'hi-low',
-    name: 'Hi Low',
+    id: 44,
+    name: 'hi-low',
+    title: 'Hi Low',
     description: '',
     phaserVersion: '2.0.7',
     isPlayable: true,
@@ -776,8 +821,9 @@ var games = [
     demos: []
   },
   {
-    id: 'horror',
-    name: 'Horror',
+    id: 45,
+    name: 'horror',
+    title: 'Horror',
     description: '',
     phaserVersion: '2.1.2',
     isPlayable: true,
@@ -795,8 +841,9 @@ var games = [
     ]
   },
   {
-    id: 'horror-ray-casting',
-    name: 'Horror Ray Casting',
+    id: 46,
+    name: 'horror-ray-casting',
+    title: 'Horror Ray Casting',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -813,8 +860,9 @@ var games = [
     demos: []
   },
   {
-    id: 'i-hate-rabbits',
-    name: 'I Hate Rabbits',
+    id: 47,
+    name: 'i-hate-rabbits',
+    title: 'I Hate Rabbits',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -829,8 +877,9 @@ var games = [
     demos: []
   },
   {
-    id: 'infinite-runner',
-    name: 'Infinite Runner',
+    id: 48,
+    name: 'infinite-runner',
+    title: 'Infinite Runner',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -845,8 +894,9 @@ var games = [
     demos: []
   },
   {
-    id: 'iromeku',
-    name: 'Iromeku',
+    id: 49,
+    name: 'iromeku',
+    title: 'Iromeku',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -862,8 +912,9 @@ var games = [
     demos: []
   },
   {
-    id: 'level-selection',
-    name: 'Level Selection',
+    id: 50,
+    name: 'level-selection',
+    title: 'Level Selection',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -878,8 +929,9 @@ var games = [
     demos: []
   },
   {
-    id: 'level-selection-with-locked-and-stars',
-    name: 'Level Selection With Locked and Stars',
+    id: 51,
+    name: 'level-selection-with-locked-and-stars',
+    title: 'Level Selection With Locked and Stars',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -895,8 +947,9 @@ var games = [
     demos: []
   },
   {
-    id: 'lighting',
-    name: 'Lighting',
+    id: 52,
+    name: 'lighting',
+    title: 'Lighting',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -911,8 +964,9 @@ var games = [
     demos: []
   },
   {
-    id: 'magick',
-    name: 'Magick',
+    id: 53,
+    name: 'magick',
+    title: 'Magick',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -934,8 +988,9 @@ var games = [
     ]
   },
   {
-    id: 'man-vs-penguins',
-    name: 'Man vs Penguins',
+    id: 54,
+    name: 'man-vs-penguins',
+    title: 'Man vs Penguins',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -950,8 +1005,9 @@ var games = [
     demos: []
   },
   {
-    id: 'mass-attack',
-    name: 'Mass Attack',
+    id: 55,
+    name: 'mass-attack',
+    title: 'Mass Attack',
     description: '',
     phaserVersion: '2.0.7',
     isPlayable: true,
@@ -966,8 +1022,9 @@ var games = [
     demos: []
   },
   {
-    id: 'maze',
-    name: 'Maze',
+    id: 56,
+    name: 'maze',
+    title: 'Maze',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -982,8 +1039,9 @@ var games = [
     demos: []
   },
   {
-    id: 'mikey-hooks',
-    name: 'Mikey Hooks',
+    id: 57,
+    name: 'mikey-hooks',
+    title: 'Mikey Hooks',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1005,8 +1063,9 @@ var games = [
     ]
   },
   {
-    id: 'monster-wants-candy',
-    name: 'Monster Wants Candy',
+    id: 58,
+    name: 'monster-wants-candy',
+    title: 'Monster Wants Candy',
     description: '',
     phaserVersion: '2.0.6',
     isPlayable: true,
@@ -1024,8 +1083,9 @@ var games = [
     ]
   },
   {
-    id: 'one-plus-two-equal-three',
-    name: '1 + 2 = 3',
+    id: 59,
+    name: 'one-plus-two-equal-three',
+    title: '1 + 2 = 3',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1042,8 +1102,9 @@ var games = [
     demos: []
   },
   {
-    id: 'one-tap-rpg',
-    name: 'One Tap RPG',
+    id: 60,
+    name: 'one-tap-rpg',
+    title: 'One Tap RPG',
     description: '',
     phaserVersion: '2.0.7',
     isPlayable: true,
@@ -1060,8 +1121,9 @@ var games = [
     demos: []
   },
   {
-    id: 'orbital-debris',
-    name: 'Orbital Debris',
+    id: 61,
+    name: 'orbital-debris',
+    title: 'Orbital Debris',
     description: '',
     phaserVersion: '1.1.6',
     isPlayable: true,
@@ -1076,8 +1138,9 @@ var games = [
     demos: []
   },
   {
-    id: 'pacman',
-    name: 'Pacman',
+    id: 62,
+    name: 'pacman',
+    title: 'Pacman',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1092,8 +1155,9 @@ var games = [
     demos: []
   },
   {
-    id: 'pacman-2',
-    name: 'Pacman 2',
+    id: 63,
+    name: 'pacman-2',
+    title: 'Pacman 2',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1112,8 +1176,9 @@ var games = [
     ]
   },
   {
-    id: 'particle-storm',
-    name: 'Particle Storm',
+    id: 64,
+    name: 'particle-storm',
+    title: 'Particle Storm',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1130,8 +1195,9 @@ var games = [
     demos: []
   },
   {
-    id: 'particle-to-sprite',
-    name: 'Particle To Sprite',
+    id: 65,
+    name: 'particle-to-sprite',
+    title: 'Particle To Sprite',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1146,8 +1212,9 @@ var games = [
     demos: []
   },
   {
-    id: 'paths-aliens',
-    name: 'Paths - Aliens',
+    id: 66,
+    name: 'paths-aliens',
+    title: 'Paths - Aliens',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1160,8 +1227,9 @@ var games = [
     demos: []
   },
   {
-    id: 'paths-face',
-    name: 'Paths - Face',
+    id: 67,
+    name: 'paths-face',
+    title: 'Paths - Face',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1174,8 +1242,9 @@ var games = [
     demos: []
   },
   {
-    id: 'paths-paths',
-    name: 'Paths - Paths',
+    id: 68,
+    name: 'paths-paths',
+    title: 'Paths - Paths',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1188,8 +1257,9 @@ var games = [
     demos: []
   },
   {
-    id: 'phshare',
-    name: 'Phshare',
+    id: 69,
+    name: 'phshare',
+    title: 'Phshare',
     description: 'Sorry, I can not remember the source',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1202,8 +1272,9 @@ var games = [
     demos: []
   },
   {
-    id: 'pixel-war',
-    name: 'Pixel War',
+    id: 70,
+    name: 'pixel-war',
+    title: 'Pixel War',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1218,8 +1289,9 @@ var games = [
     demos: []
   },
   {
-    id: 'platformer',
-    name: 'Platformer',
+    id: 71,
+    name: 'platformer',
+    title: 'Platformer',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1234,8 +1306,9 @@ var games = [
     demos: []
   },
   {
-    id: 'platformer-2',
-    name: 'Platformer 2',
+    id: 72,
+    name: 'platformer-2',
+    title: 'Platformer 2',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1250,8 +1323,9 @@ var games = [
     demos: []
   },
   {
-    id: 'pong',
-    name: 'Pong',
+    id: 73,
+    name: 'pong',
+    title: 'Pong',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1266,8 +1340,9 @@ var games = [
     demos: []
   },
   {
-    id: 'princess-quest',
-    name: 'Princess Quest',
+    id: 74,
+    name: 'princess-quest',
+    title: 'Princess Quest',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -1282,8 +1357,9 @@ var games = [
     demos: []
   },
   {
-    id: 'radical',
-    name: 'Radical',
+    id: 75,
+    name: 'radical',
+    title: 'Radical',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1302,8 +1378,9 @@ var games = [
     demos: []
   },
   {
-    id: 'rise-above',
-    name: 'Rise Above',
+    id: 76,
+    name: 'rise-above',
+    title: 'Rise Above',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -1324,8 +1401,9 @@ var games = [
     ]
   },
   {
-    id: 'run',
-    name: 'Run',
+    id: 77,
+    name: 'run',
+    title: 'Run',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1340,8 +1418,9 @@ var games = [
     demos: []
   },
   {
-    id: 'rush-hour',
-    name: 'Rush Hour',
+    id: 78,
+    name: 'rush-hour',
+    title: 'Rush Hour',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1358,8 +1437,9 @@ var games = [
     ]
   },
   {
-    id: 'santa-on-the-run',
-    name: 'Santa On The Run',
+    id: 79,
+    name: 'santa-on-the-run',
+    title: 'Santa On The Run',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1374,8 +1454,9 @@ var games = [
     demos: []
   },
   {
-    id: 'save-the-city',
-    name: 'Save the City',
+    id: 80,
+    name: 'save-the-city',
+    title: 'Save the City',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -1390,8 +1471,9 @@ var games = [
     demos: []
   },
   {
-    id: 'screenshake',
-    name: 'Screenshake',
+    id: 81,
+    name: 'screenshake',
+    title: 'Screenshake',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1408,8 +1490,9 @@ var games = [
     demos: []
   },
   {
-    id: 'sea-life-vs-mines',
-    name: 'Sea Life Vs Mines',
+    id: 82,
+    name: 'sea-life-vs-mines',
+    title: 'Sea Life Vs Mines',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1426,8 +1509,9 @@ var games = [
     demos: []
   },
   {
-    id: 'shootout',
-    name: 'Shootout',
+    id: 83,
+    name: 'shootout',
+    title: 'Shootout',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1442,8 +1526,9 @@ var games = [
     demos: []
   },
   {
-    id: 'sokoban-responsive',
-    name: 'Sokoban Responsive',
+    id: 84,
+    name: 'sokoban-responsive',
+    title: 'Sokoban Responsive',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1461,8 +1546,9 @@ var games = [
     demos: []
   },
   {
-    id: 'sokoban-swipe',
-    name: 'Sokoban Swipe',
+    id: 85,
+    name: 'sokoban-swipe',
+    title: 'Sokoban Swipe',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1477,8 +1563,9 @@ var games = [
     demos: []
   },
   {
-    id: 'space-hipster',
-    name: 'Space Hipster',
+    id: 86,
+    name: 'space-hipster',
+    title: 'Space Hipster',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1493,8 +1580,9 @@ var games = [
     demos: []
   },
   {
-    id: 'space-is-key',
-    name: 'Space is Key',
+    id: 87,
+    name: 'space-is-key',
+    title: 'Space is Key',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1512,8 +1600,9 @@ var games = [
     demos: []
   },
   {
-    id: 'spellfall',
-    name: 'Spellfall',
+    id: 88,
+    name: 'spellfall',
+    title: 'Spellfall',
     description: '',
     phaserVersion: '2.0.7',
     isPlayable: true,
@@ -1530,8 +1619,9 @@ var games = [
     demos: []
   },
   {
-    id: 'spin-wheel',
-    name: 'Spin Wheel',
+    id: 89,
+    name: 'spin-wheel',
+    title: 'Spin Wheel',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1546,8 +1636,9 @@ var games = [
     demos: []
   },
   {
-    id: 'splashscreen',
-    name: 'Splashscreen',
+    id: 90,
+    name: 'splashscreen',
+    title: 'Splashscreen',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1560,8 +1651,9 @@ var games = [
     demos: []
   },
   {
-    id: 'spring-ninja',
-    name: 'Spring Ninja',
+    id: 91,
+    name: 'spring-ninja',
+    title: 'Spring Ninja',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1578,8 +1670,9 @@ var games = [
     demos: []
   },
   {
-    id: 'spring-ninja-double-jump',
-    name: 'Spring Ninja Double Jump',
+    id: 92,
+    name: 'spring-ninja-double-jump',
+    title: 'Spring Ninja Double Jump',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1596,8 +1689,9 @@ var games = [
     demos: []
   },
   {
-    id: 'state-transition-plugin',
-    name: 'State Transition Plugin',
+    id: 93,
+    name: 'state-transition-plugin',
+    title: 'State Transition Plugin',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1616,8 +1710,9 @@ var games = [
     ]
   },
   {
-    id: 'straight-rush',
-    name: 'Straight Rush',
+    id: 94,
+    name: 'straight-rush',
+    title: 'Straight Rush',
     description: '',
     phaserVersion: '2.0.7',
     isPlayable: true,
@@ -1632,8 +1727,9 @@ var games = [
     demos: []
   },
   {
-    id: 'string-avoider',
-    name: 'String Avoider',
+    id: 95,
+    name: 'string-avoider',
+    title: 'String Avoider',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1650,8 +1746,9 @@ var games = [
     ]
   },
   {
-    id: 'string-avoider-2',
-    name: 'String Avoider 2',
+    id: 96,
+    name: 'string-avoider-2',
+    title: 'String Avoider 2',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1668,8 +1765,9 @@ var games = [
     ]
   },
   {
-    id: 'super-coin-box',
-    name: 'Super Coin Box',
+    id: 97,
+    name: 'super-coin-box',
+    title: 'Super Coin Box',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1686,8 +1784,9 @@ var games = [
     ]
   },
   {
-    id: 'tank',
-    name: 'Tank',
+    id: 98,
+    name: 'tank',
+    title: 'Tank',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1702,8 +1801,9 @@ var games = [
     demos: []
   },
   {
-    id: 'the-next-arrow',
-    name: 'The Next Arrow',
+    id: 99,
+    name: 'the-next-arrow',
+    title: 'The Next Arrow',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1722,8 +1822,9 @@ var games = [
     ]
   },
   {
-    id: 'the-three-hearths',
-    name: 'The Three Hearths',
+    id: 100,
+    name: 'the-three-hearths',
+    title: 'The Three Hearths',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: false,
@@ -1738,8 +1839,9 @@ var games = [
     demos: []
   },
   {
-    id: 'totem-destroyer',
-    name: 'Totem Destroyer',
+    id: 101,
+    name: 'totem-destroyer',
+    title: 'Totem Destroyer',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1756,8 +1858,9 @@ var games = [
     demos: []
   },
   {
-    id: 'trick-shot',
-    name: 'Trick Shot',
+    id: 102,
+    name: 'trick-shot',
+    title: 'Trick Shot',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1776,8 +1879,9 @@ var games = [
     demos: []
   },
   {
-    id: 'two-cars',
-    name: 'Two Cars',
+    id: 103,
+    name: 'two-cars',
+    title: 'Two Cars',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1793,8 +1897,9 @@ var games = [
     demos: []
   },
   {
-    id: 'webfont',
-    name: 'Webfont',
+    id: 104,
+    name: 'webfont',
+    title: 'Webfont',
     description: '',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1807,8 +1912,9 @@ var games = [
     demos: []
   },
   {
-    id: '123',
+    id: 105,
     name: '123',
+    title: '123',
     description: '1+2=3',
     phaserVersion: '2.4.4',
     isPlayable: true,
@@ -1828,6 +1934,9 @@ function debugGameObject() {
 
   console.log('nGames', nGames);
   for (i = 0; i < nGames; i++) {
-    console.log(i + ': ' + games[i].name);
+    var text = `i: ${i}, id: ${games[i].id}, ${games[i].name}`;
+    console.log(text);
   }
 }
+
+debugGameObject();

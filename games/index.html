@@ -69,7 +69,7 @@ body {
   padding-top: 12px;
 }
 
-.no {
+.id {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,7 +108,7 @@ body {
 </div>
 <script id="game-template" type="text/x-handlebars-template">
   {{#each games}}
-    <div id="game-{{id}}" class="col-md-12 game-wrap {{#unless isPlayable}}notplayable{{/unless}}">
+    <div id="game-{{name}}" class="col-md-12 game-wrap {{#unless isPlayable}}notplayable{{/unless}}">
       <div class="game">
         <div class="screenshot col-md-6"
           {{#if screenshots.[0]}}
@@ -116,7 +116,7 @@ body {
           {{/if}}
         >
           &nbsp;
-          <span class="no">{{no}}</span>
+          <span class="id">{{id}}</span>
           {{#if demos.[0]}}
             <a class="link-wrap"
               target="_blank"
@@ -127,7 +127,7 @@ body {
         </div><!-- .screenshot -->
 
         <div class="meta col-md-6">
-          <div class="name">{{name}}</div>
+          <div class="title">{{title}}</div>
           <div class="desc">{{description}}</div>
           <div class="version">Phaser version: {{phaserVersion}}</div>
           <ul class="links">
@@ -191,11 +191,8 @@ for (i = 0; i < nGames; i++) {
     games[i].screenshots[j] = screenshotsHostName + games[i].screenshots[j];
   }
 
-  // No
-  games[i].no = i + 1
-
   // Demos
-  var selfHostDemo = gameHostname + games[i].id;
+  var selfHostDemo = gameHostname + games[i].name;
   games[i].demos.unshift(selfHostDemo);
 }
 
