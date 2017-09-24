@@ -1,4 +1,5 @@
 var webshot = require('webshot');
+var program = require('commander');
 var gameFilePath = './games/games.js';
 
 // HACK
@@ -6,15 +7,21 @@ var gameFilePath = './games/games.js';
 // http://stackoverflow.com/questions/4662851/how-do-you-import-non-node-js-files
 eval(require('fs').readFileSync(gameFilePath, 'utf8'));
 
-var screenshotFolderPath = './screenshots',
-  devPath = 'http://localhost:3000/games',
-  nGames = games.length;
+program
+  .version('0.0.1')
+  .option('-i, --index [index]', 'start index')
+  .parse(process.argv);
+
+var startIndex = program.index || 0;
+var screenshotFolderPath = './screenshots';
+var devPath = 'http://localhost:3000/games';
+var nGames = games.length;
 
 /* ================================================================ Screenshot
  */
 
 var webshotOption = {
-  renderDelay: 1000
+  renderDelay: 2000
 };
 
 /**
@@ -25,24 +32,27 @@ var webshotOption = {
  * @example fireWebshotByIndex(nGames - 1);
  *
  * @param {number} idx
+ * @param {function} cb
  */
-function fireWebshotByIndex(idx) {
-  var gameId = games[idx].id;
+function fireWebshotByIndex(idx, cb) {
+  console.log(games[idx])
+  var gameName = games[idx].name;
 
-  if (gameId) {
-    var gameUrl = devPath + '/' + gameId,
-      screenshotFilePath = screenshotFolderPath + '/' + gameId + '.jpg';
+  if (gameName) {
+    var gameUrl = `${devPath}/${gameName}`
+    var screenshotFilePath = `${screenshotFolderPath}/${gameName}.jpg`;
 
     webshot(gameUrl, screenshotFilePath, webshotOption, function(err) {
-      console.log('i: ' + i + ', ' + gameId + '\'s screenshot has been saved to ' + screenshotFilePath);
-
       if (err) {
-        console.log('================ ERROR: webshot is error');
-        console.log(err);
+        console.log('ERROR: webshot is error', err);
+      } else {
+        console.log(`idx: ${idx}, screenshot has been saved to ${screenshotFilePath}`);
       }
+
+      cb()
     });
   } else {
-    console.log('================ ERROR: gameId is undefined (i: ' + i + ')');
+    console.log(`ERROR: gameName is undefined (i: ${i})`);
   }
 }
 
@@ -56,28 +66,12 @@ function fireWebshotByIndex(idx) {
  */
 function fireWebshot(i) {
   if (i < nGames) {
-    var gameId = games[i].id;
-
-    if (gameId) {
-      var gameUrl = devPath + '/' + gameId,
-        screenshotFilePath = screenshotFolderPath + '/' + gameId + '.jpg';
-
-      webshot(gameUrl, screenshotFilePath, webshotOption, function(err) {
-        console.log('i: ' + i + ', ' + gameId + '\'s screenshot has been saved to ' + screenshotFilePath);
-
-        if (err) {
-          console.log('================ ERROR: webshot is error');
-          console.log(err);
-        }
-
-        fireWebshot(++i);
-      });
-    } else {
-      console.log('================ ERROR: gameId is undefined (i: ' + i + ')');
-    }
+    fireWebshotByIndex(i, function() {
+      fireWebshot(++i);
+    });
   } else {
     console.log('================ DONE');
   }
 }
 
-fireWebshot(0);
+fireWebshot(startIndex);
