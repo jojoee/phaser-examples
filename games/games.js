@@ -24,7 +24,9 @@ var games = [
       '2048.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser'
+      'http://www.emanueleferonato.com/2014/04/04/how-to-create-a-complete-html5-2048-game-with-phaser',
+      'http://www.emanueleferonato.com/tag/2048/',
+      'http://www.emanueleferonato.com/tag/hero-slide/'
     ],
     tags: [],
     inspirations: [],
@@ -34,14 +36,15 @@ var games = [
     id: 2,
     name: '10000000',
     title: '10000000',
-    description: '',
+    description: 'Drag-and-match',
     phaserVersion: '2.4.4',
     isPlayable: true,
     screenshots: [
       '10000000.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2014/07/24/html5-drag-and-match-engine-made-with-phaser/'
+      'http://www.emanueleferonato.com/2014/07/24/html5-drag-and-match-engine-made-with-phaser/',
+      'http://www.emanueleferonato.com/tag/drag-and-match/'
     ],
     tags: [],
     inspirations: [
@@ -60,7 +63,8 @@ var games = [
       'angry-birds-space.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2015/06/19/simulate-planet-gravity-with-phaser-box2d-as-seen-on-angry-birds-space/'
+      'http://www.emanueleferonato.com/2015/06/19/simulate-planet-gravity-with-phaser-box2d-as-seen-on-angry-birds-space/',
+      'http://www.emanueleferonato.com/tag/angry-birds-space/'
     ],
     tags: [],
     inspirations: [
@@ -98,7 +102,8 @@ var games = [
     references: [
       'http://www.red3d.com/cwr/boids/',
       'http://www.kfish.org/boids/pseudocode.html',
-      'http://www.emanueleferonato.com/2016/01/12/how-to-simulate-flocking-behavior-with-boids-using-html5-and-phaser/'
+      'http://www.emanueleferonato.com/2016/01/12/how-to-simulate-flocking-behavior-with-boids-using-html5-and-phaser/',
+      'http://www.emanueleferonato.com/tag/boids/'
     ],
     tags: [
       'boids algorithm'
@@ -138,7 +143,8 @@ var games = [
       'boom-dots.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2015/04/16/create-an-html5-game-like-boom-dots-in-less-than-100-lines-of-code-with-phaser/'
+      'http://www.emanueleferonato.com/2015/04/16/create-an-html5-game-like-boom-dots-in-less-than-100-lines-of-code-with-phaser/',
+      'http://www.emanueleferonato.com/tag/boom-dots/'
     ],
     tags: [],
     inspirations: [
@@ -334,7 +340,8 @@ var games = [
       'clocks.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2016/01/07/clocks-the-game-html5-prototype-step-3-actually-playing-the-game/'
+      'http://www.emanueleferonato.com/2016/01/07/clocks-the-game-html5-prototype-step-3-actually-playing-the-game/',
+      'http://www.emanueleferonato.com/tag/clocks-the-game/'
     ],
     tags: [],
     inspirations: [],
@@ -407,7 +414,8 @@ var games = [
     ],
     references: [
       'http://www.emanueleferonato.com/2015/08/18/creation-of-the-engine-behind-cube-jump-ios-game-with-phaser/',
-      'http://www.emanueleferonato.com/wp-content/uploads/2015/08/cubejump/'
+      'http://www.emanueleferonato.com/wp-content/uploads/2015/08/cubejump/',
+      'http://www.emanueleferonato.com/tag/cube-jump/'
     ],
     tags: [],
     inspirations: [
@@ -443,7 +451,8 @@ var games = [
       'dashy-panda.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2016/01/15/phaser-tutorial-create-a-html5-prototype-of-the-ios-game-dashy-panda/'
+      'http://www.emanueleferonato.com/2016/01/15/phaser-tutorial-create-a-html5-prototype-of-the-ios-game-dashy-panda/',
+      'http://www.emanueleferonato.com/tag/dashy-panda/'
     ],
     tags: [],
     inspirations: [
@@ -463,7 +472,8 @@ var games = [
     ],
     references: [
       'http://www.emanueleferonato.com/2014/09/23/html5-diamond-diger-saga-prototype-made-with-phaser-adding-dirt-and-water/',
-      'http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/'
+      'http://www.emanueleferonato.com/2014/09/18/html5-diamond-digger-saga-prototype-made-with-phaser/',
+      'http://www.emanueleferonato.com/tag/diamond-digger-saga/'
     ],
     tags: [],
     inspirations: [],
@@ -560,7 +570,8 @@ var games = [
     references: [
       'http://www.emanueleferonato.com/2015/03/05/create-an-html5-game-like-drop-wizard-with-phaser-patrolling-enemies/',
       'http://www.emanueleferonato.com/2015/03/03/create-an-html5-game-like-drop-wizard-with-phaser-player-fire-by-extending-sprite-class/',
-      'http://www.emanueleferonato.com/2015/01/15/create-an-html5-game-like-drop-wizard-with-phaser-player-movement/'
+      'http://www.emanueleferonato.com/2015/01/15/create-an-html5-game-like-drop-wizard-with-phaser-player-movement/',
+      'http://www.emanueleferonato.com/tag/drop-wizard/'
     ],
     tags: [],
     inspirations: [
@@ -832,7 +843,8 @@ var games = [
     ],
     references: [
       'http://www.emanueleferonato.com/2014/10/21/phaser-tutorial-how-to-create-an-html5-survival-horror-game-in-6-easy-steps/',
-      'http://www.emanueleferonato.com/2014/10/10/a-quick-html5-survival-horror-prototype-made-with-phaser/'
+      'http://www.emanueleferonato.com/2014/10/10/a-quick-html5-survival-horror-prototype-made-with-phaser/',
+      'http://www.emanueleferonato.com/tag/survival-horror/'
     ],
     tags: [],
     inspirations: [],
@@ -905,7 +917,8 @@ var games = [
     ],
     references: [
       'http://www.emanueleferonato.com/2015/06/10/html5-prototype-of-the-iromeku-game-engine-made-with-phaser/',
-      'http://www.emanueleferonato.com/2013/03/20/prototype-of-the-iromeku-game-engine/'
+      'http://www.emanueleferonato.com/2013/03/20/prototype-of-the-iromeku-game-engine/',
+      'http://www.emanueleferonato.com/tag/iromeku/'
     ],
     tags: [],
     inspirations: [],
@@ -922,7 +935,10 @@ var games = [
       'level-selection.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2016/01/25/create-a-html5-level-select-screen-controlled-by-swipe-without-actually-checking-for-swipes/'
+      'http://www.emanueleferonato.com/2016/01/25/create-a-html5-level-select-screen-controlled-by-swipe-without-actually-checking-for-swipes/',
+      'http://www.emanueleferonato.com/2016/02/04/create-a-html5-level-select-screen-controlled-by-swipe-new-feature-actually-selecting-a-level/',
+      'http://www.emanueleferonato.com/2016/04/08/create-a-html5-level-select-screen-controlled-by-swipe-new-feature-navigation-with-page-thumbnails/',
+      'http://www.emanueleferonato.com/2016/09/09/apply-transitions-between-your-phaser-states-with-a-single-line-of-code-thanks-to-state-transition-plugin/'
     ],
     tags: [],
     inspirations: [],
@@ -974,7 +990,8 @@ var games = [
       'magick.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2015/05/12/phaser-tutorial-html5-player-movement-as-seen-in-ipad-magick-game-using-mostly-tile-maps/'
+      'http://www.emanueleferonato.com/2015/05/12/phaser-tutorial-html5-player-movement-as-seen-in-ipad-magick-game-using-mostly-tile-maps/',
+      'http://www.emanueleferonato.com/tag/magick/'
     ],
     tags: [
       'player movement'
@@ -1015,7 +1032,8 @@ var games = [
       'mass-attack.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2014/08/05/create-an-html5-game-like-mass-attack-with-phaser-just-using-tweens-well-almost/'
+      'http://www.emanueleferonato.com/2014/08/05/create-an-html5-game-like-mass-attack-with-phaser-just-using-tweens-well-almost/',
+      'http://www.emanueleferonato.com/2017/09/19/mass-attack-html5-game-made-with-phaser-3-code-optimized-by-richard-davey/'
     ],
     tags: [],
     inspirations: [],
@@ -1112,7 +1130,8 @@ var games = [
       'one-tap-rpg.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2014/08/13/how-to-create-an-html5-rpg-physics-driven-game-with-phaser/'
+      'http://www.emanueleferonato.com/2014/08/13/how-to-create-an-html5-rpg-physics-driven-game-with-phaser/',
+      'http://www.emanueleferonato.com/tag/one-tap-rpg/'
     ],
     tags: [],
     inspirations: [
@@ -1390,7 +1409,8 @@ var games = [
     references: [
       'http://www.emanueleferonato.com/2015/12/24/new-minibook-released-create-html5-vertical-endless-runner-cross-platform-games/',
       'http://www.emanueleferonato.com/2015/11/11/creation-of-an-html5-game-like-rise-above-using-phaser-and-arcade-physics-step-2/',
-      'http://www.emanueleferonato.com/2015/10/23/creation-of-an-html5-game-like-rise-above-using-phaser-and-arcade-physics-step-1/'
+      'http://www.emanueleferonato.com/2015/10/23/creation-of-an-html5-game-like-rise-above-using-phaser-and-arcade-physics-step-1/',
+      'http://www.emanueleferonato.com/tag/rise-above/'
     ],
     tags: [],
     inspirations: [
@@ -1591,7 +1611,8 @@ var games = [
     ],
     references: [
       'http://www.emanueleferonato.com/2014/02/01/create-an-html5-game-like-space-is-key-with-a-lot-of-room-for-customization-step-2-adding-obstacles/',
-      'http://www.emanueleferonato.com/2014/01/15/create-an-html5-game-like-space-is-key-with-a-lot-of-room-for-customization/'
+      'http://www.emanueleferonato.com/2014/01/15/create-an-html5-game-like-space-is-key-with-a-lot-of-room-for-customization/',
+      'http://www.emanueleferonato.com/tag/space-is-key/'
     ],
     tags: [],
     inspirations: [
@@ -1610,7 +1631,8 @@ var games = [
       'spellfall.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2014/08/19/how-to-create-an-html5-swap-and-match-3-game-engine-like-the-one-used-in-spellfall-ios-game-using-phaser/'
+      'http://www.emanueleferonato.com/2014/08/19/how-to-create-an-html5-swap-and-match-3-game-engine-like-the-one-used-in-spellfall-ios-game-using-phaser/',
+      'http://www.emanueleferonato.com/tag/spellfall/'
     ],
     tags: [],
     inspirations: [
@@ -1629,7 +1651,8 @@ var games = [
       'spin-wheel.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2015/07/31/create-a-wheel-of-fortune-for-your-html5-games-with-phaser-in-only-a-few-lines/'
+      'http://www.emanueleferonato.com/2015/07/31/create-a-wheel-of-fortune-for-your-html5-games-with-phaser-in-only-a-few-lines/',
+      'http://www.emanueleferonato.com/tag/wheel-of-fortune/'
     ],
     tags: [],
     inspirations: [],
@@ -1661,7 +1684,8 @@ var games = [
       'spring-ninja.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2015/03/16/html5-prototype-of-an-endless-runner-game-like-spring-ninja/'
+      'http://www.emanueleferonato.com/2015/03/16/html5-prototype-of-an-endless-runner-game-like-spring-ninja/',
+      'http://www.emanueleferonato.com/tag/a-jumping-block/'
     ],
     tags: [],
     inspirations: [
@@ -1720,7 +1744,8 @@ var games = [
       'straight-rush.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2014/07/30/html5-one-button-minigame-prototype-made-with-phaser/'
+      'http://www.emanueleferonato.com/2014/07/30/html5-one-button-minigame-prototype-made-with-phaser/',
+      'http://www.emanueleferonato.com/tag/one-button-game/'
     ],
     tags: [],
     inspirations: [],
@@ -1811,7 +1836,8 @@ var games = [
       'the-next-arrow.jpg'
     ],
     references: [
-      'http://www.emanueleferonato.com/2015/05/18/create-an-html5-game-like-the-next-arrow-using-phaser/'
+      'http://www.emanueleferonato.com/2015/05/18/create-an-html5-game-like-the-next-arrow-using-phaser/',
+      'http://www.emanueleferonato.com/tag/the-next-arrow/'
     ],
     tags: [],
     inspirations: [
@@ -1890,7 +1916,8 @@ var games = [
     ],
     references: [
       'http://www.emanueleferonato.com/2015/11/03/2-cars-html5-prototype-part-ii-adding-targets-and-steering/',
-      'http://www.emanueleferonato.com/2015/10/26/creation-of-a-2-cars-html-prototype-using-phaser-and-arcade-physics/'
+      'http://www.emanueleferonato.com/2015/10/26/creation-of-a-2-cars-html-prototype-using-phaser-and-arcade-physics/',
+      'http://www.emanueleferonato.com/tag/2-cars/'
     ],
     tags: [],
     inspirations: [],
@@ -1916,12 +1943,305 @@ var games = [
     name: '123',
     title: '123',
     description: '1+2=3',
-    phaserVersion: '2.4.4',
+    phaserVersion: '2.2.2',
     isPlayable: true,
     screenshots: [
-      'webfont.jpg'
+      '123.jpg'
     ],
-    references: [],
+    references: [
+      'http://www.emanueleferonato.com/tag/123/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://itunes.apple.com/us/app/1+2-3/id953831664?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 106,
+    name: 'guessnext',
+    title: 'GuessNext',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'guessnext.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2017/03/10/html5-deck-of-cards-management-a-first-simple-game/'
+    ],
+    tags: [],
+    inspirations: [],
+    demos: []
+  },
+  {
+    id: 107,
+    name: 'dungeon-raid',
+    title: 'Dungeon Raid',
+    description: 'Dots game using "Dungeon Raid" engine',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'dungeon-raid.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/tag/dungeon-raid/'
+    ],
+    tags: [],
+    inspirations: [
+      'http://dungeonraid.atspace.com/',
+      'https://itunes.apple.com/in/app/dots-a-game-about-connecting/id632285588?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 108,
+    name: 'samegame',
+    title: 'Samegame',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'samegame.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2016/11/17/html5-endless-samegame-engine-with-object-pooling-made-with-phaser/',
+      'http://www.emanueleferonato.com/2016/10/13/10-successful-games-you-can-easily-create-starting-from-the-samegame-engine/',
+      'http://www.emanueleferonato.com/tag/samegame/',
+      'http://www.emanueleferonato.com/tag/knightfall/'
+    ],
+    tags: [],
+    inspirations: [
+      'http://www.kongregate.com/games/megadev/knightfall'
+    ],
+    demos: []
+  },
+  {
+    id: 109,
+    name: 'revenge',
+    title: 'Revenge',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'revenge.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/tag/planet-revenge/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://itunes.apple.com/us/app/planet-revenge/id1018002797?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 110,
+    name: 'square-one',
+    title: 'Square One',
+    description: 'Back to Square One',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'square-one.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2016/08/25/html5-back-to-square-one-prototype-made-with-phaser-adding-enemies/',
+      'http://www.emanueleferonato.com/tag/back-to-square-one/'
+    ],
+    tags: [],
+    inspirations: [
+
+    ],
+    demos: []
+  },
+  {
+    id: 111,
+    name: 'circle-path',
+    title: 'Circle Path',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'circle-path.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2016/02/11/html5-prototype-of-ios-game-circle-path-made-with-phaser/',
+      'http://www.emanueleferonato.com/tag/circle-path/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://itunes.apple.com/us/app/circle-path/id1059393542?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 112,
+    name: 'flipping-legend',
+    title: 'Flipping Legend',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'flipping-legend.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2017/08/01/html5-prototype-of-mobile-hit-flipping-legend-with-top-down-view-made-with-phaser-adding-holes/',
+      'http://www.emanueleferonato.com/tag/flipping-legend/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://play.google.com/store/apps/details?id=com.noodlecake.flippinglegend&hl=en'
+    ],
+    demos: []
+  },
+  {
+    id: 113,
+    name: 'mike-dangers',
+    title: 'Mike Dangers',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'mike-dangers.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2017/06/12/play-ladderz-the-complete-html5-game-based-on-mike-dangers-concept/',
+      'http://www.emanueleferonato.com/tag/mike-dangers/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://play.google.com/store/apps/details?id=com.wildbeep.mikedangers&hl=en'
+    ],
+    demos: []
+  },
+  {
+    id: 114,
+    name: 'memdot',
+    title: 'Memdot',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'memdot.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2016/09/22/create-the-html5-engine-behind-ios-hit-memdot-with-phaser-step-2-a-game-prototype/',
+      'http://www.emanueleferonato.com/tag/memdot/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://itunes.apple.com/us/app/memdot/id1119470318?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 115,
+    name: 'pop-the-lock',
+    title: 'Pop the Lock',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'pop-the-lock.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2016/03/22/html5-prototype-of-pop-the-lock-ios-blockbuster-using-phaser-step-2/',
+      'http://www.emanueleferonato.com/tag/pop-the-lock/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://play.google.com/store/apps/details?id=com.sm.popTheLock&hl=en',
+      'https://itunes.apple.com/us/app/pop-the-lock/id979100082?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 116,
+    name: 'perfect-square',
+    title: 'Perfect Square',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'perfect-square.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2016/04/06/html5-prototype-of-ios-game-perfect-square-step-3-adding-in-game-instructions-and-scaling-the-game-for-any-resolution/',
+      'http://www.emanueleferonato.com/tag/perfect-square/'
+    ],
+    tags: [],
+    inspirations: [
+      'https://itunes.apple.com/us/app/perfect-square/id1073059261?mt=8'
+    ],
+    demos: []
+  },
+  {
+    id: 117,
+    name: 'wall-jump',
+    title: 'Wall jump',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'wall-jump.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2017/06/16/the-basics-behind-wall-jump-in-platform-games-html5-prototype-made-with-phaser-and-arcade-physics/'
+    ],
+    tags: [],
+    inspirations: [],
+    demos: []
+  },
+  {
+    id: 118,
+    name: 'twin-spin',
+    title: 'TwinSpin',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'twin-spin.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/tag/twinspin/'
+    ],
+    tags: [],
+    inspirations: [],
+    demos: []
+  },
+  {
+    id: 119,
+    name: 'zhed',
+    title: 'Zhed',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'zhed.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2017/05/11/html5-prototype-of-ios-zhed-puzzle-game-with-10-playable-levels-made-with-phaser/',
+      'http://www.emanueleferonato.com/tag/zhed/'
+    ],
+    tags: [],
+    inspirations: [],
+    demos: []
+  },
+  {
+    id: 120,
+    name: 'yeah-bunny',
+    title: 'Yeah Bunny',
+    description: '',
+    phaserVersion: '2.6.2',
+    isPlayable: true,
+    screenshots: [
+      'yeah-bunny.jpg'
+    ],
+    references: [
+      'http://www.emanueleferonato.com/2017/06/21/html5-platformer-prototype-inspired-by-ios-hit-yeah-bunny-thanks-to-phaser-and-arcade-physics/',
+      'http://www.emanueleferonato.com/tag/yeah-bunny/'
+    ],
     tags: [],
     inspirations: [],
     demos: []
