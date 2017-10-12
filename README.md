@@ -171,7 +171,7 @@ A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-exam
 - [Knights of Pen & Paper 2](https://play.google.com/store/apps/details?id=com.paradoxplaza.kopp2&hl=en)
 - [Downwell](http://downwellgame.com/)
 - [Alto's Adventure](http://altosadventure.com/)
-- [Niche](http://niche-game.com/wordpress/)
+- [Niche](http://niche-game.com/)
 - [Capitals - Free Word Battle](https://itunes.apple.com/us/app/capitals-free-word-battle/id968456900?mt=8) - Word Puzzle
 - [Letterpad - Free Word Puzzles](https://itunes.apple.com/in/app/letterpad-free-word-puzzles/id943235780?mt=8) - Word Puzzle
 - [Tiny Guardians](https://play.google.com/store/apps/details?id=com.kurechii.tinyguardians&hl=en)
