@@ -1,7 +1,7 @@
 # Phaser Examples
 A collection of games made by phaser, [DEMO](http://jojoee.github.io/phaser-examples/games/)
 
-[![Phaser Examples - Screenshot](https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages/games/demo.jpg "Phaser Examples - Screenshot")](http://jojoee.github.io/phaser-examples/games/)
+[![Phaser Examples - Screenshot](https://raw.githubusercontent.com/jojoee/phaser-examples/gh-pages/games/demo.jpg "Phaser Examples - Screenshot")](http://jojoee.github.io/phaser-examples/games/) [![Greenkeeper badge](https://badges.greenkeeper.io/jojoee/phaser-examples.svg)](https://greenkeeper.io/)
 
 ## Getting started
 1. Set path (e.g. `cd C:\xampp\htdocs\jojoee.com\phaser-examples`)
