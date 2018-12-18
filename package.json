@@ -18,10 +18,10 @@
   "homepage": "https://github.com/jojoee/phaser-examples#readme",
   "devDependencies": {
     "browser-sync": "^2.10.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.7.0",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "webshot": "^0.18.0"
   },
   "scripts": {
